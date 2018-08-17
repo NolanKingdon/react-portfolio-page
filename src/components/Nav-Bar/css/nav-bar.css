@@ -4,6 +4,13 @@
   left: 0;
   width: 25%;
   height: 100%;
-  background-color: blue;
+  background-color: #023670;
   color: white;
+  text-align: center;
+}
+
+.nav-accent-header {
+  position: relative;
+  background-color: #032C59;
+  text-align: left;
 }
