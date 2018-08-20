@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './css/nav-bar.css';
+import gitLogo from './images/GitHub-Logo.png';
+import linkedLogo from './images/LinkedIn-Logo.png';
 
 class NavMain extends Component {
 
@@ -21,52 +23,18 @@ class NavMain extends Component {
         <div className = "nav-accent-header">
           <h3 className = "nav-header">My Work</h3>
         </div>
-        <div className = "nav-content">
+        <div className = "nav-accent-header">
+          <h3 className = "nav-header">Education</h3>
         </div>
         <div className = "nav-accent-header">
           <h3 className = "nav-header">Social Media</h3>
         </div>
         <div className = "nav-content">
-          <h4>LinkedIn</h4>
-          <p>https://www.linkedin.com/in/nolan-kingdon/</p>
-          <h4>Github</h4>
-          <p>https://github.com/NolanKingdon</p>
+          <div className = "social-media-flex">
+            <a href = "https://www.linkedin.com/in/nolan-kingdon/"><img src = {linkedLogo} style={{width:"4vw"}} alt = "LinkedIn"/></a>
+            <a href="https://github.com/NolanKingdon"><img src ={gitLogo} style={{width: "4vw"}} alt = "GitHub"/></a>
+          </div>
         </div>
-        {/*
-        <div className = "nav-content">
-          <p><b>HTML</b></p>
-          <p><b>CSS3</b></p>
-          <ul>
-            <li>SCSS/SASS</li>
-            <li>Grid/Flexbox</li>
-            <li>Animations</li>
-          </ul>
-          <p><b>JavaScript</b></p>
-          <ul>
-            <li>ES6</li>
-            <li>React</li>
-            <li>JQuery</li>
-            <li>node.js</li>
-          </ul>
-          <p><b>PHP</b></p>
-          <ul>
-            <li>WordPress</li>
-            <li>PHP 7+</li>
-          </ul>
-          <p><b>SQL</b></p>
-          <ul>
-            <li>SQLite3</li>
-            <li>MySQL</li>
-          </ul>
-          <p><b>Python</b></p>
-          <ul>
-            <li>Django</li>
-          </ul>
-          <p><b>NoSQL</b></p>
-          <ul>
-            <li>Firebase</li>
-          </ul>
-        </div>*/}
       </div>
     )
   }

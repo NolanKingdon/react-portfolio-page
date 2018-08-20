@@ -1,13 +1,12 @@
-h1 {
+.nav-bar h1 {
   font-size: 2.4vw;
 }
-h2 {
+.nav-bar h2 {
   font-size: 1.7vw;
 }
-h3p, li {
+.nav-bar h3,.nav-bar p,.nav-bar li {
   font-size: 1vw;
 }
-
 
 .nav-bar {
   position: absolute;
@@ -18,8 +17,8 @@ h3p, li {
   background-color: #023670;
   color: white;
   text-align: left;
-  -moz-box-shadow:    3px 3px 10px 1px #ccc;
-  -webkit-box-shadow: 3px 3px 10px 1px #ccc;
+  -moz-box-shadow:    4px 3px 10px 1px #ccc;
+  -webkit-box-shadow: 4px 3px 10px 1px #ccc;
   box-shadow:         4px 5px 10px 1px gray;
 }
 
@@ -30,7 +29,7 @@ h3p, li {
 }
 
 .nav-first-header {
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -59,4 +58,12 @@ h3p, li {
 .nav-content p, .nav-content ul, .nav-content li, .nav-content h4 {
   margin: 0;
   padding: 5px;
+}
+
+.social-media-flex {
+  display: flex;
+}
+
+.social-media-flex a {
+  margin: 5px;
 }
