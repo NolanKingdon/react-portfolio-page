@@ -1,16 +1,62 @@
+h1 {
+  font-size: 2.4vw;
+}
+h2 {
+  font-size: 1.7vw;
+}
+h3p, li {
+  font-size: 1vw;
+}
+
+
 .nav-bar {
   position: absolute;
   top: 0;
   left: 0;
-  width: 25%;
+  width: 22vw;
   height: 100%;
   background-color: #023670;
   color: white;
-  text-align: center;
+  text-align: left;
+  -moz-box-shadow:    3px 3px 10px 1px #ccc;
+  -webkit-box-shadow: 3px 3px 10px 1px #ccc;
+  box-shadow:         4px 5px 10px 1px gray;
 }
 
 .nav-accent-header {
   position: relative;
   background-color: #032C59;
   text-align: left;
+}
+
+.nav-first-header {
+  padding-top: 20px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.nav-first-header h1, .nav-first-header h2, .nav-first-header h3 {
+  margin: 0;
+  padding-top: 5px;
+}
+
+.nav-first-header a {
+  color: white;
+}
+
+.nav-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.nav-content {
+  margin: 0;
+  padding-left: 20px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.nav-content p, .nav-content ul, .nav-content li, .nav-content h4 {
+  margin: 0;
+  padding: 5px;
 }
