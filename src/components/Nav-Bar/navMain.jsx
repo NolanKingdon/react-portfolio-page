@@ -4,10 +4,23 @@ import gitLogo from './images/GitHub-Logo.png';
 import linkedLogo from './images/LinkedIn-Logo.png';
 
 class NavMain extends Component {
+//This was an attempt at having the navBar display, and then move to -20vw to improve UI
+  // constructor(props){
+  //   super(props);
+  //   this.moveNavBar = this.moveNavBar.bind(this);
+  // }
+  //
+  // componentDidMount(){
+  //   this.moveNavBar();
+  // }
+  //
+  // moveNavBar(){
+  //   this.props.navUpdate();
+  // }
 
   render(){
     return(
-      <div className = "nav-bar">
+      <div className = "nav-bar"> {/*style = {{left: this.props.navOrigin}}*/}
         <div className = "nav-first-header nav-content">
           <h1>Nolan Kingdon</h1>
           <h2>Project Manager</h2>
