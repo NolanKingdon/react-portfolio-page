@@ -6,9 +6,6 @@ class AboutPage extends Component {
     return(
       <div className = "about" style = {{textAlign: "center"}}>
         <div className = "about-head">
-          <hr className = "about-hr" />
-          <h2 className = "about-left">About</h2>
-          <hr className = "about-hr" />
           <h1>Nolan Kingdon</h1>
           <h2>Project Manager</h2>
           <h3><a href = "tel:9052201705">(905)-220-1705</a></h3>

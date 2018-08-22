@@ -12,15 +12,3 @@
   font-size: 1.5vw;
   margin: 5px 0px 0px 0px;
 }
-
-.about-hr {
-  width: 95vw;
-  color: #023670;
-  height: 1px;
-  background-color:#023670;
-}
-
-.about-left {
-  text-align: right;
-  margin-right: 10px;
-}
