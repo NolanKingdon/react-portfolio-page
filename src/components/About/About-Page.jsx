@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './css/about.css';
+import selfImage from './images/self-image-rotated.jpeg';
 
 class AboutPage extends Component {
   render(){
     return(
       <div className = "about" style = {{textAlign: "center"}}>
         <div className = "about-head">
-          <h1>Nolan Kingdon</h1>
-          <h2>Project Manager</h2>
-          <h3><a href = "tel:9052201705">(905)-220-1705</a></h3>
-          <h3><a href = "mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></h3>
+          <img src = {selfImage} className = "self-image"/>
         </div>
       </div>
     )

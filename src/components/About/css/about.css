@@ -12,3 +12,13 @@
   font-size: 1.5vw;
   margin: 5px 0px 0px 0px;
 }
+
+.self-image {
+  width: 20vw;
+  height: auto;
+  image-orientation: from-image;
+  border-radius: 200px;
+  -moz-box-shadow:    4px 3px 10px 1px #ccc;
+  -webkit-box-shadow: 4px 3px 10px 1px #ccc;
+  box-shadow:         4px 5px 10px 1px gray;
+}
