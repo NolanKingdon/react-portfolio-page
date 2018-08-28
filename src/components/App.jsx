@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavMain from './Nav-Bar/navMain.jsx';
 import AboutPage from './About/About-Page.jsx';
 import Header from './Header-Bar/Header.jsx';
+import Employment from './Employment/Employment.jsx';
 
 class App extends Component {
 //Commented out code was an attempt at having the navBar display, and then move to -20vw to improve UI
@@ -14,6 +15,7 @@ class App extends Component {
     }
     //this.navUpdate = this.navUpdate.bind(this);
     //this.mouseEntered = this.mouseEntered.bind(this);
+    this.pageChanger = this.pageChanger.bind(this);
   }
 
   // navUpdate(){
@@ -37,11 +39,19 @@ class App extends Component {
   //   })
   // }
 
+  pageChanger(newPage){
+    console.log("Page Changer = ", newPage);
+    this.setState({
+      page: newPage
+    });
+  }
+
   render(){
     return(
       <div>
         <NavMain
           className = "nav-bar test"
+          changer = {this.pageChanger}
         />
       {/*
         navUpdate = {this.navUpdate}
@@ -52,7 +62,12 @@ class App extends Component {
         <Header
           page = {this.state.page}
         />
+      {this.state.page == "About" &&
         <AboutPage />
+      }
+      {this.state.page == "Employment History" &&
+        <Employment />
+      }
       </div>
     )
   }
