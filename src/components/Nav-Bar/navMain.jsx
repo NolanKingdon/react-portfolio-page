@@ -27,19 +27,19 @@ class NavMain extends Component {
           <h3><a href = "tel:9052201705">(905)-220-1705</a></h3>
           <h3><a href = "mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></h3>
         </div>
-        <div className = "nav-accent-header">
+        <div className = "nav-accent-header" onClick = {() => this.props.changer("About")}>
           <h3 className = "nav-header">About</h3>
         </div>
-        <div className = "nav-accent-header">
+        <div className = "nav-accent-header" onClick = {() => this.props.changer("Employment History")}>
           <h3 className = "nav-header">Employment History</h3>
         </div>
-        <div className = "nav-accent-header">
+        <div className = "nav-accent-header" onClick = {() => this.props.changer("My Work")}>
           <h3 className = "nav-header">My Work</h3>
         </div>
-        <div className = "nav-accent-header">
+        <div className = "nav-accent-header" onClick = {() => this.props.changer("Education")}>
           <h3 className = "nav-header">Education</h3>
         </div>
-        <div className = "nav-accent-header">
+        <div className = "nav-accent-header" onClick = {() => this.props.changer("Social")}>
           <h3 className = "nav-header">Social Media</h3>
         </div>
         <div className = "nav-content">
