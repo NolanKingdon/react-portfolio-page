@@ -9,7 +9,7 @@
 }
 
 .nav-bar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0vw;
   width: 22vw;
