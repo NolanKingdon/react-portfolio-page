@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CSSTransitionGroup } from 'react-transition-group';
 import NavMain from './Nav-Bar/navMain.jsx';
 import AboutPage from './About/About-Page.jsx';
 import Header from './Header-Bar/Header.jsx';
@@ -10,7 +11,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      page: "About",
+      page: "Employment History",
       navOrigin: "0vw"
     }
     //this.navUpdate = this.navUpdate.bind(this);
@@ -62,8 +63,18 @@ class App extends Component {
         <Header
           page = {this.state.page}
         />
+      {/*Add the CSS file here so we can assign the fades*/}
+      {/*
+        <CSSTransitionGroup
+        transitionName = "MainPage"
+        transitionEnterTimeout = {500}
+        transitionLeaveTimeout = {300}
+        >
+        </CSSTransitionGroup>
+        */}
       {this.state.page == "About" &&
-        <AboutPage />
+
+          <AboutPage />
       }
       {this.state.page == "Employment History" &&
         <Employment />
