@@ -1,0 +1,24 @@
+.employment-container {
+  width: 25vw;
+  margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+}
+.employment-header{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin: none;
+}
+
+.employment-hr {
+  width: 25vw;
+  color: #023670;
+  height: 2px;
+  background-color: #023670;
+}
+
+.employer-logo {
+  width: 150px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
