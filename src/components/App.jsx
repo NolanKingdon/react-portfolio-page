@@ -4,6 +4,8 @@ import NavMain from './Nav-Bar/navMain.jsx';
 import AboutPage from './About/About-Page.jsx';
 import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
+import Education from './Education/Education.jsx';
+import './css/transitions.css';
 
 class App extends Component {
 //Commented out code was an attempt at having the navBar display, and then move to -20vw to improve UI
@@ -64,21 +66,20 @@ class App extends Component {
           page = {this.state.page}
         />
       {/*Add the CSS file here so we can assign the fades*/}
-      {/*
-        <CSSTransitionGroup
-        transitionName = "MainPage"
-        transitionEnterTimeout = {500}
-        transitionLeaveTimeout = {300}
-        >
-        </CSSTransitionGroup>
-        */}
-      {this.state.page == "About" &&
+      {/*          <CSSTransitionGroup
+                  transitionName = "main-pages"
+                  transitionEnterTimeout = {500}
+                  transitionLeaveTimeout = {300}
+                >
 
-          <AboutPage />
-      }
-      {this.state.page == "Employment History" &&
-        <Employment />
-      }
+                </CSSTransitionGroup>
+
+                */}
+
+
+        {this.state.page == "About" && <AboutPage />}
+        {this.state.page == "Employment History" && <Employment />}
+        {this.state.page == "Education" && <Education />}
       </div>
     )
   }
