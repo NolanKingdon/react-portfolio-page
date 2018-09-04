@@ -11,7 +11,7 @@
 .nav-bar {
   position: fixed;
   top: 0;
-  left: 0vw;
+  left: -20vw;
   width: 22vw;
   height: 100%;
   background-color: #023670;
