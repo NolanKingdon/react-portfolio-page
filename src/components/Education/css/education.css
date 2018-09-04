@@ -1,0 +1,42 @@
+.education-item-link {
+  text-decoration: none;
+  color: inherit;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.education-item-link:hover {
+  background-color: #ccc;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  width: 50vw;
+  margin-top: 2.5vh;
+  margin-bottom: 1vh;
+  margin-left: 25vw;
+}
+
+.education-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.employment-logo {
+  width: 100px;
+}
+
+.education-item-title {
+  padding: 0;
+}
+
+.education-note-text {
+  font-style: italic;
+  padding: 0;
+}
