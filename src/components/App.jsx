@@ -13,7 +13,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      page: "Employment History",
+      page: "Education",
       navOrigin: "0vw"
     }
     //this.navUpdate = this.navUpdate.bind(this);
