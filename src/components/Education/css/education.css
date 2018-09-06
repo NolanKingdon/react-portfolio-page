@@ -1,12 +1,23 @@
-.education-item-link {
+.education-item-button {
   text-decoration: none;
-  color: inherit;
-  transition: 1s;
+  background-color: white;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
 }
 
-.education-item-link:hover {
-  background-color: #ccc;
+.education-item-button:focus{
+  outline: none;
+  background-color: #032C59;
+  color: white;
+  transition: none;
+}
+
+
+.education-item-button:hover {
+  background-color: #023670;
+  color: white;
 }
 
 .education-grid {

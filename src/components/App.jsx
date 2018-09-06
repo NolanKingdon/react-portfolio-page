@@ -14,10 +14,12 @@ class App extends Component {
     super(props);
     this.state = {
       page: "Education",
-      navHidden: false
+      navHidden: false,
+      showInfoSlider: false
     }
     this.pageChanger = this.pageChanger.bind(this);
     this.displayToggle = this.displayToggle.bind(this);
+    this.sliderToggle = this.sliderToggle.bind(this);
   }
 
   pageChanger(newPage){
@@ -29,6 +31,10 @@ class App extends Component {
 
   displayToggle(){
     this.setState({navHidden: !this.state.navHidden});
+  }
+
+  sliderToggle(){
+    this.setState({showInfoSlider: !this.state.showInfoSlider});
   }
 
   render(){
@@ -77,7 +83,7 @@ class App extends Component {
         />
         {this.state.page == "About" && <AboutPage />}
         {this.state.page == "Employment History" && <Employment />}
-        {this.state.page == "Education" && <Education />}
+        {this.state.page == "Education" && <Education showInfoSlider = {this.state.showInfoSlider} sliderToggle = {this.sliderToggle}/>}
       </div>
     )
   }
