@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './css/nav-bar.css';
 import gitLogo from './images/GitHub-Logo.png';
 import linkedLogo from './images/LinkedIn-Logo.png';
+import navArrowLeft from './images/arrow-left.png';
+import navArrowRight from './images/arrow-right.png';
 
 class NavMain extends Component {
 
@@ -16,7 +18,7 @@ class NavMain extends Component {
           className = "nav-display-toggle"
           onClick = {() => this.handleNavToggle()}
         >
-          {this.props.navHidden ? ">" : "<"}
+          {this.props.navHidden ? <img src = {navArrowRight} className = "nav-display-arrow-left"/> : <img src = {navArrowLeft} className = "nav-display-arrow-left"/>}
         </button>
         <div className = "nav-first-header nav-content">
           <h1>Nolan Kingdon</h1>

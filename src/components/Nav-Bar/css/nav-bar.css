@@ -77,4 +77,17 @@
   position: absolute;
   top: 100;
   right: 0;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.nav-display-toggle:focus {
+  outline: 0;
+}
+
+.nav-display-arrow-left {
+  width: 30px;
 }
