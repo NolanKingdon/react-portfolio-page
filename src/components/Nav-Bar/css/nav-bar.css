@@ -7,11 +7,10 @@
 .nav-bar h3,.nav-bar p,.nav-bar li {
   font-size: 1vw;
 }
-
+/*
 .nav-bar {
   position: fixed;
   top: 0;
-  left: -20vw;
   width: 22vw;
   height: 100%;
   background-color: #023670;
@@ -21,11 +20,7 @@
   -webkit-box-shadow: 4px 3px 10px 1px #ccc;
   box-shadow:         4px 5px 10px 1px gray;
   transition: 0.5s;
-}
-
-.nav-bar:hover {
-  left: 0;
-}
+} */
 
 .nav-accent-header {
   position: relative;
@@ -76,4 +71,10 @@
 
 .social-media-flex a {
   margin: 5px;
+}
+
+.nav-display-toggle {
+  position: absolute;
+  top: 100;
+  right: 0;
 }
