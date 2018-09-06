@@ -9,5 +9,5 @@ WIP - Will be my personal portfolio page
 * Fill in assets
 * Finish design and full layout
 * Finish all pages
-* Add in animations/info div on the education pages
 * Remove white from the Education icons
+* Make overflow on the education screen hidden
