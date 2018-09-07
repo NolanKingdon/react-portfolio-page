@@ -50,7 +50,7 @@ class Education extends Component {
                     WebkitBoxShadow: "4px 3px 10px 1px #ccc",
                     boxShadow:       "4px 5px 10px 1px gray",
                     WebkitTransform: `translate3d(${x}px, 0, 0)`,
-                    transform: `translate3d(${x}px, 0, 0)`,
+                    transform:       `translate3d(${x}px, 0, 0)`,
                     borderRadius: "5px",
                   }}
                 />
