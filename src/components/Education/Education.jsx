@@ -36,12 +36,13 @@ class Education extends Component {
 
               return(
                 <InfoSlider
+                  sliderToggle = {this.props.sliderToggle}
                   sliderStyles = {{
                     position: "absolute",
                     top: "10vh",
                     right: x,
                     width: "40vw",
-                    height: "75%",
+                    height: "60%",
                     backgroundColor: "#023670",
                     color: "white",
                     textAlign: "left",
@@ -50,6 +51,7 @@ class Education extends Component {
                     boxShadow:       "4px 5px 10px 1px gray",
                     WebkitTransform: `translate3d(${x}px, 0, 0)`,
                     transform: `translate3d(${x}px, 0, 0)`,
+                    borderRadius: "5px",
                   }}
                 />
               )
