@@ -9,20 +9,23 @@ class InfoSlider extends Component {
   }
 
   render(){
+    {/*Consider having a transparent div behind the currnet one so that when it slides in, you can't click the icons and mess everything up*/}
     return(
       <div className = "education-info-slider" style = {this.props.sliderStyles}>
-        <button className = "info-slider-exit-button" onClick = {() => this.props.sliderToggle()}>
-          <img src = {whiteX} className = "info-slider-exit-button-image"/>
-        </button>
-        <div className = "info-slider-text-body">
-          <h1>Course Title</h1>
-          <p>This was the course description</p>
-          <ul>
-            <li>Course Content</li>
-            <li>Course Content</li>
-            <li>Course Content</li>
-            <li>Course Content</li>
-          </ul>
+        <div className = "education-info-main">
+          <button className = "info-slider-exit-button" onClick = {() => this.props.sliderToggle()}>
+            <img src = {whiteX} className = "info-slider-exit-button-image"/>
+          </button>
+          <div className = "info-slider-text-body">
+            <h1>Course Title</h1>
+            <p>This was the course description</p>
+            <ul>
+              <li>Course Content</li>
+              <li>Course Content</li>
+              <li>Course Content</li>
+              <li>Course Content</li>
+            </ul>
+          </div>
         </div>
       </div>
     )
