@@ -15,11 +15,13 @@ class App extends Component {
     this.state = {
       page: "Education",
       navHidden: false,
-      showInfoSlider: false
+      showInfoSlider: false,
+      currentCourse: "None"
     }
     this.pageChanger = this.pageChanger.bind(this);
     this.displayToggle = this.displayToggle.bind(this);
     this.sliderToggle = this.sliderToggle.bind(this);
+    this.courseSelector = this.courseSelector.bind(this);
   }
 
   pageChanger(newPage){
@@ -35,6 +37,11 @@ class App extends Component {
 
   sliderToggle(){
     this.setState({showInfoSlider: !this.state.showInfoSlider});
+  }
+
+  courseSelector(currentCourse) {
+    console.log(currentCourse);
+    this.setState({currentCourse: currentCourse})
   }
 
   render(){
@@ -72,7 +79,7 @@ class App extends Component {
                   WebkitBoxShadow: "4px 3px 10px 1px #ccc",
                   boxShadow:       "4px 5px 10px 1px gray",
                   WebkitTransform: `translate3d(${x}px, 0, 0)`,
-                  transform: `translate3d(${x}px, 0, 0)`,
+                  transform:       `translate3d(${x}px, 0, 0)`,
                 }}
               />
             )
@@ -83,7 +90,13 @@ class App extends Component {
         />
         {this.state.page == "About" && <AboutPage />}
         {this.state.page == "Employment History" && <Employment />}
-        {this.state.page == "Education" && <Education showInfoSlider = {this.state.showInfoSlider} sliderToggle = {this.sliderToggle}/>}
+        {this.state.page == "Education" && <Education
+                                              currentCourse = {this.state.currentCourse}
+                                              courseSelector = {this.courseSelector}
+                                              showInfoSlider = {this.state.showInfoSlider}
+                                              sliderToggle = {this.sliderToggle}
+                                            />
+                                          }
       </div>
     )
   }

@@ -2,14 +2,16 @@ import React, {Component} from 'react';
 
 class EducationItem extends Component {
 
-  handleSliderToggle(){
+  handleClick(){
     this.props.sliderToggle();
+    this.props.courseSelector(this.props.title);
   }
+
 
   render(){
     {/* Instead of linking out, maybe provide a quick description of what it actually is. Have a Div element slide on in from the side */}
     return(
-      <button className = "education-item-button" onClick = {() => this.handleSliderToggle()}>
+      <button className = "education-item-button" onClick = {() => this.handleClick()}>
         <div className = "education-item-grid">
           <img src = {this.props.image} className = "employment-logo"/>
           <div>
