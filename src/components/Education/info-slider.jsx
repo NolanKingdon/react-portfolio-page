@@ -12,12 +12,10 @@ class InfoSlider extends Component {
     this.props.sliderToggle();
   }
 
-
   render(){
     {/*Consider having a transparent div behind the currnet one so that when it slides in, you can't click the icons and mess everything up*/}
     return(
-      <div className = "education-info-slider" style = {this.props.sliderStyles}>
-        <div className = "education-info-main">
+        <div className = "education-info-slider" style = {this.props.sliderStyles}>
           <button className = "info-slider-exit-button" onClick = {() => this.props.sliderToggle()}>
             <img src = {whiteX} className = "info-slider-exit-button-image"/>
           </button>
@@ -124,7 +122,6 @@ class InfoSlider extends Component {
               }
 
           </div>
-        </div>
       </div>
     )
   }

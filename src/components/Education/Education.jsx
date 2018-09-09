@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/education.css';
 import EducationItem from './educationItem.jsx';
 import InfoSlider from './info-slider.jsx';
+import Background from './info-slider-background.jsx'
 import UdemyLogo from './images/udemy-logo.png';
 import BrockLogo from './images/Brock_logo.png';
 import MitLogo from './images/MITOCW.png';
@@ -53,6 +54,38 @@ class Education extends Component {
                     WebkitTransform: `translate3d(${x}px, 0, 0)`,
                     transform:       `translate3d(${x}px, 0, 0)`,
                     borderRadius: "5px",
+                    xIndex: "21"
+                  }}
+                />
+              )
+            }}
+          </Animate>
+          <Animate
+            start={()=> ({
+              o: "0",
+              display: "none",
+            })}
+
+            update={()=>({
+              o: [ this.props.showInfoSlider ? "0.75" : "0"],
+              display: [ this.props.showInfoSlider ? "block" : "none"],
+              timing: { duration: 1000, ease: easeExpOut },
+            })}
+          >
+            {(state) => {
+              const { o } = state;
+              const { display } = state;
+
+              return(
+                {/* Make sure this is firing off properly.*/}
+                <Background
+                  backgroundStyles = {{
+                    position: "fixed",
+                    height: "100%",
+                    width: "100%",
+                    display: display,
+                    backgroundColor: `rgba(0,255,0,${o})`,
+                    zIndex: "20"
                   }}
                 />
               )
