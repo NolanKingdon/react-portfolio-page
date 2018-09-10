@@ -10,3 +10,7 @@ WIP - Will be my personal portfolio page
 * Finish design and full layout
 * Finish all pages
 * Add Page switch transitions (React-router and react-transition-group probably)
+* Nav bar based styles -> Expanded and Hidden
+* Content height -> Play around with lowering it to center it better. I don't like how close to the top it all is
+* Update all non-header fonts to Garamond
+* Add Media Queries for a good experience on multiple screen sizes/
