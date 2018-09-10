@@ -7,11 +7,13 @@ import UdemyLogo from './images/udemy-logo.png';
 import BrockLogo from './images/Brock_logo.png';
 import MitLogo from './images/MITOCW.png';
 import Animate from 'react-move/Animate';
-import { easeExpOut } from 'd3-ease';
+import { easeExpOut, easeLinear } from 'd3-ease';
 
 class Education extends Component {
 
+
   render(){
+    let t = [ this.props.showInfoSlider ? "block" : "none" ]
     {/*Again, map this in the future*/}
     return(
       <div className = "education-grid">
@@ -54,43 +56,45 @@ class Education extends Component {
                     WebkitTransform: `translate3d(${x}px, 0, 0)`,
                     transform:       `translate3d(${x}px, 0, 0)`,
                     borderRadius: "5px",
-                    xIndex: "21"
+                    zIndex: "21"
                   }}
                 />
               )
             }}
           </Animate>
+
           <Animate
             start={()=> ({
-              o: "0",
-              display: "none",
+              opacity: "0",
             })}
 
-            update={()=>({
-              o: [ this.props.showInfoSlider ? "0.75" : "0"],
-              display: [ this.props.showInfoSlider ? "block" : "none"],
-              timing: { duration: 1000, ease: easeExpOut },
+            update={() => ({
+              opacity: [ this.props.showInfoSlider ? "0.5" : "0"],
+              timing: { duration: 500, ease: easeLinear },
             })}
+
           >
             {(state) => {
-              const { o } = state;
-              const { display } = state;
+              const { opacity } = state;
 
               return(
-                {/* Make sure this is firing off properly.*/}
                 <Background
+                  sliderToggle = {this.props.sliderToggle}
                   backgroundStyles = {{
                     position: "fixed",
+                    top: "0",
+                    left: "0",
                     height: "100%",
                     width: "100%",
-                    display: display,
-                    backgroundColor: `rgba(0,255,0,${o})`,
+                    display: t,
+                    backgroundColor: `rgba(0,0,0,${opacity})`,
                     zIndex: "20"
                   }}
                 />
               )
             }}
           </Animate>
+
       </div>
     )
   }

@@ -4,7 +4,7 @@ class Background extends Component {
 
   render(){
     return(
-      <div className = "education-slider-transparent-background" styles = {this.props.backgroundStyles}>
+      <div className = "education-slider-transparent-background" style = {this.props.backgroundStyles} onClick = {() => this.props.sliderToggle()}>
         ddd
       </div>
     )
