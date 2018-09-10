@@ -4,6 +4,7 @@ import AboutPage from './About/About-Page.jsx';
 import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
 import Education from './Education/Education.jsx';
+import Work from './Work/Work.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
 
@@ -95,6 +96,7 @@ class App extends Component {
                                               showInfoSlider = {this.state.showInfoSlider}
                                               sliderToggle = {this.sliderToggle}
                                             />}
+        {this.state.page == "My Work" && <Work />}
       </div>
     )
   }

@@ -1,0 +1,36 @@
+.info-slider-exit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.info-slider-exit-button:focus {
+  outline: none;
+}
+
+.info-slider-exit-button:hover {
+  cursor: pointer;
+}
+
+.info-slider-exit-button-image {
+  width: 30px;
+}
+
+.info-slider-text-body {
+  margin-left: 20px;
+}
+
+.info-slider-text-body h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.info-slider-text-body p {
+  padding-left: 25px;
+}
+
+.info-slider-text-body ul {
+  padding-left: 75px;
+}
