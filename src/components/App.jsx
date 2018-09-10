@@ -25,7 +25,6 @@ class App extends Component {
   }
 
   pageChanger(newPage){
-    console.log("Page Changer = ", newPage);
     this.setState({
       page: newPage
     });
@@ -40,7 +39,6 @@ class App extends Component {
   }
 
   courseSelector(currentCourse) {
-    console.log(currentCourse);
     this.setState({currentCourse: currentCourse})
   }
 
