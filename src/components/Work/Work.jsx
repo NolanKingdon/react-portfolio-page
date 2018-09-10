@@ -31,7 +31,7 @@ class Work extends Component {
                   currentCourse = {this.props.currentCourse}
                   sliderToggle = {this.props.sliderToggle}
                   sliderStyles = {{
-                    position: "absolute",
+                    position: "fixed",
                     top: "10vh",
                     right: x,
                     width: "40vw",
