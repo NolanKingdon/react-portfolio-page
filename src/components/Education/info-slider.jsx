@@ -25,13 +25,12 @@ class InfoSlider extends Component {
                 <div>
                   <h3 className = "info-slider-text-dates">{MITDates[0]} - {MITDates[1]}</h3>
                   <p className = "info-slider-text-description">
-                      MIT Core computer science courses - Online and through OCW
+                      MIT Core computer science courses - Online through OCW. Various courses pertaining to:
                   </p>
                   <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
+                    <li>Intro to Computer Science/Programming concepts</li>
+                    <li>Intro to Algorithms and efficiency</li>
+                    <li>Computer Science related math</li>
                   </ul>
                 </div>
 
@@ -40,13 +39,12 @@ class InfoSlider extends Component {
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
-                     Master some web apps with react.
+                     Course focused on developing applications using React and Redux. Projects were:
                   </p>
                   <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
+                    <li>A countdown app in vanilla React</li>
+                    <li>A reminder app using Redux and Cookies for task storage</li>
+                    <li>Goal tracker using Redux and Firebase for user authentication and data storage</li>
                   </ul>
                 </div>
               }
@@ -54,13 +52,12 @@ class InfoSlider extends Component {
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
-                    Some cool PHP stuff
+                    Created a PHP based log in system to gain familiarity with PHP syntax and concepts. The App performed the following tasks:
                   </p>
                   <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
+                    <li>MySQL DataBase user authentication</li>
+                    <li>Password hashing</li>
+                    <li>Good coding practices and organization</li>
                   </ul>
                 </div>
               }
@@ -68,13 +65,13 @@ class InfoSlider extends Component {
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
-                    Basics of JS
+                    Basics of JavaScript. This was used to gain a familiarity with the JavaScript coding language. Learned:
                   </p>
                   <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
+                    <li>Document Object Model</li>
+                    <li>Browser Object Model</li>
+                    <li>Errors and Strict mode</li>
+                    <li>Creation of a menu overlay</li>
                   </ul>
                 </div>
               }
@@ -82,41 +79,29 @@ class InfoSlider extends Component {
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
-                    Fundamentals of C# and .NET for current role
+                    Fundamentals of C# and .NET for current role. This was mainly used as an intro to C#/.NET in order to better understand scripting capabilities at PowerSchool
                   </p>
-                  <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                  </ul>
                 </div>
               }
               {this.props.currentCourse == "Complete Python Bootcamp: Go from zero to hero in Python" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
-                    Python basics - first real programming course
+                    Python basics - first real programming course to learn syntax and core programming concepts
                   </p>
-                  <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                  </ul>
                 </div>
               }
               {this.props.currentCourse == "Bachelor of Arts (BA)" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{BrockDates[0]} - {BrockDates[1]}</h3>
                   <p className = "info-slider-text-description">
-                    Walking and talking
+                    Major in Honours Sociology with a Concentration in Criminology and a minor in Eastern Philosophy
                   </p>
                   <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
+                    <li>Critical Evaluation of Criminal Organizations and Gangs</li>
+                    <li>Exposure to leading Sociological theories such as Post Structuralism and Post Modernism</li>
+                    <li>Philosophy oriented in Eastern Religions such as Buddhism and Hinduism</li>
+                    <li>Philisophical study of logic and argument construction/deconstruction</li>
                   </ul>
                 </div>
               }
