@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      page: "Education",
+      page: "About",
       navHidden: false,
       showInfoSlider: false,
       currentCourse: "None"

@@ -1,24 +1,85 @@
-.about h1 {
-  font-size: 4vw;
-  margin: 15vh 0px 0px 0px;
-}
-
-.about h2 {
-  font-size: 2.5vw;
-  margin: 5px 0px 0px 0px;
-}
-
-.about h3 {
-  font-size: 1.5vw;
-  margin: 5px 0px 0px 0px;
-}
-
 .self-image {
+  border: 2px solid black;
   width: 20vw;
   height: auto;
+  margin-right: 200px;
   image-orientation: from-image;
   border-radius: 200px;
   -moz-box-shadow:    4px 3px 10px 1px #ccc;
   -webkit-box-shadow: 4px 3px 10px 1px #ccc;
   box-shadow:         4px 5px 10px 1px gray;
+  float: right;
+}
+
+.about-head {
+  margin-top: 13vh;
+}
+
+
+/* This is going to have to change on my dynamic update linked to the navbar. */
+/*
+
+This looks great for a full screen (No Nav) view.
+
+.about-text {
+  float: right;
+  margin-right: 100px;
+}
+
+.about-text {
+  float: right;
+  margin-right: 100px;
+}
+
+#about-hello {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 6rem;
+}
+
+#about-intro {
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+#about-background {
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#about-invitation {
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+ */
+
+/* This is if the nav bar is open -- Everything is just a touch smaller */
+.about-text {
+  float: right;
+  margin-right: 100px;
+}
+
+#about-hello {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 5rem;
+}
+
+#about-intro {
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+#about-background {
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#about-invitation {
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
