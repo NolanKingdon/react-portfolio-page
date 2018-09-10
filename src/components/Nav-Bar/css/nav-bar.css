@@ -91,3 +91,7 @@
 .nav-display-arrow-left {
   width: 30px;
 }
+
+.nav-display-arrow-left:hover {
+  cursor: pointer;
+}
