@@ -86,6 +86,7 @@ class App extends Component {
         <Header
           page = {this.state.page}
         />
+
         {this.state.page == "About" && <AboutPage />}
         {this.state.page == "Employment History" && <Employment />}
         {this.state.page == "Education" && <Education
@@ -93,8 +94,7 @@ class App extends Component {
                                               courseSelector = {this.courseSelector}
                                               showInfoSlider = {this.state.showInfoSlider}
                                               sliderToggle = {this.sliderToggle}
-                                            />
-                                          }
+                                            />}
       </div>
     )
   }
