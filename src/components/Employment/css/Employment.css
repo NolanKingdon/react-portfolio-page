@@ -41,6 +41,8 @@
   font-size: 0.75vw;
   font-style: italic;
   margin-top: 0;
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-weight: 600;
 }
 
 .employment-hr {
@@ -54,4 +56,9 @@
   width: 100px;
   margin-right: 15px;
   border-radius: 5px;
+}
+
+.employment-description {
+  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-size: 1rem;
 }
