@@ -4,6 +4,10 @@
   flex-direction: column;
   height: 90%;
   flex-wrap: wrap;
+  /* Collapsed View */
+  margin-left: 7vw;
+  /* Extended View */
+  /* margin-left: 15vw; */
 }
 
 .employment-item-container {

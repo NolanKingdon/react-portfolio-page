@@ -1,5 +1,5 @@
 .education-info-main {
-  
+
 }
 
 .education-item-button {
@@ -32,7 +32,12 @@
   width: 50vw;
   margin-top: 2.5vh;
   margin-bottom: 1vh;
-  margin-left: 25vw;
+  /* For Collapsed View */
+  /* margin-left: 22vw; */
+
+  /* for extended view */
+  margin-left: 35vw;
+ 
 }
 
 .education-item-grid {
