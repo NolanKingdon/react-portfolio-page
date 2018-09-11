@@ -88,15 +88,15 @@ class App extends Component {
           page = {this.state.page}
         />
 
-        {this.state.page == "About" && <AboutPage />}
-        {this.state.page == "Employment History" && <Employment />}
-        {this.state.page == "Education" && <Education
+        {this.state.page === "About" && <AboutPage />}
+        {this.state.page === "Employment History" && <Employment />}
+        {this.state.page === "Education" && <Education
                                               currentCourse = {this.state.currentCourse}
                                               courseSelector = {this.courseSelector}
                                               showInfoSlider = {this.state.showInfoSlider}
                                               sliderToggle = {this.sliderToggle}
                                             />}
-        {this.state.page == "My Work" && <Work />}
+        {this.state.page === "My Work" && <Work />}
       </div>
     )
   }

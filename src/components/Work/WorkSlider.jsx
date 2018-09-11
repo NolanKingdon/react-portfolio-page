@@ -13,13 +13,13 @@ class WorkSlider extends Component {
     return(
         <div className = "education-info-slider" style = {this.props.sliderStyles}>
           <button className = "info-slider-exit-button" onClick = {() => this.props.sliderToggle()}>
-            <img src = {whiteX} className = "info-slider-exit-button-image"/>
+            <img src = {whiteX} className = "info-slider-exit-button-image" alt = "white X"/>
           </button>
           <div className = "info-slider-text-body">
             <h1 className = "info-slider-text-header">{this.props.currentCourse}</h1>
-              {this.props.currentCourse == "Core Computer Science Courses" &&
+              {this.props.currentCourse === "Core Computer Science Courses" &&
                 <div>
-                  <h3 className = "info-slider-text-dates"></h3>
+                  <h3 className = "info-slider-text-dates">Placeholder</h3>
                   <p className = "info-slider-text-description">
                       MIT Core computer science courses - Online and through OCW
                   </p>

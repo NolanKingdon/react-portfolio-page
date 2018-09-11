@@ -6,7 +6,7 @@ class EmploymentItem extends Component {
   render(){
     return(
       <div className = "employment-item-container">
-        <img className = "employer-logo" src = {this.props.image}></img>
+        <img className = "employer-logo" src = {this.props.image} alt = "logo"></img>
         <div>
           <h1 className = "employment-header" id = "employment-h1">{this.props.Company}</h1>
           <h2 className = "employment-header" id = "employment-h2">{this.props.Title}</h2>

@@ -18,7 +18,7 @@ class NavMain extends Component {
           className = "nav-display-toggle"
           onClick = {() => this.handleNavToggle()}
         >
-          {this.props.navHidden ? <img src = {navArrowRight} className = "nav-display-arrow-left"/> : <img src = {navArrowLeft} className = "nav-display-arrow-left"/>}
+          {this.props.navHidden ? <img src = {navArrowRight} className = "nav-display-arrow-left" alt = "arrow"/> : <img src = {navArrowLeft} className = "nav-display-arrow-left" alt = "arrow"/>}
         </button>
         <div className = "nav-first-header nav-content">
           <h1>Nolan Kingdon</h1>

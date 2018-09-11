@@ -7,7 +7,7 @@ class AboutPage extends Component {
     return(
       <div className = "about" style = {{textAlign: "center"}}>
         <div className = "about-head">
-          <img src = {selfImage} className = "self-image"/>
+          <img src = {selfImage} className = "self-image" alt = "Self"/>
           <div className = "about-text">
             <h1 id = "about-hello">Hello.</h1>
             <p id = "about-intro">My name is Nolan - I am a web developer.</p>

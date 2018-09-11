@@ -17,11 +17,11 @@ class InfoSlider extends Component {
     return(
         <div className = "education-info-slider" style = {this.props.sliderStyles}>
           <button className = "info-slider-exit-button" onClick = {() => this.props.sliderToggle()}>
-            <img src = {whiteX} className = "info-slider-exit-button-image"/>
+            <img src = {whiteX} className = "info-slider-exit-button-image" alt = "white X"/>
           </button>
           <div className = "info-slider-text-body">
             <h1 className = "info-slider-text-header">{this.props.currentCourse}</h1>
-              {this.props.currentCourse == "Core Computer Science Courses" &&
+              {this.props.currentCourse === "Core Computer Science Courses" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{MITDates[0]} - {MITDates[1]}</h3>
                   <p className = "info-slider-text-description">
@@ -35,7 +35,7 @@ class InfoSlider extends Component {
                 </div>
 
               }
-              {this.props.currentCourse == "React JS and Redux - Mastering Web Apps" &&
+              {this.props.currentCourse === "React JS and Redux - Mastering Web Apps" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
@@ -48,7 +48,7 @@ class InfoSlider extends Component {
                   </ul>
                 </div>
               }
-              {this.props.currentCourse == "Create a PHP Login and Registration from Scratch" &&
+              {this.props.currentCourse === "Create a PHP Login and Registration from Scratch" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
@@ -61,7 +61,7 @@ class InfoSlider extends Component {
                   </ul>
                 </div>
               }
-              {this.props.currentCourse == "Learn JavaScript for Web Development" &&
+              {this.props.currentCourse === "Learn JavaScript for Web Development" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
@@ -75,7 +75,7 @@ class InfoSlider extends Component {
                   </ul>
                 </div>
               }
-              {this.props.currentCourse == "C# Basics for Beginners: Learn C# Fundamentals by Coding" &&
+              {this.props.currentCourse === "C# Basics for Beginners: Learn C# Fundamentals by Coding" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
@@ -83,7 +83,7 @@ class InfoSlider extends Component {
                   </p>
                 </div>
               }
-              {this.props.currentCourse == "Complete Python Bootcamp: Go from zero to hero in Python" &&
+              {this.props.currentCourse === "Complete Python Bootcamp: Go from zero to hero in Python" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{UdemyDates[0]} - {UdemyDates[1]}</h3>
                   <p className = "info-slider-text-description">
@@ -91,7 +91,7 @@ class InfoSlider extends Component {
                   </p>
                 </div>
               }
-              {this.props.currentCourse == "Bachelor of Arts (BA)" &&
+              {this.props.currentCourse === "Bachelor of Arts (BA)" &&
                 <div>
                   <h3 className = "info-slider-text-dates">{BrockDates[0]} - {BrockDates[1]}</h3>
                   <p className = "info-slider-text-description">
