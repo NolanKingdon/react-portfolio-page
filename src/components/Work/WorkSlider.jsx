@@ -9,7 +9,7 @@ class WorkSlider extends Component {
   }
 
   render(){
-    {/*Consider having a transparent div behind the currnet one so that when it slides in, you can't click the icons and mess everything up*/}
+    {/*TODO - Just make a more efficient component and DRY*/}
     return(
         <div className = "education-info-slider" style = {this.props.sliderStyles}>
           <button className = "info-slider-exit-button" onClick = {() => this.props.sliderToggle()}>
@@ -20,6 +20,7 @@ class WorkSlider extends Component {
               {this.props.currentCourse === "Core Computer Science Courses" &&
                 <div>
                   <h3 className = "info-slider-text-dates">Placeholder</h3>
+                  <hr className = "info-slider-hr"/>
                   <p className = "info-slider-text-description">
                       MIT Core computer science courses - Online and through OCW
                   </p>
