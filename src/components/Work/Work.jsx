@@ -7,6 +7,7 @@ import { easeExpOut, easeLinear } from 'd3-ease';
 import "./css/work.css";
 //Images below
 import BVP from './images/BVP-logo.png';
+import CALC from './images/calc.jpg';
 
 class Work extends Component {
 
@@ -24,9 +25,9 @@ class Work extends Component {
         <WorkItem
           sliderToggle = {this.props.sliderToggle}
           projectSelector = {this.props.projectSelector}
-          image = {BVP}
-          title = {"Buona Vita Pizza Online Menu"}
-          noteText = {"Online Menu for Buona Vita Pizza, Hamilton"}
+          image = {CALC}
+          title = {"JavaScript Calculator"}
+          noteText = {"A digital calculator using JavaScript to complete the calculations and interactions"}
         />
         <WorkItem
           sliderToggle = {this.props.sliderToggle}

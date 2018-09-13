@@ -33,6 +33,34 @@ class WorkSlider extends Component {
                   </ul>
                 </div>
               }
+              {this.props.currentProject === "JavaScript Calculator" &&
+                <div>
+                  <a href = {this.props.link}>{this.props.link}</a>
+                  <hr className = "info-slider-hr"/>
+                  <p className = "info-slider-text-description">
+                    A basic JavaScript calculator that turned out really well. Uses JavaScript to do all the calculations and CSS3 to handle some button presses.
+                  </p>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS3</li>
+                    <li>JavaScript/Jquery</li>
+                  </ul>
+                </div>
+              }
+              {this.props.currentProject === "JavaScript Calculator" &&
+                <div>
+                  <a href = {this.props.link}>{this.props.link}</a>
+                  <hr className = "info-slider-hr"/>
+                  <p className = "info-slider-text-description">
+                    A basic JavaScript calculator that turned out really well. Uses JavaScript to do all the calculations and CSS3 to handle some button presses.
+                  </p>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS3</li>
+                    <li>JavaScript/Jquery</li>
+                  </ul>
+                </div>
+              }
           </div>
       </div>
     )
