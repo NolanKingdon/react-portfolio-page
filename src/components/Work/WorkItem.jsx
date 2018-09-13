@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './css/work.css';
 
 class WorkItem extends Component {
 
@@ -13,7 +14,7 @@ class WorkItem extends Component {
       return(
         <button className = "education-item-button" onClick = {() => this.handleClick()}>
           <div className = "education-item-grid">
-            <img src = {this.props.image} className = "employment-logo" alt = "Logo"/>
+            <img src = {this.props.image} className = "work-logo" alt = "Logo"/>
             <div>
               <h2 className = "education-item-title">{this.props.title}</h2>
               <p className = "education-item-note-text">{this.props.noteText}</p>

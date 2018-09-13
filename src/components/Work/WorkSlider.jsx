@@ -47,20 +47,51 @@ class WorkSlider extends Component {
                   </ul>
                 </div>
               }
-              {this.props.currentProject === "JavaScript Calculator" &&
+              {this.props.currentProject === "Python QA Reporting Tool" &&
                 <div>
                   <a href = {this.props.link}>{this.props.link}</a>
                   <hr className = "info-slider-hr"/>
                   <p className = "info-slider-text-description">
-                    A basic JavaScript calculator that turned out really well. Uses JavaScript to do all the calculations and CSS3 to handle some button presses.
+                    An automated QA reporting tool. Takes a csv file as an input and auto-writes a formated, cumulative report.
                   </p>
                   <ul>
-                    <li>HTML</li>
-                    <li>CSS3</li>
-                    <li>JavaScript/Jquery</li>
+                    <li>Python</li>
+                    <li>CSV Writer</li>
+                    <li>SQLite3</li>
                   </ul>
                 </div>
               }
+              {this.props.currentProject === "Project Efficiency Tool" &&
+                <div>
+                  <a href = {this.props.link}>{this.props.link}</a>
+                  <hr className = "info-slider-hr"/>
+                  <p className = "info-slider-text-description">
+                    A react based client tracker/efficiency tool. Includes a Task organizer, Client organizer, and a timeline estimator to send clients.
+                  </p>
+                  <ul>
+                    <li>React</li>
+                    <li>NoSQL - Firebase</li>
+                  </ul>
+                </div>
+              }
+              {
+              <div>
+                <a href = {this.props.link}>{this.props.link}</a>
+                <hr className = "info-slider-hr"/>
+                <p className = "info-slider-text-description">
+                  My React based portfolio page. Uses several libraries and transitions to create a functional page.
+                </p>
+                <ul>
+                  <li>React</li>
+                  <li>React-Move</li>
+                  <li>D3-Ease</li>
+                  <li>CSS3</li>
+                  <li>HTML5</li>
+                  <li>React-Router</li>
+                  <li>React-transition-group</li>
+                </ul>
+              </div>
+            }
           </div>
       </div>
     )

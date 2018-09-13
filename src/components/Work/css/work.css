@@ -1,3 +1,18 @@
 .work-grid {
-  margin-left: 30vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  width: 50vw;
+  margin-top: 2.5vh;
+  margin-bottom: 1vh;
+  /* For Collapsed View */
+  /* margin-left: 22vw; */
+
+  /* for extended view */
+  margin-left: 35vw;
+}
+
+.work-logo {
+  width: 100px;
 }

@@ -8,6 +8,8 @@ import "./css/work.css";
 //Images below
 import BVP from './images/BVP-logo.png';
 import CALC from './images/calc.jpg';
+import PYCON from './images/python.png';
+import REACT from './images/react.png';
 
 class Work extends Component {
 
@@ -25,6 +27,13 @@ class Work extends Component {
         <WorkItem
           sliderToggle = {this.props.sliderToggle}
           projectSelector = {this.props.projectSelector}
+          image = {REACT}
+          title = {"This Page"}
+          noteText = {"My React based portfolio page"}
+        />
+        <WorkItem
+          sliderToggle = {this.props.sliderToggle}
+          projectSelector = {this.props.projectSelector}
           image = {CALC}
           title = {"JavaScript Calculator"}
           noteText = {"A digital calculator using JavaScript to complete the calculations and interactions"}
@@ -32,16 +41,16 @@ class Work extends Component {
         <WorkItem
           sliderToggle = {this.props.sliderToggle}
           projectSelector = {this.props.projectSelector}
-          image = {BVP}
-          title = {"Buona Vita Pizza Online Menu"}
-          noteText = {"Online Menu for Buona Vita Pizza, Hamilton"}
+          image = {PYCON}
+          title = {"Python QA Reporting Tool"}
+          noteText = {"Console based QA reporting tool"}
         />
         <WorkItem
           sliderToggle = {this.props.sliderToggle}
           projectSelector = {this.props.projectSelector}
-          image = {BVP}
-          title = {"Buona Vita Pizza Online Menu"}
-          noteText = {"Online Menu for Buona Vita Pizza, Hamilton"}
+          image = {REACT}
+          title = {"Project Efficiency Tool"}
+          noteText = {"Client organizational tool"}
         />
           <Animate
             start={()=> ({
