@@ -31,6 +31,7 @@ class WorkSlider extends Component {
                     <li>JavaScript/Jquery</li>
                     <li>PHP</li>
                   </ul>
+                  <a href = "http://www.buonavitapizza.ca/" target = "_blank" className = "work-slider-link">Live Webpage</a>
                 </div>
               }
               {this.props.currentProject === "JavaScript Calculator" &&
@@ -45,6 +46,7 @@ class WorkSlider extends Component {
                     <li>CSS3</li>
                     <li>JavaScript/Jquery</li>
                   </ul>
+                  <a href = "http://www.buonavitapizza.ca/" target = "_blank" className = "work-slider-link">Live Webpage</a>
                 </div>
               }
               {this.props.currentProject === "Python QA Reporting Tool" &&
@@ -59,6 +61,7 @@ class WorkSlider extends Component {
                     <li>CSV Writer</li>
                     <li>SQLite3</li>
                   </ul>
+                  <a href = "http://www.buonavitapizza.ca/" target = "_blank" className = "work-slider-link">Live Webpage</a>
                 </div>
               }
               {this.props.currentProject === "Project Efficiency Tool" &&
@@ -72,6 +75,7 @@ class WorkSlider extends Component {
                     <li>React</li>
                     <li>NoSQL - Firebase</li>
                   </ul>
+                  <a href = "http://www.buonavitapizza.ca/" target = "_blank" className = "work-slider-link">Live Webpage</a>
                 </div>
               }
               {this.props.currentProject === "This Page" &&
@@ -90,8 +94,26 @@ class WorkSlider extends Component {
                   <li>React-Router</li>
                   <li>React-transition-group</li>
                 </ul>
+                <a href = "http://www.buonavitapizza.ca/" target = "_blank" className = "work-slider-link">Live Webpage</a>
               </div>
             }
+            {this.props.currentProject === "PHP based Login System" &&
+            <div>
+              <a href = {this.props.link}>{this.props.link}</a>
+              <hr className = "info-slider-hr"/>
+              <p className = "info-slider-text-description">
+                A simple login system using PHP. Communicates with MySQL to store passwords and create new users.
+              </p>
+              <ul>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>XAMPP</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+              </ul>
+              <a href = "http://www.buonavitapizza.ca/" target = "_blank" className = "work-slider-link">Live Webpage</a>
+            </div>
+          }
           </div>
       </div>
     )
