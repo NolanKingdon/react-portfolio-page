@@ -10,6 +10,8 @@ import BVP from './images/BVP-logo.png';
 import CALC from './images/calc.jpg';
 import PYCON from './images/python.png';
 import REACT from './images/react.png';
+import PHPSQL from './images/php-mysql.png';
+import THISIMG from './images/this.png';
 
 class Work extends Component {
 
@@ -27,7 +29,7 @@ class Work extends Component {
         <WorkItem
           sliderToggle = {this.props.sliderToggle}
           projectSelector = {this.props.projectSelector}
-          image = {REACT}
+          image = {THISIMG}
           title = {"This Page"}
           noteText = {"My React based portfolio page"}
         />
@@ -51,6 +53,13 @@ class Work extends Component {
           image = {REACT}
           title = {"Project Efficiency Tool"}
           noteText = {"Client organizational tool"}
+        />
+        <WorkItem
+          sliderToggle = {this.props.sliderToggle}
+          projectSelector = {this.props.projectSelector}
+          image = {PHPSQL}
+          title = {"PHP based Login System"}
+          noteText = {"PHP/MySQL login tool"}
         />
           <Animate
             start={()=> ({

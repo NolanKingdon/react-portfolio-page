@@ -74,7 +74,7 @@ class WorkSlider extends Component {
                   </ul>
                 </div>
               }
-              {
+              {this.props.currentProject === "This Page" &&
               <div>
                 <a href = {this.props.link}>{this.props.link}</a>
                 <hr className = "info-slider-hr"/>
