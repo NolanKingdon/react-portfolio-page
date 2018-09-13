@@ -35,3 +35,11 @@
   background-color: #CCF;
   color: black;
 }
+
+.work-item-hr {
+  width: 90%;
+  height: 2px;
+  color: #032C59;
+  background-color: #032C59;
+  border: none;
+}

@@ -17,6 +17,7 @@ class WorkItem extends Component {
             <img src = {this.props.image} className = "work-logo" alt = "Logo"/>
             <div>
               <h2 className = "education-item-title">{this.props.title}</h2>
+              <hr className = "work-item-hr"/>
               <p className = "education-item-note-text">{this.props.noteText}</p>
             </div>
           </div>
