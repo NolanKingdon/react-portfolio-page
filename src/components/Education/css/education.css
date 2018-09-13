@@ -61,3 +61,11 @@
   font-style: italic;
   padding: 0;
 }
+
+.education-item-hr {
+  width: 90%;
+  height: 2px;
+  color: #032C59;
+  background-color: #032C59;
+  border: none;
+}
