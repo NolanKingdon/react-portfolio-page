@@ -4,6 +4,9 @@ import WorkSlider from './WorkSlider.jsx';
 import Background from './work-slider-background.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut, easeLinear } from 'd3-ease';
+import "./css/work.css";
+//Images below
+import BVP from './images/BVP-logo.png';
 
 class Work extends Component {
 
@@ -14,9 +17,30 @@ class Work extends Component {
         <WorkItem
           sliderToggle = {this.props.sliderToggle}
           projectSelector = {this.props.projectSelector}
-          image = {"AAA"}
-          title = {"Test Title"}
-          noteText = {"Test NoteText"}
+          image = {BVP}
+          title = {"Buona Vita Pizza Online Menu"}
+          noteText = {"Online Menu for Buona Vita Pizza, Hamilton"}
+        />
+        <WorkItem
+          sliderToggle = {this.props.sliderToggle}
+          projectSelector = {this.props.projectSelector}
+          image = {BVP}
+          title = {"Buona Vita Pizza Online Menu"}
+          noteText = {"Online Menu for Buona Vita Pizza, Hamilton"}
+        />
+        <WorkItem
+          sliderToggle = {this.props.sliderToggle}
+          projectSelector = {this.props.projectSelector}
+          image = {BVP}
+          title = {"Buona Vita Pizza Online Menu"}
+          noteText = {"Online Menu for Buona Vita Pizza, Hamilton"}
+        />
+        <WorkItem
+          sliderToggle = {this.props.sliderToggle}
+          projectSelector = {this.props.projectSelector}
+          image = {BVP}
+          title = {"Buona Vita Pizza Online Menu"}
+          noteText = {"Online Menu for Buona Vita Pizza, Hamilton"}
         />
           <Animate
             start={()=> ({

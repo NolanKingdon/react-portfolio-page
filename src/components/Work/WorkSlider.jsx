@@ -18,18 +18,18 @@ class WorkSlider extends Component {
           </button>
           <div className = "info-slider-text-body">
             <h1 className = "info-slider-text-header">{this.props.currentProject}</h1>
-              {this.props.currentProject === "Test Title" &&
+              {this.props.currentProject === "Buona Vita Pizza Online Menu" &&
                 <div>
-                  <h3 className = "info-slider-text-dates">Test Dates</h3>
+                  <a href = {this.props.link}>{this.props.link}</a>
                   <hr className = "info-slider-hr"/>
                   <p className = "info-slider-text-description">
-                      MIT Core computer science courses - Online and through OCW
+                      Buona Vita Pizza's online menu system. Currently designing a PHP based ordering system and PHP based backend for price updates.
                   </p>
                   <ul>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
-                    <li>Course Content</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript/Jquery</li>
+                    <li>PHP</li>
                   </ul>
                 </div>
               }
