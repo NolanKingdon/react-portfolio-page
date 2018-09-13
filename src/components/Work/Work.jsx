@@ -8,18 +8,23 @@ import { easeExpOut, easeLinear } from 'd3-ease';
 class Work extends Component {
 
   render(){
-    let t = [ this.props.showInfoSlider ? "block" : "none" ]
-    {/*Again, map this in the future*/}
+    let t = [ this.props.showWorkSlider ? "block" : "none" ]
     return(
       <div className = "work-grid">
-        <WorkItem />
+        <WorkItem
+          sliderToggle = {this.props.sliderToggle}
+          projectSelector = {this.props.projectSelector}
+          image = {"AAA"}
+          title = {"Test Title"}
+          noteText = {"Test NoteText"}
+        />
           <Animate
             start={()=> ({
               x: "-50vw",
             })}
 
             update={() => ({
-              x: [ this.props.showInfoSlider ? "30vw" : "-50vw"],
+              x: [ this.props.showWorkSlider ? "30vw" : "-50vw"],
               timing: { duration: 1000, ease: easeExpOut },
             })}
           >
@@ -28,7 +33,7 @@ class Work extends Component {
 
               return(
                 <WorkSlider
-                  currentCourse = {this.props.currentCourse}
+                  currentProject = {this.props.currentProject}
                   sliderToggle = {this.props.sliderToggle}
                   sliderStyles = {{
                     position: "fixed",
@@ -58,7 +63,7 @@ class Work extends Component {
             })}
 
             update={() => ({
-              opacity: [ this.props.showInfoSlider ? "0.5" : "0"],
+              opacity: [ this.props.showWorkSlider ? "0.5" : "0"],
               timing: { duration: 500, ease: easeLinear },
             })}
 

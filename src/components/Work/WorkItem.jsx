@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class WorkItem extends Component {
 
     handleClick(){
-    //  this.props.sliderToggle();
-    //  this.props.courseSelector(this.props.title);
+      this.props.sliderToggle();
+      this.props.projectSelector(this.props.title);
     }
 
 

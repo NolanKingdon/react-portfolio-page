@@ -17,12 +17,16 @@ class App extends Component {
       page: "About",
       navHidden: false,
       showInfoSlider: false,
-      currentCourse: "None"
+      currentCourse: "None",
+      showWorkSlider: false,
+      currentProject: "None"
     }
     this.pageChanger = this.pageChanger.bind(this);
     this.displayToggle = this.displayToggle.bind(this);
     this.sliderToggle = this.sliderToggle.bind(this);
     this.courseSelector = this.courseSelector.bind(this);
+    this.workSliderToggle = this.workSliderToggle.bind(this);
+    this.projectSelector = this.projectSelector.bind(this);
   }
 
   pageChanger(newPage){
@@ -39,10 +43,18 @@ class App extends Component {
     this.setState({showInfoSlider: !this.state.showInfoSlider});
   }
 
+
   courseSelector(currentCourse) {
     this.setState({currentCourse: currentCourse})
   }
 
+  workSliderToggle(){
+    this.setState({showWorkSlider: !this.state.showWorkSlider});
+  }
+
+  projectSelector(currentProject) {
+    this.setState({currentProject: currentProject})
+  }
   render(){
     return(
       <div>
@@ -96,7 +108,12 @@ class App extends Component {
                                               showInfoSlider = {this.state.showInfoSlider}
                                               sliderToggle = {this.sliderToggle}
                                             />}
-        {this.state.page === "My Work" && <Work />}
+        {this.state.page === "My Work" && <Work
+                                            currentProject = {this.state.currentProject}
+                                            projectSelector = {this.projectSelector}
+                                            showWorkSlider = {this.state.showWorkSlider}
+                                            sliderToggle = {this.workSliderToggle}
+                                          />}
       </div>
     )
   }
