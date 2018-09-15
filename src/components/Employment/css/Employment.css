@@ -5,7 +5,7 @@
   height: 90%;
   flex-wrap: wrap;
   /* Collapsed View */
-  margin-left: 7vw;
+  /* margin-left: 7vw; */
   /* Extended View */
   /* margin-left: 15vw; */
 }
@@ -14,7 +14,7 @@
   width: 25vw;
   margin-top: 2.5vh;
   margin-bottom: 1vh;
-  margin-left: 10vw;
+  margin-right: 7vw;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;

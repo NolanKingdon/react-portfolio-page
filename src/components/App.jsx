@@ -106,15 +106,17 @@ class App extends Component {
           transitionEnterTimeout={600}
           transitionLeaveTimeout={1}
           >
-            {this.state.page === "About" && <AboutPage />}
-            {this.state.page === "Employment History" && <Employment />}
+            {this.state.page === "About" && <AboutPage navHidden = {this.state.navHidden}/>}
+            {this.state.page === "Employment History" && <Employment navHidden = {this.state.navHidden}/>}
             {this.state.page === "Education" && <Education
+                                                  navHidden = {this.state.navHidden}
                                                   currentCourse = {this.state.currentCourse}
                                                   courseSelector = {this.courseSelector}
                                                   showInfoSlider = {this.state.showInfoSlider}
                                                   sliderToggle = {this.sliderToggle}
                                                 />}
             {this.state.page === "My Work" && <Work
+                                                navHidden = {this.state.navHidden}
                                                 currentProject = {this.state.currentProject}
                                                 projectSelector = {this.projectSelector}
                                                 showWorkSlider = {this.state.showWorkSlider}
