@@ -7,6 +7,8 @@ import Education from './Education/Education.jsx';
 import Work from './Work/Work.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
+import { CSSTransitionGroup } from 'react-transition-group';
+import './css/transitions.css';
 
 class App extends Component {
 //Commented out code was an attempt at having the navBar display, and then move to -20vw to improve UI
@@ -99,21 +101,26 @@ class App extends Component {
         <Header
           page = {this.state.page}
         />
-
-        {this.state.page === "About" && <AboutPage />}
-        {this.state.page === "Employment History" && <Employment />}
-        {this.state.page === "Education" && <Education
-                                              currentCourse = {this.state.currentCourse}
-                                              courseSelector = {this.courseSelector}
-                                              showInfoSlider = {this.state.showInfoSlider}
-                                              sliderToggle = {this.sliderToggle}
-                                            />}
-        {this.state.page === "My Work" && <Work
-                                            currentProject = {this.state.currentProject}
-                                            projectSelector = {this.projectSelector}
-                                            showWorkSlider = {this.state.showWorkSlider}
-                                            sliderToggle = {this.workSliderToggle}
-                                          />}
+        <CSSTransitionGroup
+          transitionName="main-pages"
+          transitionEnterTimeout={600}
+          transitionLeaveTimeout={1}
+          >
+            {this.state.page === "About" && <AboutPage />}
+            {this.state.page === "Employment History" && <Employment />}
+            {this.state.page === "Education" && <Education
+                                                  currentCourse = {this.state.currentCourse}
+                                                  courseSelector = {this.courseSelector}
+                                                  showInfoSlider = {this.state.showInfoSlider}
+                                                  sliderToggle = {this.sliderToggle}
+                                                />}
+            {this.state.page === "My Work" && <Work
+                                                currentProject = {this.state.currentProject}
+                                                projectSelector = {this.projectSelector}
+                                                showWorkSlider = {this.state.showWorkSlider}
+                                                sliderToggle = {this.workSliderToggle}
+                                              />}
+        </CSSTransitionGroup>
       </div>
     )
   }

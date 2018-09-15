@@ -9,7 +9,7 @@
     "react-dom": "^16.4.2",
     "react-move": "^2.8.0",
     "react-scripts": "1.1.4",
-    "react-transition-group": "^2.4.0"
+    "react-transition-group": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
