@@ -31,7 +31,7 @@ class WorkSlider extends Component {
                     <li>JavaScript/Jquery</li>
                     <li>PHP</li>
                   </ul>
-                  <a href = "http://www.buonavitapizza.ca/" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a>
+                  <center><a href = "http://www.buonavitapizza.ca/" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a></center>
                 </div>
               }
               {this.props.currentProject === "JavaScript Calculator" &&
@@ -46,7 +46,7 @@ class WorkSlider extends Component {
                     <li>CSS3</li>
                     <li>JavaScript/Jquery</li>
                   </ul>
-                  <a href = "https://nolankingdon.github.io/JavaScript-Calculator/" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a>
+                  <center><a href = "https://nolankingdon.github.io/JavaScript-Calculator/" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a></center>
                 </div>
               }
               {this.props.currentProject === "Python QA Reporting Tool" &&
@@ -61,7 +61,7 @@ class WorkSlider extends Component {
                     <li>CSV Writer</li>
                     <li>SQLite3</li>
                   </ul>
-                  <a href = "https://github.com/NolanKingdon/QA-Reporting-Tool" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a>
+                  <center><a href = "https://github.com/NolanKingdon/QA-Reporting-Tool" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github repository</a></center>
                 </div>
               }
               {this.props.currentProject === "Project Efficiency Tool" &&
@@ -75,7 +75,7 @@ class WorkSlider extends Component {
                     <li>React</li>
                     <li>NoSQL - Firebase</li>
                   </ul>
-                  <a href = "https://github.com/NolanKingdon/efficiency_tool" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a>
+                  <center><a href = "https://github.com/NolanKingdon/efficiency_tool" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github repository</a></center>
                 </div>
               }
               {this.props.currentProject === "This Page" &&
@@ -94,7 +94,7 @@ class WorkSlider extends Component {
                   <li>React-Router</li>
                   <li>React-transition-group</li>
                 </ul>
-                <a href = "https://github.com/NolanKingdon/react-portfolio-page" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a>
+                <center><a href = "https://github.com/NolanKingdon/react-portfolio-page" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github repository</a></center>
               </div>
             }
             {this.props.currentProject === "PHP based Login System" &&
@@ -111,7 +111,7 @@ class WorkSlider extends Component {
                 <li>CSS3</li>
                 <li>HTML5</li>
               </ul>
-              <a href = "https://github.com/NolanKingdon/PHP-Registration" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Live Webpage</a>
+              <center><a href = "https://github.com/NolanKingdon/PHP-Registration" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github repository</a></center>
             </div>
           }
           </div>
