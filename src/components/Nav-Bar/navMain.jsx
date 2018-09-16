@@ -38,13 +38,13 @@ class NavMain extends Component {
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Education")}>
           <h3 className = "nav-header">Education</h3>
         </div>
-        <div className = "nav-accent-header" onClick = {() => this.props.changer("Social")}>
-          <h3 className = "nav-header">Social Media</h3>
+        <div className = "nav-accent-header" onClick = {() => this.props.changer("Contact")}>
+          <h3 className = "nav-header">Contact</h3>
         </div>
         <div className = "nav-content">
           <div className = "social-media-flex">
-            <a href = "https://www.linkedin.com/in/nolan-kingdon/"><img src = {linkedLogo} style={{width:"4vw"}} alt = "LinkedIn"/></a>
-            <a href="https://github.com/NolanKingdon"><img src ={gitLogo} style={{width: "4vw"}} alt = "GitHub"/></a>
+            <a href = "https://www.linkedin.com/in/nolan-kingdon/" target = "_blank" rel = "noopener noreferrer"><img src = {linkedLogo} style={{width:"4vw"}} alt = "LinkedIn"/></a>
+            <a href="https://github.com/NolanKingdon" target = "_blank" rel = "noopener noreferrer"><img src ={gitLogo} style={{width: "4vw"}} alt = "GitHub"/></a>
           </div>
         </div>
       </div>

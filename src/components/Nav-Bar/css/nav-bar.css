@@ -67,11 +67,20 @@
 }
 
 .social-media-flex {
+  position: absolute;
+  bottom: 15px;
+  left: 27%;
   display: flex;
 }
 
 .social-media-flex a {
   margin: 5px;
+  opacity: 0.5;
+  transition: 400ms;
+}
+
+.social-media-flex a:hover{
+  opacity: 1;
 }
 
 .nav-display-toggle {
