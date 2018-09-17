@@ -27,6 +27,7 @@
 
 .contact-grid-item img {
   width: 100px;
+  margin-left: 5px;
 }
 
 .contact-grid-item {
@@ -42,7 +43,7 @@
 
 .contact-grid-item hr {
   border: none;
-  border-left: 1px solid hsla(200, 10%, 50%,100);
+  border-left: 2px solid #032C59;
   height: 100px;
   width: 1px;
   position: relative;
