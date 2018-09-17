@@ -48,7 +48,7 @@ export default class Contact extends Component {
                 <a href = "tel:9052201705" className = "contact-grid-item">
                   <img src = {PHONE} alt = "phone" />
                   <hr />
-                  <p id = "about-phone">(905 220-1705)</p>
+                  <p id = "about-phone">(905) 220-1705</p>
                 </a>
               </div>
             </div>
