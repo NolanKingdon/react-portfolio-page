@@ -33,14 +33,14 @@ class Employment extends Component {
                 Company = "Buona Vita Pizza"
                 Title = "Web Developer"
                 Time = "May 2018 - Present"
-                Description = "Web Developer for Buona Vita Pizza. Worked with the owners to create a simple webpage to hold their online menu. Used a wireframe to create the website from scratch, as well as hosted on a third party hosting service. Currently working to develop a PHP based online ordering system, and a PHP backend for easy Price updates. Currently responsible for maintenance of content."
+                Description = "Web Developer for Buona Vita Pizza. Worked with the owners to create a simple webpage to hold their online menu. Used a wireframe to create the website from scratch, as well as hosted on a third party hosting service. Currently working to develop a PHP based online ordering system, and a PHP backend for easy price updates. Currently responsible for maintenance of content."
                 image = {BVPLogo}
                 />
               <EmploymentItem
                 Company = "PowerSchool"
                 Title = "Project Manager"
                 Time = "January 2018 - Present"
-                Description = "Project Manager for the Registration department in PowerSchool. Managed multiple implementation projects of PowerSchool's Online registration software, often liasing with clients in order to maintain the timeline and drive projects forward. Responsibilities also include running and reporting QA tasks for forms before launch, in which I made a Python based reporting tool to optimize reporting - Saving roughly an hour of time in reporting a week."
+                Description = "Project Manager for the Registration department in PowerSchool. Managed multiple implementation projects of PowerSchool's online registration software, often liasing with clients in order to maintain the timeline and drive projects forward. Responsibilities also include running and reporting QA tasks for forms before launch, in which I made a Python based reporting tool to optimize reporting - Saving roughly an hour of time in reporting a week."
                 image = {PSLogo}
                 />
               <EmploymentItem
