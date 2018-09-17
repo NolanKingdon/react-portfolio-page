@@ -5,6 +5,7 @@ import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
 import Education from './Education/Education.jsx';
 import Work from './Work/Work.jsx';
+import Contact from './Contact/Contact.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
 import { CSSTransitionGroup } from 'react-transition-group';
@@ -122,6 +123,7 @@ class App extends Component {
                                                 showWorkSlider = {this.state.showWorkSlider}
                                                 sliderToggle = {this.workSliderToggle}
                                               />}
+            {this.state.page === "Contact" && <Contact navHidden = {this.state.navHidden}/>}
         </CSSTransitionGroup>
       </div>
     )
