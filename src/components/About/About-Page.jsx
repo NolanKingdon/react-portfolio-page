@@ -57,7 +57,7 @@ class AboutPage extends Component {
                   <h1 id = "about-hello" style = {{fontSize: h}}>Hello.</h1>
                   <p id = "about-intro" style = {{fontSize: intro}}>My name is Nolan - I am a web developer.</p>
                   <p id = "about-background" style = {{fontSize: b}}>I currently work at PowerSchool as a Project Manager.</p>
-                  <p id = "about-invitation" style = {{fontSize: inv}}>Feel free to explore around my site.</p>
+                  <p id = "about-invitation" style = {{fontSize: inv}}>Feel free to explore my site.</p>
                 </div>
               )
             }}
