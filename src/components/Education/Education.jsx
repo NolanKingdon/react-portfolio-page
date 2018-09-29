@@ -12,7 +12,17 @@ import { easeExpOut, easeLinear } from 'd3-ease';
 class Education extends Component {
   render(){
     let t = [ this.props.showInfoSlider ? "block" : "none" ]
-    {/*Again, map this in the future*/}
+
+    let responsiveT = ["20vh","10vh"];
+
+    if(this.props.screenSize == 1920){
+      responsiveT = ["20vh","10vh"];
+    } else if(this.props.screenSize == 1366){
+      responsiveT = ["10vh","5vh"];
+    } else if(this.props.screenSize == 1280){
+      responsiveT = ["10vh", "5vh"];
+    }
+
     return(
       <div>
         <Animate
@@ -20,14 +30,14 @@ class Education extends Component {
             x: "35vw",
             gtc: "1fr 1fr",
             w: "50vw",
-            t: "10vh",
+            t: responsiveT[1],
           })}
 
           update={() => ({
             x: [ this.props.navHidden ? "12vw" : "35vw"],
             gtc: [ this.props.navHidden ? "1fr 1fr 1fr" : "1fr 1fr"],
             w: [ this.props.navHidden ? "75vw" : "50vw"],
-            t: [ this.props.navHidden ? "20vh" : "10vh"],
+            t: [ this.props.navHidden ? responsiveT[0] : responsiveT[1]],
             timing: { duration: 1000, ease: easeExpOut },
           })}
           >

@@ -43,3 +43,9 @@
   background-color: #032C59;
   border: none;
 }
+
+@media only screen and (max-width: 1366px){
+  .work-grid {
+    margin-top: 7vh;
+  }
+}
