@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavMain from './Nav-Bar/navMain.jsx';
+import NavMobile from './Nav-Bar/navMobile.jsx';
 import AboutPage from './About/About-Page.jsx';
 import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
@@ -26,6 +27,7 @@ class App extends Component {
       width: window.innerWidth
     }
     this.pageChanger = this.pageChanger.bind(this);
+    this.pageChangerMobile = this.pageChangerMobile.bind(this);
     this.displayToggle = this.displayToggle.bind(this);
     this.sliderToggle = this.sliderToggle.bind(this);
     this.courseSelector = this.courseSelector.bind(this);
@@ -39,6 +41,13 @@ class App extends Component {
     });
   }
 
+  pageChangerMobile(newPage){
+    this.setState({
+      page: newPage
+    });
+    this.displayToggle();
+  }
+
   displayToggle(){
     this.setState({navHidden: !this.state.navHidden});
   }
@@ -46,7 +55,6 @@ class App extends Component {
   sliderToggle(){
     this.setState({showInfoSlider: !this.state.showInfoSlider});
   }
-
 
   courseSelector(currentCourse) {
     this.setState({currentCourse: currentCourse})
@@ -71,10 +79,14 @@ class App extends Component {
       this.setState({width: 1920});
     } else if (windowWidth <= 1919 && windowWidth >= 1300){
       this.setState({width: 1366});
-    } else if (windowWidth <= 1299 && windowWidth >= 1000){
+    } else if (windowWidth <= 1299 && windowWidth >= 1100){
       this.setState({width: 1280});
-    } else if (windowWidth < 760){
-      this.setState({width: "mobile"});
+    } else if (windowWidth < 1100 && windowWidth > 750){
+      this.setState({width: 900});
+    } else if (windowWidth < 750 && windowWidth > 650){
+      this.setState({width: 750});
+    } else if (windowWidth <= 650) {
+      this.setState({width: 650});
     }
     console.log(this.state.width);
   }
@@ -89,11 +101,14 @@ class App extends Component {
       responsiveX = "-19vw";
     } else if(this.state.width == 1280){
       responsiveX = "-19vw";
+    } else if(this.state.width == 900){
+      //Nothing, yet.
     }
 
     return(
       <div>
 
+        { this.state.width != 900 && this.state.width != 750 &&
         <Animate
           start={()=> ({
             x: "0vw",
@@ -110,7 +125,7 @@ class App extends Component {
             return(
               <NavMain
                 screenSize = {this.state.width}
-                className = "nav-bar test"
+                className = "nav-bar"
                 changer = {this.pageChanger}
                 displayToggle = {this.displayToggle}
                 navHidden = {this.state.navHidden}
@@ -133,6 +148,43 @@ class App extends Component {
             )
           }}
         </Animate>
+      }
+      { (this.state.width == 900 || this.state.width == 750) &&
+        <Animate
+          start={()=> ({
+            x: "0vh",
+          })}
+
+          update={() => ({
+            x: [ this.state.navHidden ? "-33vh" : "0vh"],
+            timing: { duration: 1000, ease: easeExpOut },
+          })}
+        >
+          {(state) => {
+            const { x } = state;
+
+            return(
+              <NavMobile
+                changer = {this.pageChangerMobile}
+                displayToggle = {this.displayToggle}
+                navHidden = {this.state.navHidden}
+                divStyle = {{
+                  position: "fixed",
+                  top: x,
+                  left: "0",
+                  width: "100%",
+                  height: "40%",
+                  backgroundColor: "#023670",
+                  color: "white",
+                  MozBoxShadow:    "4px 3px 10px 1px #ccc",
+                  WebkitBoxShadow: "4px 3px 10px 1px #ccc",
+                  boxShadow:       "4px 5px 10px 1px gray",
+                }}
+              />
+            )
+          }}
+        </Animate>
+      }
         <Header
           screenSize = {this.state.width}
           page = {this.state.page}
