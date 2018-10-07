@@ -12,6 +12,7 @@ class NavMobile extends Component {
   render(){
     return(
       <div className = "mobile-nav-bar" style = {this.props.divStyle}>
+        
         <button
           className = "mobile-nav-display-toggle"
           onClick = {() => this.handleNavToggle()}

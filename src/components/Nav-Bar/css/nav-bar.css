@@ -99,9 +99,10 @@
 /* Mobile NavBar */
 
 .mobile-nav-header {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 30px;
+  position: relative;
+  top: 25%;
+  left:5px;
+  font-size: 1em;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 2px;
 }
@@ -110,6 +111,7 @@
   position: relative;
   background-color: #032C59;
   text-align: center;
+  height: 15%;
 }
 
 .mobile-nav-accent-header:hover {
@@ -117,11 +119,12 @@
   cursor: pointer;
 }
 
-
 .mobile-nav-display-toggle {
   position: absolute;
   bottom: 0;
-  right: 46%;
+  display: inline-block;
+  left: 50%;
+  zoom: 1;
   text-decoration: none;
   background-color: transparent;
   border: none;
@@ -138,7 +141,10 @@
 }
 
 .mobile-nav-display-arrow-left {
-  width: 55px;
+  width: 1.5em;
+  position: relative;
+  left: -0.75em;
+  top: 10px;
 }
 
 
