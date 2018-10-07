@@ -7,6 +7,7 @@ import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
 import MobileEmployment from './Employment/MobileEmployment.jsx';
 import Education from './Education/Education.jsx';
+import MobileEducation from './Education/MobileEducation.jsx';
 import Work from './Work/Work.jsx';
 import WorkMobile from './Work/WorkMobile.jsx';
 import Contact from './Contact/Contact.jsx';
@@ -242,7 +243,7 @@ class App extends Component {
               {this.state.page === "Employment History" && <MobileEmployment
                                                               screenSize = {this.state.width}
                                                               navHidden = {this.state.navHidden}/>}
-              {this.state.page === "Education" && <Education
+              {this.state.page === "Education" && <MobileEducation
                                                     screenSize = {this.state.width}
                                                     navHidden = {this.state.navHidden}
                                                     currentCourse = {this.state.currentCourse}

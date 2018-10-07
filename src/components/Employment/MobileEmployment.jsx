@@ -3,8 +3,6 @@ import MobileEmploymentItem from './MobileEmployment-Item.jsx';
 import './css/Employment.css';
 import PSLogo from './images/PS-logo.png'
 import BVPLogo from './images/BVP-logo.png'
-import Animate from 'react-move/Animate';
-import { easeExpOut, easeLinear } from 'd3-ease';
 
 class MobileEmployment extends Component {
 

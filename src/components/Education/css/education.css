@@ -99,6 +99,15 @@
     margin-right: 10px;
   }
 
+  .education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-gap: 1px;
+    margin-bottom: 1vh;
+  }
+
 }
 
 
