@@ -22,9 +22,10 @@ class App extends Component {
 //Will return to this later
   constructor(props){
     super(props);
+    const navHiddenInitial =  (window.innerWidth < 1100 ? true : false);
     this.state = {
       page: "About",
-      navHidden: false,
+      navHidden: navHiddenInitial,
       showInfoSlider: false,
       currentCourse: "None",
       showWorkSlider: false,
