@@ -82,17 +82,17 @@ class App extends Component {
   resize() {
     let windowWidth = window.innerWidth;
     if(windowWidth >= 1900){
-      this.setState({width: 1920});
+      this.setState({width: 1920, navHidden: false});
     } else if (windowWidth <= 1919 && windowWidth >= 1300){
-      this.setState({width: 1366});
+      this.setState({width: 1366, navHidden: false});
     } else if (windowWidth <= 1299 && windowWidth >= 1100){
-      this.setState({width: 1280});
+      this.setState({width: 1280, navHidden: false});
     } else if (windowWidth < 1100 && windowWidth > 750){
-      this.setState({width: 900});
+      this.setState({width: 900, navHidden: true});
     } else if (windowWidth < 750 && windowWidth > 650){
-      this.setState({width: 750});
+      this.setState({width: 750, navHidden: true});
     } else if (windowWidth <= 650) {
-      this.setState({width: 650});
+      this.setState({width: 650, navHidden: true});
     }
     console.log(this.state.width);
   }
