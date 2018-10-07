@@ -69,3 +69,38 @@
     grid-gap: 1rem;
   }
 }
+
+@media only screen and (max-width: 1100px){
+  .education-item-button {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    width: 100vw;
+    margin-bottom: 5px;
+  }
+
+  .education-item-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    margin: 10px;
+  }
+
+  .education-item-note-text {
+    width: 90%;
+  }
+
+  .education-item-title {
+    margin-right: 10px;
+  }
+
+}
+
+
+
+/*  */
