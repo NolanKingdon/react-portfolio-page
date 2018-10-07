@@ -76,11 +76,11 @@ class MobileEducation extends Component {
         </div>
         <Animate
           start={()=> ({
-            x: "-50vw",
+            x: "-80vw",
           })}
 
           update={() => ({
-            x: [ this.props.showInfoSlider ? "30vw" : "-50vw"],
+            x: [ this.props.showInfoSlider ? "10vw" : "-80vw"],
             timing: { duration: 1000, ease: easeExpOut },
           })}
           >
@@ -95,7 +95,7 @@ class MobileEducation extends Component {
                   position: "fixed",
                   top: "10vh",
                   right: x,
-                  width: "40vw",
+                  width: "80vw",
                   height: "60%",
                   backgroundColor: "#023670",
                   color: "white",
