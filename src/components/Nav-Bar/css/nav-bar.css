@@ -119,17 +119,23 @@
   cursor: pointer;
 }
 
+/* Mobile Arrow */
+
 .mobile-nav-display-toggle {
   position: absolute;
   bottom: 0;
   display: inline-block;
   left: 50%;
-  zoom: 1;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
   text-decoration: none;
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .mobile-nav-display-toggle:focus {
@@ -143,7 +149,7 @@
 .mobile-nav-display-arrow-left {
   width: 1.5em;
   position: relative;
-  left: -0.75em;
+  /* left: -0.75em; */
   top: 10px;
 }
 
