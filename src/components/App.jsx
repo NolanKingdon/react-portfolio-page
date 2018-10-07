@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import NavMain from './Nav-Bar/navMain.jsx';
 import NavMobile from './Nav-Bar/navMobile.jsx';
 import AboutPage from './About/About-Page.jsx';
+import MobileAboutPage from './About/MobileAbout.jsx';
 import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
 import Education from './Education/Education.jsx';
 import Work from './Work/Work.jsx';
+import WorkMobile from './Work/WorkMobile.jsx';
 import Contact from './Contact/Contact.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
@@ -108,118 +110,159 @@ class App extends Component {
     return(
       <div>
 
-        { this.state.width != 900 && this.state.width != 750 &&
-        <Animate
-          start={()=> ({
-            x: "0vw",
-          })}
+        { (this.state.width != 900 && this.state.width != 750 && this.state.width != 650) &&
+          <div>
+            <Animate
+              start={()=> ({
+                x: "0vw",
+              })}
 
-          update={() => ({
-            x: [ this.state.navHidden ? responsiveX : "0vw"],
-            timing: { duration: 1000, ease: easeExpOut },
-          })}
-        >
-          {(state) => {
-            const { x } = state;
+              update={() => ({
+                x: [ this.state.navHidden ? responsiveX : "0vw"],
+                timing: { duration: 1000, ease: easeExpOut },
+              })}
+            >
+              {(state) => {
+                const { x } = state;
 
-            return(
-              <NavMain
-                screenSize = {this.state.width}
-                className = "nav-bar"
-                changer = {this.pageChanger}
-                displayToggle = {this.displayToggle}
-                navHidden = {this.state.navHidden}
-                divStyle = {{
-                  position: "fixed",
-                  top: "0",
-                  left: x,
-                  width: "22vw",
-                  height: "100%",
-                  backgroundColor: "#023670",
-                  color: "white",
-                  textAlign: "left",
-                  MozBoxShadow:    "4px 3px 10px 1px #ccc",
-                  WebkitBoxShadow: "4px 3px 10px 1px #ccc",
-                  boxShadow:       "4px 5px 10px 1px gray",
-                  WebkitTransform: `translate3d(${x}px, 0, 0)`,
-                  transform:       `translate3d(${x}px, 0, 0)`,
-                }}
-              />
-            )
-          }}
-        </Animate>
+                return(
+                  <NavMain
+                    screenSize = {this.state.width}
+                    className = "nav-bar"
+                    changer = {this.pageChanger}
+                    displayToggle = {this.displayToggle}
+                    navHidden = {this.state.navHidden}
+                    divStyle = {{
+                      position: "fixed",
+                      top: "0",
+                      left: x,
+                      width: "22vw",
+                      height: "100%",
+                      backgroundColor: "#023670",
+                      color: "white",
+                      textAlign: "left",
+                      MozBoxShadow:    "4px 3px 10px 1px #ccc",
+                      WebkitBoxShadow: "4px 3px 10px 1px #ccc",
+                      boxShadow:       "4px 5px 10px 1px gray",
+                      WebkitTransform: `translate3d(${x}px, 0, 0)`,
+                      transform:       `translate3d(${x}px, 0, 0)`,
+                    }}
+                  />
+                )
+              }}
+            </Animate>
+            <Header
+              screenSize = {this.state.width}
+              page = {this.state.page}
+            />
+            <CSSTransitionGroup
+              transitionName="main-pages"
+              transitionEnterTimeout={600}
+              transitionLeaveTimeout={1}
+              >
+                {this.state.page === "About" && <AboutPage
+                                                    screenSize = {this.state.width}
+                                                    navHidden = {this.state.navHidden}/>}
+                {this.state.page === "Employment History" && <Employment
+                                                                screenSize = {this.state.width}
+                                                                navHidden = {this.state.navHidden}/>}
+                {this.state.page === "Education" && <Education
+                                                      screenSize = {this.state.width}
+                                                      navHidden = {this.state.navHidden}
+                                                      currentCourse = {this.state.currentCourse}
+                                                      courseSelector = {this.courseSelector}
+                                                      showInfoSlider = {this.state.showInfoSlider}
+                                                      sliderToggle = {this.sliderToggle}
+                                                    />}
+                {this.state.page === "My Work" && <Work
+                                                    screenSize = {this.state.width}
+                                                    navHidden = {this.state.navHidden}
+                                                    currentProject = {this.state.currentProject}
+                                                    projectSelector = {this.projectSelector}
+                                                    showWorkSlider = {this.state.showWorkSlider}
+                                                    sliderToggle = {this.workSliderToggle}
+                                                  />}
+                {this.state.page === "Contact" && <Contact
+                                                    screenSize = {this.state.width}
+                                                    navHidden = {this.state.navHidden}/>}
+            </CSSTransitionGroup>
+        </div>
       }
-      { (this.state.width == 900 || this.state.width == 750) &&
-        <Animate
-          start={()=> ({
-            x: "0vh",
-          })}
+      { (this.state.width == 900 || this.state.width <= 750) &&
+        <div>
 
-          update={() => ({
-            x: [ this.state.navHidden ? "-33vh" : "0vh"],
-            timing: { duration: 1000, ease: easeExpOut },
-          })}
-        >
-          {(state) => {
-            const { x } = state;
+          <Animate
+            start={()=> ({
+              x: "0vh",
+            })}
 
-            return(
-              <NavMobile
-                changer = {this.pageChangerMobile}
-                displayToggle = {this.displayToggle}
-                navHidden = {this.state.navHidden}
-                divStyle = {{
-                  position: "fixed",
-                  top: x,
-                  left: "0",
-                  width: "100%",
-                  height: "40%",
-                  backgroundColor: "#023670",
-                  color: "white",
-                  MozBoxShadow:    "4px 3px 10px 1px #ccc",
-                  WebkitBoxShadow: "4px 3px 10px 1px #ccc",
-                  boxShadow:       "4px 5px 10px 1px gray",
-                }}
-              />
-            )
-          }}
-        </Animate>
-      }
-        <Header
-          screenSize = {this.state.width}
-          page = {this.state.page}
-        />
-        <CSSTransitionGroup
-          transitionName="main-pages"
-          transitionEnterTimeout={600}
-          transitionLeaveTimeout={1}
-          >
-            {this.state.page === "About" && <AboutPage
-                                                screenSize = {this.state.width}
-                                                navHidden = {this.state.navHidden}/>}
-            {this.state.page === "Employment History" && <Employment
-                                                            screenSize = {this.state.width}
-                                                            navHidden = {this.state.navHidden}/>}
-            {this.state.page === "Education" && <Education
+            update={() => ({
+              x: [ this.state.navHidden ? "-33vh" : "0vh"],
+              timing: { duration: 1000, ease: easeExpOut },
+            })}
+            >
+            {(state) => {
+              const { x } = state;
+
+              return(
+                <NavMobile
+                  changer = {this.pageChangerMobile}
+                  displayToggle = {this.displayToggle}
+                  navHidden = {this.state.navHidden}
+                  divStyle = {{
+                    position: "fixed",
+                    top: x,
+                    left: "0",
+                    width: "100%",
+                    height: "40%",
+                    backgroundColor: "#023670",
+                    color: "white",
+                    MozBoxShadow:    "4px 3px 10px 1px #ccc",
+                    WebkitBoxShadow: "4px 3px 10px 1px #ccc",
+                    boxShadow:       "4px 5px 10px 1px gray",
+                  }}
+                  />
+              )
+            }}
+          </Animate>
+          <Header
+            screenSize = {this.state.width}
+            page = {this.state.page}
+            dynamicTopMargin = {{marginTop: "4em"}}
+            />
+          <CSSTransitionGroup
+            transitionName="main-pages"
+            transitionEnterTimeout={600}
+            transitionLeaveTimeout={1}
+            >
+              {this.state.page === "About" && <MobileAboutPage
+                                                  screenSize = {this.state.width}
+                                                  navHidden = {this.state.navHidden}/>}
+              {this.state.page === "Employment History" && <Employment
+                                                              screenSize = {this.state.width}
+                                                              navHidden = {this.state.navHidden}/>}
+              {this.state.page === "Education" && <Education
+                                                    screenSize = {this.state.width}
+                                                    navHidden = {this.state.navHidden}
+                                                    currentCourse = {this.state.currentCourse}
+                                                    courseSelector = {this.courseSelector}
+                                                    showInfoSlider = {this.state.showInfoSlider}
+                                                    sliderToggle = {this.sliderToggle}
+                                                  />}
+              {this.state.page === "My Work" && <WorkMobile
                                                   screenSize = {this.state.width}
                                                   navHidden = {this.state.navHidden}
-                                                  currentCourse = {this.state.currentCourse}
-                                                  courseSelector = {this.courseSelector}
-                                                  showInfoSlider = {this.state.showInfoSlider}
-                                                  sliderToggle = {this.sliderToggle}
+                                                  currentProject = {this.state.currentProject}
+                                                  projectSelector = {this.projectSelector}
+                                                  showWorkSlider = {this.state.showWorkSlider}
+                                                  sliderToggle = {this.workSliderToggle}
                                                 />}
-            {this.state.page === "My Work" && <Work
-                                                screenSize = {this.state.width}
-                                                navHidden = {this.state.navHidden}
-                                                currentProject = {this.state.currentProject}
-                                                projectSelector = {this.projectSelector}
-                                                showWorkSlider = {this.state.showWorkSlider}
-                                                sliderToggle = {this.workSliderToggle}
-                                              />}
-            {this.state.page === "Contact" && <Contact
-                                                screenSize = {this.state.width}
-                                                navHidden = {this.state.navHidden}/>}
-        </CSSTransitionGroup>
+              {this.state.page === "Contact" && <Contact
+                                                  screenSize = {this.state.width}
+                                                  navHidden = {this.state.navHidden}/>}
+          </CSSTransitionGroup>
+        </div>
+      }
       </div>
     )
   }
