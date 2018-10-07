@@ -86,6 +86,7 @@ class WorkMobile extends Component {
                   right: x,
                   width: "75vw",
                   height: "80%",
+                  overflowY: "scroll",
                   backgroundColor: "#023670",
                   color: "white",
                   textAlign: "left",
