@@ -5,6 +5,7 @@ import AboutPage from './About/About-Page.jsx';
 import MobileAboutPage from './About/MobileAbout.jsx';
 import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
+import MobileEmployment from './Employment/MobileEmployment.jsx';
 import Education from './Education/Education.jsx';
 import Work from './Work/Work.jsx';
 import WorkMobile from './Work/WorkMobile.jsx';
@@ -238,7 +239,7 @@ class App extends Component {
               {this.state.page === "About" && <MobileAboutPage
                                                   screenSize = {this.state.width}
                                                   navHidden = {this.state.navHidden}/>}
-              {this.state.page === "Employment History" && <Employment
+              {this.state.page === "Employment History" && <MobileEmployment
                                                               screenSize = {this.state.width}
                                                               navHidden = {this.state.navHidden}/>}
               {this.state.page === "Education" && <Education
