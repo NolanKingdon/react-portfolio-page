@@ -11,6 +11,7 @@ import MobileEducation from './Education/MobileEducation.jsx';
 import Work from './Work/Work.jsx';
 import WorkMobile from './Work/WorkMobile.jsx';
 import Contact from './Contact/Contact.jsx';
+import MobileContact from './Contact/MobileContact.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
 import { CSSTransitionGroup } from 'react-transition-group';
@@ -259,7 +260,7 @@ class App extends Component {
                                                   showWorkSlider = {this.state.showWorkSlider}
                                                   sliderToggle = {this.workSliderToggle}
                                                 />}
-              {this.state.page === "Contact" && <Contact
+              {this.state.page === "Contact" && <MobileContact
                                                   screenSize = {this.state.width}
                                                   navHidden = {this.state.navHidden}/>}
           </CSSTransitionGroup>

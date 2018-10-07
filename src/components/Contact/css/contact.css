@@ -92,3 +92,23 @@
     font-size: 2rem;
   }
 }
+
+@media only screen and (max-width: 1100px) {
+  #about-h1 {
+    font-size: 3em;
+  }
+
+  #about-h2 {
+    font-size: 2em;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+}
