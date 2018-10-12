@@ -30,7 +30,8 @@ class App extends Component {
       currentCourse: "None",
       showWorkSlider: false,
       currentProject: "None",
-      width: window.innerWidth
+      width: window.innerWidth,
+      navTop: (window.innerHeight - (window.innerHeight/3)*4)
     }
     this.pageChanger = this.pageChanger.bind(this);
     this.pageChangerMobile = this.pageChangerMobile.bind(this);
@@ -81,6 +82,7 @@ class App extends Component {
 
   resize() {
     let windowWidth = window.innerWidth;
+    this.setState({navTop: (window.innerHeight - (window.innerHeight/3)*4)})
     if(windowWidth >= 1900){
       this.setState({width: 1920, navHidden: false});
     } else if (windowWidth <= 1919 && windowWidth >= 1300){
@@ -94,7 +96,6 @@ class App extends Component {
     } else if (windowWidth <= 650) {
       this.setState({width: 650, navHidden: true});
     }
-    console.log(this.state.width);
   }
 
   render(){
@@ -197,11 +198,11 @@ class App extends Component {
 
           <Animate
             start={()=> ({
-              x: "0vh",
+              x: this.state.navTop,
             })}
 
             update={() => ({
-              x: [ this.state.navHidden ? "-33vh" : "0vh"],
+              x: [ this.state.navHidden ? this.state.navTop : 0],
               timing: { duration: 1000, ease: easeExpOut },
             })}
             >

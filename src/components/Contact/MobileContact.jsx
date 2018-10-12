@@ -3,6 +3,7 @@ import './css/contact.css';
 import GMAIL from "./images/gmailCircle.png";
 import PHONE from "./images/phoneIcon.png";
 import LINKEDIN from '../Nav-Bar/images/LinkedIn-Logo.png';
+import GITHUB from '../Nav-Bar/images/GitHub-Logo.png';
 
 export default class MobileContact extends Component {
 
@@ -26,6 +27,11 @@ export default class MobileContact extends Component {
             <img src = {PHONE} alt = "phone" />
             <hr />
             <p id = "about-phone">(905) 220-1705</p>
+          </a>
+          <a href = "https://github.com/NolanKingdon" className = "contact-grid-item">
+            <img src = {GITHUB} alt = "github" />
+            <hr />
+            <p id = "about-phone">Github</p>
           </a>
         </div>
       </div>
