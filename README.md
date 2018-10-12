@@ -7,11 +7,12 @@ WIP - Will be my personal portfolio page
 ## TODOS
 
 ### MOBILE
-* Add Github link
-* Fix nav bar to run on innerHeight instead of a vh position
 
 ### Desktop
 * Add navbar icons
+* Adjust width of overhand to be more accomodating for the new icons
+* Fix Employment History to not be chunky on Hidden load
 
 ### All
 * Add Reviews/References
+* Change slider button styles - make it white bg with blue font. Change font to header font
