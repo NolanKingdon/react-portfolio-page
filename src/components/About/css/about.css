@@ -64,9 +64,6 @@
     margin-right: 70px;
     width: 22vw;
   }
-
-
-
 }
 
 @media only screen and (max-width: 1100px){
@@ -85,7 +82,7 @@
     }
 
     #about-hello {
-      font-size: 3rem;
+      font-size: 2.7rem;
       margin: 10px;
     }
 
