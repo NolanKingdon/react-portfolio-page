@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MobileWorkItem from './MobileWorkItem.jsx';
-import WorkSlider from './WorkSlider.jsx';
+import MobileWorkSlider from './MobileWorkSlider.jsx';
 import Background from './work-slider-background.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut, easeLinear } from 'd3-ease';
@@ -77,7 +77,7 @@ class WorkMobile extends Component {
             const { x } = state;
 
             return(
-              <WorkSlider
+              <MobileWorkSlider
                 currentProject = {this.props.currentProject}
                 sliderToggle = {this.props.sliderToggle}
                 sliderStyles = {{
