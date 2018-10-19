@@ -103,7 +103,7 @@ class App extends Component {
     let responsiveX = "0vw";
 
     if(this.state.width == 1920){
-      responsiveX = "-20vw";
+      responsiveX = "-19vw";
     } else if(this.state.width == 1366){
       responsiveX = "-19vw";
     } else if(this.state.width == 1280){
@@ -120,15 +120,17 @@ class App extends Component {
             <Animate
               start={()=> ({
                 x: "0vw",
+                left: "0%"
               })}
 
               update={() => ({
                 x: [ this.state.navHidden ? responsiveX : "0vw"],
+                left: [ this.state.navHidden ? "90%" : "5%"],
                 timing: { duration: 1000, ease: easeExpOut },
               })}
             >
               {(state) => {
-                const { x } = state;
+                const { x, left } = state;
 
                 return(
                   <NavMain
@@ -152,6 +154,7 @@ class App extends Component {
                       WebkitTransform: `translate3d(${x}px, 0, 0)`,
                       transform:       `translate3d(${x}px, 0, 0)`,
                     }}
+                  navImgLeftPos = {left}
                   />
                 )
               }}
