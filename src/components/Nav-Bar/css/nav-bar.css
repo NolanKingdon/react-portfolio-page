@@ -108,7 +108,7 @@
 .mobile-nav-header {
   position: relative;
   top: 25%;
-  left:5px;
+  left: 5px;
   font-size: 1em;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 2px;
@@ -160,5 +160,17 @@
   top: 10px;
 }
 
+@media only screen and (max-width: 1367px){
 
-/*  */
+  .nav-display-toggle {
+    right: -5px;
+  }
+
+  .nav-display-arrow-left {
+    width: 35px;
+  }
+  .nav-main-header-icons {
+    width: 20px;
+  }
+
+}
