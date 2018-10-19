@@ -23,7 +23,7 @@
 
 .nav-main-header-icons {
   position: absolute;
-  transition: 0.5s;
+  transition: 0.1s;
   /* left: 5%; */
   width: 30px;
 }
