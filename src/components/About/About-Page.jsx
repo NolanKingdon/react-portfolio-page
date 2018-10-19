@@ -19,7 +19,7 @@ class AboutPage extends Component {
       responsiveInv = ["1.5rem", "1.2rem"];
     } else if(this.props.screenSize == 1366){
       responsiveH = ["6rem", "5rem"]
-      responsiveIntro = ["3rem", "2rem"];
+      responsiveIntro = ["2.8rem", "2rem"];
       responsiveB = ["2rem", "1.4rem"];
       responsiveInv = ["1.5rem", "1.2rem"];
     } else if(this.props.screenSize == 1280){
