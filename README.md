@@ -9,8 +9,6 @@ WIP - Will be my personal portfolio page
 ### MOBILE
 
 ### Desktop
-* Add navbar icons
-* Adjust width of overhand to be more accommodating for the new icons
 * Fix Employment History to not be chunky on Hidden load
 
 ### All
