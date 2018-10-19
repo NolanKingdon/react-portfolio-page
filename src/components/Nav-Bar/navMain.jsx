@@ -37,13 +37,13 @@ class NavMain extends Component {
           <h3 className = "nav-header">About <img src = {ABOUT} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Employment History")}>
-          <h3 className = "nav-header">Employment History <img src = {HAT} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">Employment History <img src = {BREIFCASE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("My Work")}>
-          <h3 className = "nav-header">My Work <img src = {BREIFCASE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">My Work <img src = {CODE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Education")}>
-          <h3 className = "nav-header">Education <img src = {CODE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">Education <img src = {HAT} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Contact")}>
           <h3 className = "nav-header">Contact <img src = {ENVELOPE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
