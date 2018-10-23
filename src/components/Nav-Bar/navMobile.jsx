@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
+import Background from '../Education/info-slider-background.jsx';
 import './css/nav-bar.css';
 import navArrowUp from './images/arrow-up.png';
 import navArrowDown from './images/arrow-down.png';
 
 class NavMobile extends Component {
 
-  handleNavToggle(){
-    this.props.displayToggle();
-  }
-
   render(){
+    let bgDisplay = [this.props.navHidden ? "none" : "block"];
+
     return(
       <div className = "mobile-nav-bar" style = {this.props.divStyle}>
-        
-        <button
-          className = "mobile-nav-display-toggle"
-          onClick = {() => this.handleNavToggle()}
-        >
-          {this.props.navHidden ? <img src = {navArrowDown} className = "mobile-nav-display-arrow-left" alt = "arrow"/> : <img src = {navArrowUp} className = "mobile-nav-display-arrow-left" alt = "arrow"/>}
-        </button>
+        <Background
+          backgroundStyles = {{
+            position: "fixed",
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%",
+            display: bgDisplay,
+            backgroundColor: `rgba(0,0,0, 0.3)`,
+            transition: "500ms",
+            zIndex: "0"
+          }}
+          sliderToggle = {this.props.displayToggle}
+        />
         <div className = "mobile-nav-accent-header" onClick = {() => this.props.changer("About")}>
           <h3 className = "mobile-nav-header">About</h3>
         </div>

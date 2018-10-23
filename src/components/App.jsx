@@ -12,6 +12,7 @@ import Work from './Work/Work.jsx';
 import WorkMobile from './Work/WorkMobile.jsx';
 import Contact from './Contact/Contact.jsx';
 import MobileContact from './Contact/MobileContact.jsx';
+import Buttons from './MobileNavButtons/Buttons.jsx';
 import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
 import { CSSTransitionGroup } from 'react-transition-group';
@@ -31,7 +32,7 @@ class App extends Component {
       showWorkSlider: false,
       currentProject: "None",
       width: window.innerWidth,
-      navTop: (window.innerHeight - (window.innerHeight/3)*4)
+      navRight: -400
     }
     this.pageChanger = this.pageChanger.bind(this);
     this.pageChangerMobile = this.pageChangerMobile.bind(this);
@@ -201,11 +202,11 @@ class App extends Component {
 
           <Animate
             start={()=> ({
-              x: this.state.navTop,
+              x: this.state.navRight,
             })}
 
             update={() => ({
-              x: [ this.state.navHidden ? this.state.navTop : 0],
+              x: [ this.state.navHidden ? this.state.navRight : 10],
               timing: { duration: 1000, ease: easeExpOut },
             })}
             >
@@ -219,15 +220,16 @@ class App extends Component {
                   navHidden = {this.state.navHidden}
                   divStyle = {{
                     position: "fixed",
-                    top: x,
-                    left: "0",
-                    width: "100%",
+                    top: "245px",
+                    right: x,
+                    width: "75%",
                     height: "40%",
                     backgroundColor: "#023670",
                     color: "white",
-                    MozBoxShadow:    "4px 3px 10px 1px #ccc",
-                    WebkitBoxShadow: "4px 3px 10px 1px #ccc",
-                    boxShadow:       "4px 5px 10px 1px gray",
+                    MozBoxShadow:    "2px 2px 10px 1px black",
+                    WebkitBoxShadow: "2px 2px 10px 1px black",
+                    boxShadow:       "2px 2px 10px 1px black",
+                    zIndex: 99999
                   }}
                   />
               )
@@ -236,8 +238,11 @@ class App extends Component {
           <Header
             screenSize = {this.state.width}
             page = {this.state.page}
-            dynamicTopMargin = {{marginTop: "4em"}}
             />
+          <Buttons
+            displayToggle = {this.displayToggle}
+            navHidden = {this.state.navHidden}
+          />
           <CSSTransitionGroup
             transitionName="main-pages"
             transitionEnterTimeout={600}
@@ -271,6 +276,7 @@ class App extends Component {
           </CSSTransitionGroup>
         </div>
       }
+
       </div>
     )
   }
