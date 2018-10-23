@@ -12,6 +12,7 @@ WIP - Will be my personal portfolio page
 * right-align text and left align images in mobile nav
 * Make function to handle pages - before and after current page - for mobile arrows
 * Make Appropriate arrows appear based on whether or not there are pages before or after current one
+* Make mobile nav alot smaller.
 
 ### Desktop
 * Fix Employment History to not be chunky on Hidden load
