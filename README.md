@@ -13,6 +13,7 @@ WIP - Will be my personal portfolio page
 * Make function to handle pages - before and after current page - for mobile arrows
 * Make Appropriate arrows appear based on whether or not there are pages before or after current one
 * Make mobile nav alot smaller.
+* Make mobile nav fixed - remember the issue with the browser URL bar pushing it around
 
 ### Desktop
 * Fix Employment History to not be chunky on Hidden load
