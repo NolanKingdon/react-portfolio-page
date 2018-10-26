@@ -135,8 +135,8 @@ class MobileEducation extends Component {
                   position: "fixed",
                   top: "0",
                   left: "0",
-                  height: "100%",
-                  width: "100%",
+                  height: "120%",
+                  width: "120%",
                   display: t,
                   backgroundColor: `rgba(0,0,0,${opacity})`,
                   zIndex: "20"
