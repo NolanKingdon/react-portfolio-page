@@ -220,7 +220,7 @@ class App extends Component {
                   navHidden = {this.state.navHidden}
                   divStyle = {{
                     position: "fixed",
-                    top: "245px",
+                    bottom: "140px",
                     right: x,
                     width: "75%",
                     height: "40%",
