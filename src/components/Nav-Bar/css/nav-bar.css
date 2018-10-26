@@ -109,7 +109,7 @@
   position: relative;
   top: 25%;
   left: 5px;
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 2px;
 }
@@ -117,8 +117,9 @@
 .mobile-nav-accent-header {
   position: relative;
   background-color: #032C59;
-  text-align: center;
-  height: 15%;
+  margin-top: 2px;
+  /* text-align: center; */
+  height: 2em;
 }
 
 .mobile-nav-accent-header:hover {
@@ -126,9 +127,16 @@
   cursor: pointer;
 }
 
+.mobile-nav-header-icon {
+  position: absolute;
+  transition: 0.1s;
+  /* left: 5%; */
+  width: 20px;
+}
+
 /* Mobile Arrow */
 
-.mobile-nav-display-toggle {
+/* .mobile-nav-display-toggle {
   position: absolute;
   bottom: 0;
   display: inline-block;
@@ -143,8 +151,8 @@
   border: none;
   color: white;
   font-size: 2em;
-}
-
+} */
+/*
 .mobile-nav-display-toggle:focus {
   outline: 0;
 }
@@ -156,9 +164,9 @@
 .mobile-nav-display-arrow-left {
   width: 1.5em;
   position: relative;
-  /* left: -0.75em; */
+  // left: -0.75em; // Pre-commented out
   top: 10px;
-}
+} */
 
 @media only screen and (max-width: 1367px){
 

@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import Background from '../Education/info-slider-background.jsx';
 import './css/nav-bar.css';
-import navArrowUp from './images/arrow-up.png';
-import navArrowDown from './images/arrow-down.png';
+//IMAGES
+import ABOUT from './images/nav-icons/white/nav-icon-person-white.png';
+import HAT from './images/nav-icons/white/nav-icon-grad-cap-white.png';
+import ENVELOPE from './images/nav-icons/white/nav-icon-envelope-white.png';
+import CODE from './images/nav-icons/white/nav-icon-code-white.png';
+import BREIFCASE from './images/nav-icons/white/nav-icon-briefcase-white.png';
 
 class NavMobile extends Component {
 
@@ -25,20 +29,25 @@ class NavMobile extends Component {
           }}
           sliderToggle = {this.props.displayToggle}
         />
-        <div className = "mobile-nav-accent-header" onClick = {() => this.props.changer("About")}>
-          <h3 className = "mobile-nav-header">About</h3>
+        <div className = "mobile-nav-accent-header" onClick = {() => this.props.changer("About")} style = {{marginTop: 3}}>
+          <h3 style = {{float: "right", marginRight: 10}} className = "mobile-nav-header">About</h3>
+          <img style = {{float: "left", marginLeft: 10, marginTop: 7}} src = {ABOUT} className = "mobile-nav-header-icon"/>
         </div>
         <div className = "mobile-nav-accent-header" onClick = {() => this.props.changer("Employment History")}>
-          <h3 className = "mobile-nav-header">Employment History</h3>
+          <h3 style = {{float: "right", marginRight: 10}} className = "mobile-nav-header">Employment History</h3>
+          <img style = {{float: "left", marginLeft: 10, marginTop: 7}} src = {BREIFCASE} className = "mobile-nav-header-icon"/>
         </div>
         <div className = "mobile-nav-accent-header" onClick = {() => this.props.changer("My Work")}>
-          <h3 className = "mobile-nav-header">My Work</h3>
+          <h3 style = {{float: "right", marginRight: 10}} className = "mobile-nav-header">My Work</h3>
+          <img style = {{float: "left", marginLeft: 10, marginTop: 7}} src = {CODE} className = "mobile-nav-header-icon"/>
         </div>
         <div className = "mobile-nav-accent-header" onClick = {() => this.props.changer("Education")}>
-          <h3 className = "mobile-nav-header">Education</h3>
+          <h3 style = {{float: "right", marginRight: 10}} className = "mobile-nav-header">Education</h3>
+          <img style = {{float: "left", marginLeft: 10, marginTop: 7}} src = {HAT} className = "mobile-nav-header-icon"/>
         </div>
         <div className = "mobile-nav-accent-header" onClick = {() => this.props.changer("Contact")}>
-          <h3 className = "mobile-nav-header">Contact</h3>
+          <h3 style = {{float: "right", marginRight: 10}} className = "mobile-nav-header">Contact</h3>
+          <img style = {{float: "left", marginLeft: 10, marginTop: 7}} src = {ENVELOPE} className = "mobile-nav-header-icon"/>
         </div>
       </div>
     )
