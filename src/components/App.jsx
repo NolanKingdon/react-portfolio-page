@@ -32,7 +32,8 @@ class App extends Component {
       showWorkSlider: false,
       currentProject: "None",
       width: window.innerWidth,
-      navRight: -400
+      navRight: -400,
+      mobileBtnDisplay: [false, true]
     }
     this.pageChanger = this.pageChanger.bind(this);
     this.pageChangerMobile = this.pageChangerMobile.bind(this);
@@ -41,6 +42,7 @@ class App extends Component {
     this.courseSelector = this.courseSelector.bind(this);
     this.workSliderToggle = this.workSliderToggle.bind(this);
     this.projectSelector = this.projectSelector.bind(this);
+    this.mobileButtonToggle = this.mobileButtonToggle.bind(this);
   }
 
   pageChanger(newPage){
@@ -96,6 +98,45 @@ class App extends Component {
       this.setState({width: 750, navHidden: true});
     } else if (windowWidth <= 650) {
       this.setState({width: 650, navHidden: true});
+    }
+  }
+
+  mobileButtonToggle(direction){
+    //Mapping the pages based on what is before and after
+    const pages = {
+      "About":["","Employment History"],
+      "Employment History": ["About", "My Work"],
+      "My Work": ["Employment History", "Education"],
+      "Education":["My Work", "Contact"],
+      "Contact":["Education", ""]
+    }
+    //Checking to see the direction of the btn press
+    if(direction == "fwd"){
+      //if our array is not empty execute the following
+      if(pages[this.state.page][1] !== ""){
+        //Change page to associated next item
+        this.pageChanger(pages[this.state.page][1]);
+        //Set state so we know that we should load in the button again
+        this.setState({
+          mobileBtnDisplay: [true, true]
+        });
+      } else {
+        //If the next item in our map IS empty, we're going to want to hide the button
+        this.setState({
+          mobileBtnDisplay: [false, true]
+        })
+      }
+    } else if(direction == "back"){
+      if(pages[this.state.page][0] !== ""){
+        this.pageChanger(pages[this.state.page][0]);
+        this.setState({
+          mobileBtnDisplay: [true, true]
+        });
+      } else {
+        this.setState({
+          mobileBtnDisplay: [true, false]
+        })
+      }
     }
   }
 
@@ -242,6 +283,8 @@ class App extends Component {
           <Buttons
             displayToggle = {this.displayToggle}
             navHidden = {this.state.navHidden}
+            mobileButtonToggle = {this.mobileButtonToggle}
+            page = {this.state.page}
           />
           <CSSTransitionGroup
             transitionName="main-pages"
