@@ -52,6 +52,7 @@ class App extends Component {
   }
 
   pageChangerMobile(newPage){
+    window.scrollTo(0, 0);
     this.setState({
       page: newPage
     });
@@ -115,7 +116,7 @@ class App extends Component {
       //if our array is not empty execute the following
       if(pages[this.state.page][1] !== ""){
         //Change page to associated next item
-        this.pageChanger(pages[this.state.page][1]);
+        this.pageChangerMobile(pages[this.state.page][1]);
         //Set state so we know that we should load in the button again
         this.setState({
           mobileBtnDisplay: [true, true]
@@ -128,7 +129,7 @@ class App extends Component {
       }
     } else if(direction == "back"){
       if(pages[this.state.page][0] !== ""){
-        this.pageChanger(pages[this.state.page][0]);
+        this.pageChangerMobile(pages[this.state.page][0]);
         this.setState({
           mobileBtnDisplay: [true, true]
         });
