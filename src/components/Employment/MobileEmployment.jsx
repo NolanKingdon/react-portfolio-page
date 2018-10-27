@@ -10,18 +10,18 @@ class MobileEmployment extends Component {
     return(
       <div className = "employment-container">
         <MobileEmploymentItem
+          Company = "PowerSchool"
+          Title = "Implementation Specialist"
+          Time = "January 2018 - Present"
+          Description = "Work hands on with multiple projects using HTML, CSS, Javascript, and C# through PowerSchool's custom CMS to create mobile friendly school registration forms for first year clients. Configured secure data transfer using API connections to client Databases"
+          image = {PSLogo}
+          />
+        <MobileEmploymentItem
           Company = "Buona Vita Pizza"
           Title = "Web Developer"
           Time = "May 2018 - Present"
-          Description = "Web Developer for Buona Vita Pizza. Worked with the owners to create a simple webpage to hold their online menu. Used a wireframe to create the website from scratch, as well as hosted on a third party hosting service. Currently working to develop a PHP based online ordering system, and a PHP backend for easy price updates. Currently responsible for maintenance of content."
+          Description = "Worked with the owners to create a simple webpage to hold their online menu. Used a wireframe to create the website from scratch, as well as hosted on a third party hosting service. Currently working to develop a PHP based online ordering system, and a PHP backend for easy price updates. Currently responsible for maintenance of content."
           image = {BVPLogo}
-          />
-        <MobileEmploymentItem
-          Company = "PowerSchool"
-          Title = "Project Manager"
-          Time = "January 2018 - Present"
-          Description = "Project Manager for the Registration department in PowerSchool. Managed multiple implementation projects of PowerSchool's online registration software, often liasing with clients in order to maintain the timeline and drive projects forward. Responsibilities also include running and reporting QA tasks for forms before launch, in which I made a Python based reporting tool to optimize reporting - Saving roughly an hour of time in reporting a week."
-          image = {PSLogo}
           />
         <MobileEmploymentItem
           Company = "PowerSchool"
