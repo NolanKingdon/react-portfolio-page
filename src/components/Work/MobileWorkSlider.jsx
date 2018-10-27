@@ -111,7 +111,7 @@ class WorkSlider extends Component {
                 <li>CSS3</li>
                 <li>HTML5</li>
               </ul>
-              <center><a href = "https://github.com/NolanKingdon/PHP-Registration" target = "_blank" rel = "noopener noreferrer" className = "mobile-work-slider-link">Github repository</a></center>
+              <center><a href = "https://github.com/NolanKingdon/PHP-Registration" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github repository</a></center>
             </div>
           }
           </div>
