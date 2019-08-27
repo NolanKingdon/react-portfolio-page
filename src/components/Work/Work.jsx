@@ -12,6 +12,10 @@ import PYCON from './images/python.png';
 import REACT from './images/react.png';
 import PHPSQL from './images/php-mysql.png';
 import THISIMG from './images/this.png';
+import MOON from './images/moonphase.PNG';
+import POKEMON from './images/pokemon.png';
+import READER from './images/speedreader.png';
+import CLOCK from './images/clock.png';
 
 class Work extends Component {
 
@@ -51,9 +55,16 @@ class Work extends Component {
                 <WorkItem
                   sliderToggle = {this.props.sliderToggle}
                   projectSelector = {this.props.projectSelector}
-                  image = {CALC}
-                  title = {"JavaScript Calculator"}
-                  noteText = {"A digital calculator using JavaScript to complete the calculations and interactions"}
+                  image = {POKEMON}
+                  title = {"Daily Pokemon"}
+                  noteText = {"A module for the open source library, MagicMirror. Displays a random Pokemon at set intervals throughout the day."}
+                  />
+                <WorkItem
+                  sliderToggle = {this.props.sliderToggle}
+                  projectSelector = {this.props.projectSelector}
+                  image = {MOON}
+                  title = {"Moon Phase"}
+                  noteText = {"A module for the open source library, MagicMirror. Calculates and plots current moon phase"}
                   />
                 <WorkItem
                   sliderToggle = {this.props.sliderToggle}
@@ -65,6 +76,13 @@ class Work extends Component {
                 <WorkItem
                   sliderToggle = {this.props.sliderToggle}
                   projectSelector = {this.props.projectSelector}
+                  image = {READER}
+                  title = {"Speed Reader"}
+                  noteText = {"Console/GUI Speed Reading Application"}
+                  />
+                <WorkItem
+                  sliderToggle = {this.props.sliderToggle}
+                  projectSelector = {this.props.projectSelector}
                   image = {REACT}
                   title = {"Project Efficiency Tool"}
                   noteText = {"Client organizational tool"}
@@ -72,9 +90,9 @@ class Work extends Component {
                 <WorkItem
                   sliderToggle = {this.props.sliderToggle}
                   projectSelector = {this.props.projectSelector}
-                  image = {PHPSQL}
-                  title = {"PHP based Login System"}
-                  noteText = {"PHP/MySQL login tool"}
+                  image = {CLOCK}
+                  title = {"Monitor Landing Screen"}
+                  noteText = {"A tool built to condense several of my commonly used applications into one convenient location"}
                   />
               </div>
             )
