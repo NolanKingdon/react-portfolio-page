@@ -17,13 +17,17 @@ import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
 import { CSSTransitionGroup } from 'react-transition-group';
 import './css/transitions.css';
+import './css/general.scss';
 
 class App extends Component {
-//Commented out code was an attempt at having the navBar display, and then move to -20vw to improve UI
-//Will return to this later
   constructor(props){
     super(props);
     const navHiddenInitial =  (window.innerWidth < 1100 ? true : false);
+    /*
+      State keeps information about where you currently are in the page and whether or not the 
+      user is in mobile. Will integrate dynamic styles into this eventually for better, more readable
+      code.
+    */
     this.state = {
       page: "About",
       navHidden: navHiddenInitial,
@@ -35,6 +39,7 @@ class App extends Component {
       navRight: -400,
       mobileBtnDisplay: [false, true]
     }
+    // Binding our functions
     this.pageChanger = this.pageChanger.bind(this);
     this.pageChangerMobile = this.pageChangerMobile.bind(this);
     this.displayToggle = this.displayToggle.bind(this);
@@ -45,12 +50,15 @@ class App extends Component {
     this.mobileButtonToggle = this.mobileButtonToggle.bind(this);
   }
 
+  // Communicates with the Router to move between pages seamlessly
   pageChanger(newPage){
     this.setState({
       page: newPage
     });
   }
 
+  // Communicates while in mobile. Main difference is our fancy nav will be hidden on click
+  // and our window goes back to top.
   pageChangerMobile(newPage){
     window.scrollTo(0, 0);
     this.setState({
@@ -59,31 +67,38 @@ class App extends Component {
     this.displayToggle();
   }
 
+  // Toggles our nav visibility
   displayToggle(){
     this.setState({navHidden: !this.state.navHidden});
   }
 
+  // Toggles info slider when you click on projects/education
   sliderToggle(){
     this.setState({showInfoSlider: !this.state.showInfoSlider});
   }
 
+  // Used in tandem with sliderToggle - Highlights what information to pull
   courseSelector(currentCourse) {
     this.setState({currentCourse: currentCourse})
   }
 
+  // Shows slider when in work page
   workSliderToggle(){
     this.setState({showWorkSlider: !this.state.showWorkSlider});
   }
 
+  // Used in tandem with wordToggle - Demonstrates the content of the current project
   projectSelector(currentProject) {
     this.setState({currentProject: currentProject})
   }
 
+  // Handling Resize when component mounts - react event
   componentDidMount() {
       window.addEventListener("resize", this.resize.bind(this));
       this.resize();
   }
 
+  // Handling resize of the page - uses breakpoints to keep the changes minimal
   resize() {
     let windowWidth = window.innerWidth;
     this.setState({navTop: (window.innerHeight - (window.innerHeight/3)*4)})
@@ -141,8 +156,9 @@ class App extends Component {
     }
   }
 
+  // Rendering our components
   render(){
-
+    // Setting our responsive elements for the navBar
     let responsiveX = "0vw";
 
     if(this.state.width == 1920){
@@ -151,13 +167,13 @@ class App extends Component {
       responsiveX = "-19vw";
     } else if(this.state.width == 1280){
       responsiveX = "-19vw";
-    } else if(this.state.width == 900){
-      //Nothing, yet.
-    }
+    } 
 
     return(
       <div style={{overflowX: "hidden"}}>
 
+        {// Ensuring we are not in mobile
+        }
         { (this.state.width != 900 && this.state.width != 750 && this.state.width != 650) &&
           <div>
             <Animate
@@ -174,7 +190,7 @@ class App extends Component {
             >
               {(state) => {
                 const { x, left } = state;
-
+                // We generate the main nav if we hid all the above criteria
                 return(
                   <NavMain
                     screenSize = {this.state.width}
@@ -239,6 +255,9 @@ class App extends Component {
             </CSSTransitionGroup>
         </div>
       }
+          {// Rendering mobile mode - Seperate due to lack of animations. Reduces buffer time
+          // On phones. If we re-used components, it would be VERY slow
+          }
       { (this.state.width == 900 || this.state.width <= 750) &&
         <div>
 
@@ -254,7 +273,6 @@ class App extends Component {
             >
             {(state) => {
               const { x } = state;
-
               return(
                 <NavMobile
                   changer = {this.pageChangerMobile}
