@@ -1,34 +1,46 @@
+
 .self-image {
   border: 2px solid black;
   width: 20vw;
   height: auto;
-  margin-right: 200px;
+  margin-right: auto;
+  margin-left: auto;
   image-orientation: from-image;
   border-radius: 200px;
   -moz-box-shadow:    4px 3px 10px 1px #ccc;
   -webkit-box-shadow: 4px 3px 10px 1px #ccc;
   box-shadow:         4px 5px 10px 1px gray;
-  float: right;
+  /* float: right; */
 }
 
 .about-head {
-  margin-top: 13vh;
+  margin-top: 5vh;
+  /* border: 1px solid black; */
+  width: 78vw;
+  margin-left: 22vw;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* This is if the nav bar is open -- Everything is just a touch smaller */
 .about-text {
-  float: right;
-  margin-right: 100px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #about-hello {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #about-intro {
   font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
   font-weight: 800;
   font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #about-background {
@@ -45,29 +57,30 @@
 
 
 @media only screen and (max-width: 1366px) {
-  .about-text {
+  /* .about-text {
     margin-right: 50px;
   }
 
   .self-image {
-    margin-right: 100px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 50px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1280px) {
-  .about-text {
+  /* .about-text {
     margin-right: 40px;
   }
 
   .self-image {
     margin-right: 70px;
     width: 22vw;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1100px){
-  .self-image {
+  /* .self-image {
     margin-top: 15px;
     width: 200px;
     }
@@ -100,6 +113,6 @@
     #about-invitation {
       margin: 10px;
       font-size: 1.2rem;
-    }
+    } */
 
 }

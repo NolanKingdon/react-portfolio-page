@@ -156,7 +156,7 @@ class App extends Component {
     }
 
     return(
-      <div>
+      <div style={{overflowX: "hidden"}}>
 
         { (this.state.width != 900 && this.state.width != 750 && this.state.width != 650) &&
           <div>
