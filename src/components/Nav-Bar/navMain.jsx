@@ -29,8 +29,7 @@ class NavMain extends Component {
         </button>
         <div className = "nav-first-header nav-content">
           <h1>Nolan Kingdon</h1>
-          <h2>Web Developer</h2>
-          <h3><a href = "tel:9052201705">(905) 220-1705</a></h3>
+          <h2><a href = "tel:9052201705">(905) 220-1705</a></h2>
           <h3><a href = "mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("About")}>
