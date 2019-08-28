@@ -6,6 +6,7 @@ import Background from './info-slider-background.jsx'
 import UdemyLogo from './images/udemy-logo.png';
 import BrockLogo from './images/Brock_logo.png';
 import MitLogo from './images/MITOCW.png';
+import MohawkLogo from './images/Mohawk.png';
 import Animate from 'react-move/Animate';
 import { easeExpOut, easeLinear } from 'd3-ease';
 
@@ -46,13 +47,14 @@ class Education extends Component {
 
             return(
               <div className = "education-grid" style = {{marginLeft: x, gridTemplateColumns: gtc, width: w, marginTop: t}}>
+                <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://www.mohawkcollege.ca/programs/technology/computer-systems-technology-software-development-559"} image = {MohawkLogo} title = {"Software Development Advanced Diploma"} noteText = {"Computer Systems Technology - Software Development - 559"}/>
                 <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://www.udemy.com/react-js-and-redux-mastering-web-apps/learn/v4/overview"} image = {UdemyLogo} title = {"React JS and Redux - Mastering Web Apps"} noteText = {"David Katz - Software Engineer"}/>
                 <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://www.udemy.com/create-php-ajax-js-jquery-mysql-login-system-today/learn/v4/overview"} image = {UdemyLogo} title = {"Create a PHP Login and Registration from Scratch"} noteText = {"Kalob Taulien - Web Developer"}/>
                 <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://www.udemy.com/javascript-learn-javascript-essentials-and-build-project/learn/v4/overview"} image = {UdemyLogo} title = {"Learn JavaScript for Web Development"} noteText = {"Irfan Dayan - Freelancer/Web Developer"}/>
                 <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://www.udemy.com/csharp-tutorial-for-beginners/learn/v4/"} image = {UdemyLogo} title = {"C# Basics for Beginners: Learn C# Fundamentals by Coding"} noteText = {"Mosh Hamedani - Software Engineer"}/>
                 <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://www.udemy.com/complete-python-bootcamp/learn/v4/overview"} image = {UdemyLogo} title = {"Complete Python Bootcamp: Go from zero to hero in Python"} noteText = {"Jose Portilla - Data Scientist"}/>
                 <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://ocw.mit.edu/index.htm"} image = {MitLogo} title = {"Core Computer Science Courses"} noteText = {"Various Professors"}/>
-                <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://brocku.ca/social-sciences/"} image = {BrockLogo} title = {"Bachelor of Arts (BA)"} noteText = {"Honours Sociology, Conc. Criminology - Minor in Philosophy"}/>
+                <EducationItem courseSelector = {this.props.courseSelector} sliderToggle = {this.props.sliderToggle} link = {"https://brocku.ca/social-sciences/"} image = {BrockLogo} title = {"BA - Sociology"} noteText = {"Honours Sociology, Conc. Criminology - Minor in Philosophy"}/>
               </div>
             )
           }}

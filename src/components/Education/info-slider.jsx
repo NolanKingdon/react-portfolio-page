@@ -5,6 +5,7 @@ import './css/slider.css';
 const MITDates = ["10/01/2018", "Ongoing"];
 const UdemyDates = ["09/01/2017", "06/01/2018"];
 const BrockDates = ["09/01/2011", "04/01/2015"];
+const MohawkDates = ["01/01/2019", "Present"];
 
 class InfoSlider extends Component {
 
@@ -21,6 +22,27 @@ class InfoSlider extends Component {
           </button>
           <div className = "info-slider-text-body">
             <h1 className = "info-slider-text-header">{this.props.currentCourse}</h1>
+            {this.props.currentCourse === "Software Development Advanced Diploma" &&
+                <div>
+                  <h3 className = "info-slider-text-dates"><center>{MohawkDates[0]} - {MohawkDates[1]}</center></h3>
+                  <hr  className = "info-slider-hr" />
+                  <p className = "info-slider-text-description">
+                    Software Development Program at Mohawk College. Currently in third semester (As of September, 2019). Learning about software development in regards to programming, 
+                    best practices, and theory. Courses include:
+                  </p>
+                  <ul>
+                    <li>Intro to Computer Science using Python</li>
+                    <li>Intro to Programming in Java</li>
+                    <li>Mathematics for Computer Science</li>
+                    <li>Discrete Math and Statistics</li>
+                    <li>HTML/CSS</li>
+                    <li>PHP and JavaScript</li>
+                    <li>.NET Framework</li>
+                    <li>Database Theory</li>
+                  </ul>
+                </div>
+
+              }
               {this.props.currentCourse === "Core Computer Science Courses" &&
                 <div>
                   <h3 className = "info-slider-text-dates"><center>{MITDates[0]} - {MITDates[1]}</center></h3>
@@ -94,11 +116,12 @@ class InfoSlider extends Component {
                   <h3 className = "info-slider-text-dates"><center>{UdemyDates[0]} - {UdemyDates[1]}</center></h3>
                   <hr  className = "info-slider-hr" />
                   <p className = "info-slider-text-description">
-                    Python basics - first real programming course to learn syntax and core programming concepts
+                    Python basics - first real programming course to learn syntax and core programming concepts.
                   </p>
+                  <p>Learned language structure and best practices using Jupyter Notebook, and created several console projects.</p>
                 </div>
               }
-              {this.props.currentCourse === "Bachelor of Arts (BA)" &&
+              {this.props.currentCourse === "BA - Sociology" &&
                 <div>
                   <h3 className = "info-slider-text-dates"><center>{BrockDates[0]} - {BrockDates[1]}</center></h3>
                   <hr  className = "info-slider-hr" />
