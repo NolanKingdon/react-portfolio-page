@@ -12,9 +12,8 @@ class MobileAboutPage extends Component {
         <div className = "about-head">
             <div className = "about-text">
               <h1 id = "about-hello">Hello, World!</h1>
-              <p id = "about-intro">My name is Nolan and I am a web developer.</p>
-              <p id = "about-background">I currently work at PowerSchool Group LLC.</p>
-              <p id = "about-invitation">Feel free to explore my portfolio!</p>
+              <p id = "about-intro">My name is Nolan and I am a Software Development Student at Mohawk College.</p>
+              <p id = "about-background">Feel free to explore my portfolio!</p>
             </div>
             <img src = {selfImage} className = "self-image" alt = "Self"/>
         </div>

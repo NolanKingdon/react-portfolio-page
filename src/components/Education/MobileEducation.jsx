@@ -6,6 +6,7 @@ import Background from './info-slider-background.jsx'
 import UdemyLogo from './images/udemy-logo.png';
 import BrockLogo from './images/Brock_logo.png';
 import MitLogo from './images/MITOCW.png';
+import MohawkLogo from './images/Mohawk.png';
 import Animate from 'react-move/Animate';
 import { easeExpOut, easeLinear } from 'd3-ease';
 
@@ -17,6 +18,13 @@ class MobileEducation extends Component {
     return(
       <div>
         <div className = "education-grid" style = {{marginLeft: "10vw", marginTop: "2em"}}>
+          <MobileEducationItem 
+            courseSelector = {this.props.courseSelector} 
+            sliderToggle = {this.props.sliderToggle} 
+            link = {"https://www.mohawkcollege.ca/programs/technology/computer-systems-technology-software-development-559"} 
+            image = {MohawkLogo} title = {"Software Development Advanced Diploma"} 
+            noteText = {"Computer Systems Technology - Software Development - 559"}
+          />
           <MobileEducationItem
             courseSelector = {this.props.courseSelector}
             sliderToggle = {this.props.sliderToggle}

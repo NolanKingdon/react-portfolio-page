@@ -12,14 +12,14 @@ class MobileEmployment extends Component {
         <MobileEmploymentItem
           Company = "PowerSchool"
           Title = "Implementation Specialist"
-          Time = "January 2018 - Present"
+          Time = "January 2018 - December 2018"
           Description = "Work hands on with multiple projects using HTML, CSS, and Javascript through PowerSchool's custom CMS to create mobile friendly school registration forms for first year clients. Responsible for project implementations for districts containing up to 25,000 students."
           image = {PSLogo}
           />
         <MobileEmploymentItem
           Company = "Buona Vita Pizza"
           Title = "Web Developer"
-          Time = "May 2018 - Present"
+          Time = "May 2018 - December 2018"
           Description = "Worked with the owners to create a simple webpage to hold their online menu. Used a wireframe to create the website from scratch, as well as hosted on a third party hosting service. Currently working to develop a React based online ordering system, and a PHP backend for easy price updates. Currently responsible for maintenance of content."
           image = {BVPLogo}
           />
