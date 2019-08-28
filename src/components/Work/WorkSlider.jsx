@@ -143,6 +143,11 @@ class WorkSlider extends Component {
                   <p className = "info-slider-text-description">
                     A react based client tracker/efficiency tool. Includes a Task organizer, Client organizer, and a timeline estimator to send clients.
                   </p>
+                  <p>This was born from needing to keep track of project status and client responsiveness in an efficient way that didn't involve multiple spreadsheets. This 
+                    project was handy in that it would assign a specific color to each client depending on what phase they were in relative to their launch date, and relative to 
+                    their last date of communication. Using a color coded system, I could tell at a glance how far along/precarious the project was, and if it needed any special attention. 
+                    This saved me upwards of an hour of project management in any given week.
+                  </p>
                   <ul>
                     <li>React</li>
                     <li>NoSQL - Firebase</li>
