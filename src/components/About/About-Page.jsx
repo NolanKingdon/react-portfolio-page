@@ -65,7 +65,7 @@ class AboutPage extends Component {
               <img src = {selfImage} className = "self-image" alt = "Self"/>
                 <div className = "about-text">
                   <h1 id = "about-hello" style = {{fontSize: h}}>Hello, World!</h1>
-                  <p id = "about-intro" style = {{fontSize: intro}}>My name is Nolan and I am a Software Development Student at Mohawk.</p>
+                  <p id = "about-intro" style = {{fontSize: intro}}>My name is Nolan and I am a Software Development Student at Mohawk College.</p>
                   <p id = "about-background" style = {{fontSize: b}}>Feel free to explore my portfolio!</p>
                 </div>
             </div>
