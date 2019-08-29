@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/about.css';
-import selfImage from './images/self-image-rotated.jpeg';
+import selfImage from './images/linkedin.jpeg';
 import Animate from 'react-move/Animate';
 import { easeExpOut, easeLinear } from 'd3-ease';
 
