@@ -11,6 +11,7 @@
   margin-right: auto;
   margin-left: auto;
   image-orientation: from-image;
+  transform: rotate(90deg);
   border-radius: 200px;
   -moz-box-shadow:    4px 3px 10px 1px #ccc;
   -webkit-box-shadow: 4px 3px 10px 1px #ccc;
