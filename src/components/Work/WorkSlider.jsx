@@ -100,7 +100,7 @@ class WorkSlider extends Component {
                     <li>Websockets for realtime data streaming</li>
                     <li>External APIs for Firebase and Youtube streams</li>
                   </ul>
-                  <center><a href = "https://github.com/NolanKingdon/Python_Speed_Reader" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github Repo</a></center>
+                  <center><a href = "https://github.com/NolanKingdon/Monitor_Landing_Screen" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github Repo</a></center>
                 </div>
               }
               {this.props.currentProject === "JavaScript Calculator" &&
