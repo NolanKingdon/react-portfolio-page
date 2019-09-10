@@ -64,7 +64,7 @@ class WorkSlider extends Component {
                     <li>CSS</li>
                     <li>JavaScript/nodeJS</li>
                   </ul>
-                  <center><a href = "https://github.com/NolanKingdon/MMM-MoonPhase" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github Repo</a></center>
+                  <center><a href = "https://github.com/NolanKingdon/MMM-DailyPokemon" target = "_blank" rel = "noopener noreferrer" className = "work-slider-link">Github Repo</a></center>
                 </div>
               }
                {this.props.currentProject === "Speed Reader" &&
