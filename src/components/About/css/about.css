@@ -10,10 +10,6 @@
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  transform: rotate(90deg);
   border-radius: 200px;
   -moz-box-shadow:    4px 3px 10px 1px #ccc;
   -webkit-box-shadow: 4px 3px 10px 1px #ccc;
