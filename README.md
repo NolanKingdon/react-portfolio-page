@@ -13,3 +13,11 @@ WIP - Will be my personal portfolio page
 
 ### All
 * Add Reviews/References
+
+# Change Log
+
+* Removed Animations
+* Removed mobile templates in favor of responsive CSS
+* Added model/view seperation
+* Modularized More with components
+* Updated information

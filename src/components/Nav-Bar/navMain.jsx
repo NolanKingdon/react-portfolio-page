@@ -20,7 +20,7 @@ class NavMain extends Component {
 
   render(){
     return(
-      <div className = "nav-bar" style = {this.props.divStyle}> {/*style = {{left: this.props.navOrigin}}*/}
+      <div className = "nav-bar">
         <button
           className = "nav-display-toggle"
           onClick = {() => this.handleNavToggle()}
