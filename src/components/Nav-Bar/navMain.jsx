@@ -21,31 +21,36 @@ class NavMain extends Component {
   render(){
     return(
       <div className = "nav-bar">
-        <button
-          className = "nav-display-toggle"
-          onClick = {() => this.handleNavToggle()}
-        >
-          {this.props.navHidden ? <img src = {navArrowRight} className = "nav-display-arrow-left" alt = "arrow"/> : <img src = {navArrowLeft} className = "nav-display-arrow-left" alt = "arrow"/>}
-        </button>
         <div className = "nav-first-header nav-content">
-          <h1>Nolan Kingdon</h1>
-          <h2><a href = "tel:9052201705">(905) 220-1705</a></h2>
-          <h3><a href = "mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></h3>
+          <div className = "nav-first-header-left">
+            <h1>Nolan Kingdon</h1>
+            <h2><a href = "tel:9052201705">(905) 220-1705</a></h2>
+            <h3><a href = "mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></h3>
+          </div>
+          <div className = "nav-first-header-right">
+            <button
+              className = "nav-display-toggle"
+              onClick = {() => this.handleNavToggle()}>
+              {this.props.navHidden ? 
+                <img src = {navArrowRight} className = "nav-display-arrow-left" alt = "arrow"/> : 
+                <img src = {navArrowLeft} className = "nav-display-arrow-left" alt = "arrow"/>}
+            </button>
+          </div>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("About")}>
-          <h3 className = "nav-header">About <img src = {ABOUT} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">About <img src = {ABOUT} className = "nav-main-header-icons"/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Employment History")}>
-          <h3 className = "nav-header">Employment History <img src = {BREIFCASE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">Employment History <img src = {BREIFCASE} className = "nav-main-header-icons"/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("My Work")}>
-          <h3 className = "nav-header">My Work <img src = {CODE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">My Work <img src = {CODE} className = "nav-main-header-icons"/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Education")}>
-          <h3 className = "nav-header">Education <img src = {HAT} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">Education <img src = {HAT} className = "nav-main-header-icons"/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Contact")}>
-          <h3 className = "nav-header">Contact <img src = {ENVELOPE} className = "nav-main-header-icons" style = {{left: this.props.navImgLeftPos}}/></h3>
+          <h3 className = "nav-header">Contact <img src = {ENVELOPE} className = "nav-main-header-icons"/></h3>
         </div>
         <div className = "nav-content">
           <div className = "social-media-flex">

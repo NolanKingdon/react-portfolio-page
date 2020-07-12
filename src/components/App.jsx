@@ -11,7 +11,7 @@ import Animate from 'react-move/Animate';
 import { easeExpOut } from 'd3-ease';
 import { CSSTransitionGroup } from 'react-transition-group';
 import './css/transitions.css';
-import './css/general.scss';
+import './css/general.css';
 
 class App extends Component {
   constructor(props){
@@ -102,48 +102,41 @@ class App extends Component {
   // Rendering our components
   render(){
     return(
-      <div>
-        <NavMain
-          screenSize = {this.state.width}
-          className = "nav-bar"
-          changer = {this.pageChanger}
-          displayToggle = {this.displayToggle}
-          navHidden = {this.state.navHidden}
-          divStyle = "" />
-          <Header
-            screenSize = {this.state.width}
-            page = {this.state.page}/>
-          <Buttons
-            displayToggle = {this.displayToggle}
-            navHidden = {this.state.navHidden}
-            mobileButtonToggle = {this.mobileButtonToggle}
-            page = {this.state.page}/>
+      <div className = "page-container">
+        <div className = "page-left">
 
-          {this.state.page === "About" && <AboutPage
-                                              screenSize = {this.state.width}
-                                              navHidden = {this.state.navHidden}/>}
-          {this.state.page === "Employment History" && <Employment
-                                                          screenSize = {this.state.width}
-                                                          navHidden = {this.state.navHidden}/>}
-          {this.state.page === "Education" && <Education
-                                                screenSize = {this.state.width}
+        </div>
+          <NavMain className = "nav-bar"
+                   changer = {this.pageChanger}
+                   displayToggle = {this.displayToggle}
+                   navHidden = {this.state.navHidden}/>
+        <div className = "page-right">
+          <Header page = {this.state.page}/>
+          {/* Buttons are the mobile nav buttons. Add conditional rendering here */}         
+        <Buttons displayToggle = {this.displayToggle}
+                 navHidden = {this.state.navHidden}
+                 mobileButtonToggle = {this.mobileButtonToggle}
+                 page = {this.state.page}/>
+
+        {this.state.page === "About" && <AboutPage screenSize = {this.state.width}
+                                                   navHidden = {this.state.navHidden}/>}
+        {this.state.page === "Employment History" && <Employment screenSize = {this.state.width}
+                                                                 navHidden = {this.state.navHidden}/>}
+        {this.state.page === "Education" && <Education screenSize = {this.state.width}
+                                                       navHidden = {this.state.navHidden}
+                                                       currentCourse = {this.state.currentCourse}
+                                                       courseSelector = {this.courseSelector}
+                                                       showInfoSlider = {this.state.showInfoSlider}
+                                                       sliderToggle = {this.sliderToggle}/>}
+        {this.state.page === "My Work" && <Work screenSize = {this.state.width}
                                                 navHidden = {this.state.navHidden}
-                                                currentCourse = {this.state.currentCourse}
-                                                courseSelector = {this.courseSelector}
-                                                showInfoSlider = {this.state.showInfoSlider}
-                                                sliderToggle = {this.sliderToggle}
-                                              />}
-          {this.state.page === "My Work" && <Work
-                                              screenSize = {this.state.width}
-                                              navHidden = {this.state.navHidden}
-                                              currentProject = {this.state.currentProject}
-                                              projectSelector = {this.projectSelector}
-                                              showWorkSlider = {this.state.showWorkSlider}
-                                              sliderToggle = {this.workSliderToggle}
-                                            />}
-          {this.state.page === "Contact" && <Contact
-                                              screenSize = {this.state.width}
-                                              navHidden = {this.state.navHidden}/>}
+                                                currentProject = {this.state.currentProject}
+                                                projectSelector = {this.projectSelector}
+                                                showWorkSlider = {this.state.showWorkSlider}
+                                                sliderToggle = {this.workSliderToggle}/>}
+        {this.state.page === "Contact" && <Contact screenSize = {this.state.width}
+                                                   navHidden = {this.state.navHidden}/>} 
+        </div>
       </div>
     )
   }

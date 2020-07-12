@@ -1,3 +1,17 @@
+.nav-bar {
+  display: inline-block;
+  width: 22vw;
+  height: 100%;
+  background-color: #023670;
+  color: white;
+  text-align: left;
+  -moz-box-shadow:      "4px 3px 10px 1px #ccc";
+  -webkit-box-shadow:   "4px 3px 10px 1px #ccc";
+  box-shadow:           "4px 5px 10px 1px gray";
+
+  border: 1px solid red;
+}
+
 .nav-bar h1 {
   font-size: 2.4vw;
 }
@@ -13,25 +27,29 @@
   background-color: #032C59;
   text-align: left;
   transition: 0.5s;
+  margin: 20px 0px;
+}
+
+.nav-first-header {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  display: flex;
 }
 
 .nav-accent-header:hover {
   background-color: #2781e5;
   cursor: pointer;
 }
-/* Header Images */
 
+/* Header Images */
 .nav-main-header-icons {
   position: absolute;
   transition: 0.1s;
-  /* left: 5%; */
+  right: 5%;
   width: 30px;
 }
 
-.nav-first-header {
-  padding-top: 15px;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-}
 
 .nav-first-header h1, .nav-first-header h2, .nav-first-header h3 {
   margin: 0;
@@ -45,7 +63,7 @@
 .nav-header {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 80px;
+  padding-left: 10px;
   font-size: 1.2rem;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -61,7 +79,7 @@
 }
 
 .social-media-flex {
-  position: absolute;
+  position: relative;
   bottom: 15px;
   left: 27%;
   display: flex;
@@ -78,9 +96,9 @@
 }
 
 .nav-display-toggle {
-  position: absolute;
-  top: 100;
-  right: 0;
+  position: inherit;
+  top: 0px;
+  left: 0px;
   text-decoration: none;
   background-color: transparent;
   border: none;

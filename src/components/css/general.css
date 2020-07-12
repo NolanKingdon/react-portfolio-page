@@ -1,0 +1,28 @@
+button:focus {
+    outline: none;
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.page-left {
+    display: inline-block;
+    width: auto;
+    border: 1px solid red;
+}
+
+.page-right {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.page-container {
+    display: flex;
+    height: 100%;
+}
