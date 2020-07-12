@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavMain from './Nav-Bar/navMain.jsx';
-import AboutPage from './About/About-Page.jsx';
+import AboutPage from './About/AboutPage.jsx';
 import Header from './Header-Bar/Header.jsx';
 import Employment from './Employment/Employment.jsx';
 import Education from './Education/Education.jsx';

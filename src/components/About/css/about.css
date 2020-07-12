@@ -19,51 +19,32 @@
 /* Using flexbox for easy centering */
 .about-head {
   margin-top: 5vh;
-  width: 78vw;
-  margin-left: 22vw;
+  width: 100%;
+  margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
 }
 
 .about-text {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 10px auto;
 }
 
 #about-hello {
+  font-size: 3em;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 #about-intro {
   font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
   font-weight: 800;
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 2em;
 }
 
 #about-background {
   font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
   font-weight: 600;
-  font-size: 1.4rem;
-}
-
-#about-invitation {
-  font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-
-@media only screen and (max-width: 1366px) {
-  /* Redundant When using Flexbox */
-}
-
-@media only screen and (max-width: 1280px) {
-  /* Redundant when using Flexbox */
+  font-size: 1.8em;
 }
 
 /* Anything that would typically be an iPad or phone gets these styles - No fancy transitions here */
@@ -102,5 +83,4 @@
       margin: 10px;
       font-size: 1.2rem;
     }
-
 }

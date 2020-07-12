@@ -1,25 +1,13 @@
+/* =============== Box Styles ===============*/
 .nav-bar {
   display: inline-block;
-  width: 22vw;
   height: 100%;
   background-color: #023670;
   color: white;
   text-align: left;
+  box-shadow:           "4px 5px 10px 1px gray";
   -moz-box-shadow:      "4px 3px 10px 1px #ccc";
   -webkit-box-shadow:   "4px 3px 10px 1px #ccc";
-  box-shadow:           "4px 5px 10px 1px gray";
-
-  border: 1px solid red;
-}
-
-.nav-bar h1 {
-  font-size: 2.4vw;
-}
-.nav-bar h2 {
-  font-size: 1.7vw;
-}
-.nav-bar h3,.nav-bar p,.nav-bar li {
-  font-size: 1vw;
 }
 
 .nav-accent-header {
@@ -30,26 +18,45 @@
   margin: 20px 0px;
 }
 
+.nav-accent-header:hover {
+  background-color: #2781e5;
+  cursor: pointer;
+}
+
+.social-media-flex {
+  position: relative;
+  bottom: 15px;
+  left: 27%;
+  display: flex;
+}
+
+.social-media-flex a {
+  margin: 5px;
+  opacity: 0.5;
+  transition: 400ms;
+}
+
+.social-media-flex a:hover{
+  opacity: 1;
+}
+
+/* =============== Text styles ===============*/
+.nav-bar h1 {
+  font-size: 2.4vw;
+}
+.nav-bar h2 {
+  font-size: 1.7vw;
+}
+.nav-bar h3,.nav-bar p,.nav-bar li {
+  font-size: 1vw;
+}
+
 .nav-first-header {
   padding-top: 0px;
   margin-top: 0px;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   display: flex;
 }
-
-.nav-accent-header:hover {
-  background-color: #2781e5;
-  cursor: pointer;
-}
-
-/* Header Images */
-.nav-main-header-icons {
-  position: absolute;
-  transition: 0.1s;
-  right: 5%;
-  width: 30px;
-}
-
 
 .nav-first-header h1, .nav-first-header h2, .nav-first-header h3 {
   margin: 0;
@@ -77,23 +84,17 @@
   margin: 0;
   padding: 5px;
 }
-
-.social-media-flex {
-  position: relative;
-  bottom: 15px;
-  left: 27%;
-  display: flex;
+/* =============== Image Styles ===============*/
+.nav-main-header-icons {
+  position: absolute;
+  transition: 0.1s;
+  right: 5%;
+  width: 30px;
 }
 
-.social-media-flex a {
-  margin: 5px;
-  opacity: 0.5;
-  transition: 400ms;
-}
 
-.social-media-flex a:hover{
-  opacity: 1;
-}
+
+/* =============== Toggle Button ===============*/
 
 .nav-display-toggle {
   position: inherit;
@@ -121,71 +122,8 @@
   opacity: 1;
 }
 
-/* Mobile NavBar */
-
-.mobile-nav-header {
-  position: relative;
-  top: 25%;
-  left: 5px;
-  font-size: 0.8em;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  margin: 2px;
-}
-
-.mobile-nav-accent-header {
-  position: relative;
-  background-color: #032C59;
-  margin-top: 2px;
-  /* text-align: center; */
-  height: 2em;
-}
-
-.mobile-nav-accent-header:hover {
-  background-color: #2781e5;
-  cursor: pointer;
-}
-
-.mobile-nav-header-icon {
-  position: absolute;
-  transition: 0.1s;
-  /* left: 5%; */
-  width: 20px;
-}
-
-/* Mobile Arrow */
-
-/* .mobile-nav-display-toggle {
-  position: absolute;
-  bottom: 0;
-  display: inline-block;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 2em;
-} */
-/*
-.mobile-nav-display-toggle:focus {
-  outline: 0;
-}
-
-.mobile-nav-display-toggle:focus {
-  outline: 0;
-}
-
-.mobile-nav-display-arrow-left {
-  width: 1.5em;
-  position: relative;
-  // left: -0.75em; // Pre-commented out
-  top: 10px;
-} */
-
+/* =============== Mobile Styles ===============*/
+/* TODO -> Add in mobile CSS -> Hide navbar display and use the button */
 @media only screen and (max-width: 1367px){
 
   .nav-display-toggle {

@@ -2,17 +2,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React Based Portfolio Page
 
-WIP - Will be my personal portfolio page
 
 ## TODOS
-
-### MOBILE
-* Merge with desktop - A lot of redundant components are left over from old design  
-
-### Desktop
-
-### All
-* Add Reviews/References
+* Better Mobile responsiveness
+* Better transitions
+* Remove animation library
+* update node modules - several vulnerabilities exist
+* Actual README file
+* More components where applicable
+* Best practice code cleanup:
+* * JDOC comments
+* * consistent naming conventions
+* * Documented/Organized CSS files
+* * Research current React best practices/changes. Modernize.
+* Tests?
+* Add linter -> Catch all the double quotes/poor conventions
 
 # Change Log
 
