@@ -5,7 +5,6 @@ import PSLogo from './images/PS-logo.png'
 import BVPLogo from './images/BVP-logo.png'
 
 class Employment extends Component {
-
   render(){
     return(
       <div className = "employment-container">
@@ -31,7 +30,7 @@ class Employment extends Component {
           image = {PSLogo}
           />
       </div>
-    )
+    );
   }
 }
 

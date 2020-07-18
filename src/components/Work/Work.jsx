@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import WorkItem from './WorkItem.jsx';
-import WorkSlider from './WorkSlider.jsx';
-import Background from './work-slider-background.jsx';
-import Animate from 'react-move/Animate';
-import { easeExpOut, easeLinear } from 'd3-ease';
 import "./css/work.css";
-//Images below
 import BVP from './images/BVP-logo.png';
-import CALC from './images/calc.jpg';
 import PYCON from './images/python.png';
 import REACT from './images/react.png';
-import PHPSQL from './images/php-mysql.png';
 import THISIMG from './images/this.png';
 import MOON from './images/moonphase.PNG';
 import POKEMON from './images/pokemon.png';
@@ -18,7 +11,6 @@ import READER from './images/speedreader.png';
 import CLOCK from './images/clock.png';
 
 class Work extends Component {
-
   render(){
     return(
       <div className = "work-grid">
@@ -113,8 +105,8 @@ class Work extends Component {
       }}
       /> */}
       </div>
-    )
-
+    );
   }
 }
+
 export default Work;

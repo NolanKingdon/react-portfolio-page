@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import './css/nav-bar.css';
-//Images
 import gitLogo from './images/GitHub-Logo.png';
 import linkedLogo from './images/LinkedIn-Logo.png';
 import navArrowLeft from './images/arrow-left.png';
 import navArrowRight from './images/arrow-right.png';
-//Changed Naming conventions halfway - TODO - make all the naming conventions the same
 import ABOUT from './images/nav-icons/white/nav-icon-person-white.png';
 import HAT from './images/nav-icons/white/nav-icon-grad-cap-white.png';
 import ENVELOPE from './images/nav-icons/white/nav-icon-envelope-white.png';
 import CODE from './images/nav-icons/white/nav-icon-code-white.png';
 import BREIFCASE from './images/nav-icons/white/nav-icon-briefcase-white.png';
-//End images
+
 class NavMain extends Component {
 
   handleNavToggle(){
@@ -59,7 +57,7 @@ class NavMain extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

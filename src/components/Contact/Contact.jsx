@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import './css/contact.css';
-import Animate from 'react-move/Animate';
-import { easeExpOut, easeLinear } from 'd3-ease';
 import GMAIL from "./images/gmailCircle.png";
 import PHONE from "./images/phoneIcon.png";
 import LINKEDIN from '../Nav-Bar/images/LinkedIn-Logo.png';
 
 export default class Contact extends Component {
-
   render(){
     return(
       <div className = "about-container">
@@ -31,7 +28,6 @@ export default class Contact extends Component {
           </a>
         </div>
       </div>
-    )
+    );
   }
-
 }

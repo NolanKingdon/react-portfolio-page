@@ -3,12 +3,8 @@ import './css/education.css';
 import EducationItem from './educationItem.jsx';
 import InfoSlider from './info-slider.jsx';
 import Background from './info-slider-background.jsx'
-import UdemyLogo from './images/udemy-logo.png';
 import BrockLogo from './images/Brock_logo.png';
-import MitLogo from './images/MITOCW.png';
 import MohawkLogo from './images/Mohawk.png';
-import Animate from 'react-move/Animate';
-import { easeExpOut, easeLinear } from 'd3-ease';
 
 class Education extends Component {
   render(){
@@ -63,9 +59,8 @@ class Education extends Component {
             zIndex: "20"
           }}/> */}
       </div>
-    )
+    );
   }
-
 }
 
 export default Education;

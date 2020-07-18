@@ -7,7 +7,6 @@ class EducationItem extends Component {
     this.props.courseSelector(this.props.title);
   }
 
-
   render(){
     {/* Instead of linking out, maybe provide a quick description of what it actually is. Have a Div element slide on in from the side */}
     return(
@@ -21,8 +20,7 @@ class EducationItem extends Component {
           </div>
         </div>
       </button>
-    )
+    );
   }
-
 }
 export default EducationItem;

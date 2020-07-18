@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './css/about.css';
 import selfImage from './images/linkedin.png';
-import Animate from 'react-move/Animate';
-import { easeExpOut, easeLinear } from 'd3-ease';
 
 class AboutPage extends Component {
   render(){
@@ -17,7 +15,7 @@ class AboutPage extends Component {
             </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

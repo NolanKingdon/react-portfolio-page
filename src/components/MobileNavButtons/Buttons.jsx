@@ -63,6 +63,6 @@ export default class Buttons extends Component {
           <img src = {LEFTARROW} className = "mobile-btn-icon"/>
         </button>
       </div>
-    )
+    );
   }
 }
