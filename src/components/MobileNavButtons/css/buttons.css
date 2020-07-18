@@ -1,5 +1,6 @@
 .mobile-btn {
   /* TODO be better with z-index */
+  display: none;
   z-index: 99999999;
   position: fixed;
   bottom: 15px;
@@ -22,4 +23,11 @@
   position: relative;
   width: 20px;
   transition: 500ms;
+}
+
+/* 768 is ipad dimension */
+@media only screen and (max-width: 768px){
+  .mobile-btn {
+    display: block;
+  }
 }

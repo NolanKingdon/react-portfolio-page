@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './css/buttons.css';
-//Images
 import MENU from '../Nav-Bar/images/nav-icons/mobile/Hamburger_icon.png';
 import LEFTARROW from '../Nav-Bar/images/arrow-left.png';
 import RIGHTARROW from '../Nav-Bar/images/arrow-right.png';
@@ -12,7 +11,6 @@ export default class Buttons extends Component {
     this.handleToggle = this.handleToggle.bind(this);
     this.handleForwardClick = this.handleForwardClick.bind(this);
     this.handleBackwardClick = this.handleBackwardClick.bind(this);
-
   }
 
   handleToggle(){
@@ -32,11 +30,12 @@ export default class Buttons extends Component {
 
   render(){
     let rotation = [ this.props.navHidden ? "rotate(180deg)" : "rotate(0deg)"];
-    //if the page is contact: Always Hide the arrow. If not - only hide if if navHidden is true
-    let rightArrowX = [ this.props.page == "Contact" ? "-100px" :[this.props.navHidden ? "-100px" : "10px"]];
-    //if the page is About: Always hide the arrow. If not - Only hide it if navHidden is true AND if we're on the Contact page, shift it to the left
-    let leftArrowX = [ this.props.page == "About" ? "-100px" : [this.props.navHidden ? "-100px" :[ this.props.page == "Contact" ? "10px" : "70px"]]];
 
+    //if the page is contact: Always Hide the arrow. If not - only hide if if navHidden is true.
+    let rightArrowX = [ this.props.page == "Contact" ? "-100px" : [this.props.navHidden ? "-100px" : "10px"]];
+
+    //if the page is About: Always hide the arrow. If not - Only hide it if navHidden is true AND if we're on the Contact page, shift it to the left.
+    let leftArrowX = [ this.props.page == "About" ? "-100px" : [this.props.navHidden ? "-100px" :[ this.props.page == "Contact" ? "10px" : "70px"]]];
 
     return(
       <div>
@@ -66,7 +65,4 @@ export default class Buttons extends Component {
       </div>
     )
   }
-
-
-
 }

@@ -124,17 +124,8 @@
 
 /* =============== Mobile Styles ===============*/
 /* TODO -> Add in mobile CSS -> Hide navbar display and use the button */
-@media only screen and (max-width: 1367px){
-
-  .nav-display-toggle {
-    right: -5px;
+@media only screen and (max-width: 768px){
+  .nav-bar {
+    display: none;
   }
-
-  .nav-display-arrow-left {
-    width: 35px;
-  }
-  .nav-main-header-icons {
-    width: 20px;
-  }
-
 }
