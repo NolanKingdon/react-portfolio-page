@@ -12,18 +12,6 @@ import { easeExpOut, easeLinear } from 'd3-ease';
 
 class Education extends Component {
   render(){
-    let t = [ this.props.showInfoSlider ? "block" : "none" ]
-
-    let responsiveT = ["20vh","10vh"];
-
-    if(this.props.screenSize == 1920){
-      responsiveT = ["20vh","10vh"];
-    } else if(this.props.screenSize == 1366){
-      responsiveT = ["10vh","5vh"];
-    } else if(this.props.screenSize == 1280){
-      responsiveT = ["10vh", "5vh"];
-    }
-
     return(
       <div>
         <div className = "education-grid">
