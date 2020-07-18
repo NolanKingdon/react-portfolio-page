@@ -1,12 +1,31 @@
 .work-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-auto-flow: row;
-  grid-gap: 2rem;
-  width: 50vw;
-  margin-top: 15vh;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 1vh;
+}
+
+.work-item-button {
+  width: 550px;
+  margin: 5px auto 5px auto;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.work-item-button:hover {
+  outline: none;
+  background-color: #032C59;
+  color: white;
+}
+
+.work-item-button:focus {
+  outline: none;
+  background-color: #032C59;
+  color: white;
+  transition: none;
 }
 
 .work-logo {
