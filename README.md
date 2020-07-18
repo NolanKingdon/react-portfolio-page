@@ -4,10 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## TODOS
-* Better Mobile responsiveness
-* Better transitions
-* Remove animation library
-* update node modules - several vulnerabilities exist
+* Mobile responsiveness
 * Actual README file
 * More components where applicable
 * Best practice code cleanup:
@@ -20,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Change Log
 
-* Removed Animations
+* Removed Animations library
 * Removed mobile templates in favor of responsive CSS
 * Added model/view seperation
 * Modularized More with components
