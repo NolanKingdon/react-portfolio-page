@@ -8,9 +8,7 @@
 
 .employment-item-container {
   width: 25vw;
-  margin-top: 2.5vh;
-  margin-bottom: 1vh;
-  margin-right: 7vw;
+  margin: 2.5vh auto 1vh auto;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
