@@ -8,7 +8,6 @@ class EducationItem extends Component {
   }
 
   render(){
-    {/* Instead of linking out, maybe provide a quick description of what it actually is. Have a Div element slide on in from the side */}
     return(
       <button className = "education-item-button" onClick = {() => this.handleClick()}>
         <div className = "education-item-grid">
