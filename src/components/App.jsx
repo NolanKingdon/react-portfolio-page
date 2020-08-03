@@ -87,7 +87,7 @@ class App extends Component {
       nextIndex = this.state.pages.indexOf(this.state.page) - 1; 
     }
 
-    if (nextIndex < this.state.pages.length && nextIndex > 0){
+    if (nextIndex < this.state.pages.length && nextIndex >= 0){
       this.pageChanger(this.state.pages[nextIndex]);
     }
   }
@@ -108,7 +108,7 @@ class App extends Component {
                    page = {this.state.page}/>
           {this.state.page === "About" && <AboutPage screenSize = {this.state.width}
                                                     navHidden = {this.state.navHidden}/>}
-          {this.state.page === "Employment History" && <Employment screenSize = {this.state.width}
+          {this.state.page === "Employment" && <Employment screenSize = {this.state.width}
                                                                   navHidden = {this.state.navHidden}/>}
           {this.state.page === "Education" && <Education screenSize = {this.state.width}
                                                         navHidden = {this.state.navHidden}
@@ -116,7 +116,7 @@ class App extends Component {
                                                         courseSelector = {this.courseSelector}
                                                         showInfoSlider = {this.state.showInfoSlider}
                                                         sliderToggle = {this.sliderToggle}/>}
-          {this.state.page === "My Work" && <Work screenSize = {this.state.width}
+          {this.state.page === "Work" && <Work screenSize = {this.state.width}
                                                   navHidden = {this.state.navHidden}
                                                   currentProject = {this.state.currentProject}
                                                   projectSelector = {this.projectSelector}
