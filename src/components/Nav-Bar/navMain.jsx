@@ -38,7 +38,7 @@ class NavMain extends Component {
         <div className = "nav-accent-header" onClick = {() => this.props.changer("About")}>
           <h3 className = "nav-header">About <img src = {ABOUT} className = "nav-main-header-icons"/></h3>
         </div>
-        <div className = "nav-accent-header" onClick = {() => this.props.changer("Employment History")}>
+        <div className = "nav-accent-header" onClick = {() => this.props.changer("Employment")}>
           <h3 className = "nav-header">Employment History <img src = {BREIFCASE} className = "nav-main-header-icons"/></h3>
         </div>
         <div className = "nav-accent-header" onClick = {() => this.props.changer("Work")}>

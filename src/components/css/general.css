@@ -18,7 +18,6 @@ html, body, #root {
 .page-right {
     display: inline-block;
     width: 100%;
-    border: 1px solid black;
 }
 
 .page-container {

@@ -2,7 +2,7 @@
 .employment-container {
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: auto;
   flex-wrap: wrap;
 }
 
@@ -55,28 +55,6 @@
 .employment-description {
   font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
   font-size: 1rem;
-}
-
-@media only screen and (max-width: 1366px){
-  .employer-logo {
-    width: 60px;
-  }
-
-  #employment-h1 {
-    font-size: 1.5vw;
-  }
-
-  .employment-description {
-    font-size: 0.85rem;
-  }
-
-}
-
-@media only screen and (max-width: 1280px){
-  .employment-item-container {
-    margin-top: 1vw;
-    margin-bottom: 0vh;
-  }
 }
 
 @media only screen and (max-width: 1100px){
