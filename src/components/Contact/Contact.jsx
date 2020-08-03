@@ -16,7 +16,10 @@ export default class Contact extends Component {
               <hr />
               <p id = "about-email">nolan.kingdon@gmail.com</p>
           </a>
-          <a href = "https://www.linkedin.com/in/nolan-kingdon/" target = "_blank" rel = "noopener noreferrer" className = "contact-grid-item">
+          <a href = "https://www.linkedin.com/in/nolan-kingdon/" 
+             target = "_blank" 
+             rel = "noopener noreferrer" 
+             className = "contact-grid-item">
             <img src = {LINKEDIN} alt = "linkedin" />
             <hr />
             <p id = "about-linkedIn">LinkedIn</p>
