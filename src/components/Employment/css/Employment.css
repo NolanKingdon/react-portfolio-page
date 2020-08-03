@@ -19,24 +19,24 @@
   margin: 0;
 }
 
-#employment-h1 {
-  font-size: 2vw;
+.employment-h1 {
+  font-size: 2em;
   padding: none;
   margin: none;
 }
 
-#employment-h2 {
-  font-size: 1vw;
+.employment-h2 {
+  font-size: 1em;
   padding: none;
   margin: none;
 }
 
-#employment-time {
-  font-size: 0.75vw;
+.employment-time {
+  font-size: 1em;
   font-style: italic;
   margin-top: 0;
   font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .employment-hr {
@@ -66,11 +66,11 @@
     grid-template-columns: 1fr 4fr;
   }
 
-  #employment-h1 {
+  .employment-h1 {
     font-size: 1.5em;
   }
 
-  #employment-h2 {
+  .employment-h2 {
     font-size: 1em;
   }
 
@@ -84,5 +84,21 @@
 
   .employment-hr {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .employment-item-container {
+    margin: 10px auto;
+    grid-template-columns: 1fr;
+  }
+
+  .employer-logo {
+    margin: 0px auto;
+  }
+
+  .employment-header, .employment-h2, .employment-time, .employment-description {
+    margin: 0px auto;
+    text-align: center;
   }
 }
