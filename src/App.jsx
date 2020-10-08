@@ -12,13 +12,19 @@ class App extends Component {
     this.state = {
       currentPage: "My Work"
     }
+
+    this.changeState = this.changeState.bind(this);
+  }
+
+  changeState(page){
+    this.setState({currentPage: page});
   }
 
   // Rendering our components.
   render(){
     return (
       <div className="main-flex-panel">
-        <NavigationBar items={navigationItems}></NavigationBar>
+        <NavigationBar items={navigationItems} changeState={this.changeState}></NavigationBar>
         <Page currentPage={this.state.currentPage} pageContents={pageContent[this.state.currentPage]}></Page>
       </div>
     );

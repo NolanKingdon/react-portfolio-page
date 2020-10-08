@@ -13,7 +13,11 @@ function NavigationBar(props){
             </div>
             {
                 Object.keys(props.items).map(keyName => {
-                    return (<NavigationItem key={keyName} name={keyName} icon={props.items[keyName].icon}></NavigationItem>)
+                    return (<NavigationItem 
+                                key={keyName}
+                                name={keyName}
+                                icon={props.items[keyName].icon} 
+                                changeState={props.changeState}/>)
                 })
             }
         </div>
