@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import './css/styles.css';
+import Pane from './Pane';
 
 class Page extends Component {
   constructor(props){
@@ -11,7 +11,8 @@ class Page extends Component {
   render(){
     return (
       <div className="main-page">
-          <Header pageName="About"></Header>
+          <Header pageName={this.props.currentPage}></Header>
+          <Pane content={this.props.pageContents}></Pane>
       </div>
     );
   }
