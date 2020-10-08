@@ -1,0 +1,77 @@
+/* 
+===========
+  Globals
+===========
+*/
+
+html, body, #root {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* 
+===========
+ Main Page
+===========
+*/
+
+.main-flex-panel {
+    display: flex;
+    height: 100%;
+}
+
+.main-page {
+    flex: 1;
+    height: 100%;
+    width: auto;
+    transition: 500ms ease-out;
+
+    border: 1px solid blue;
+}
+
+.navigation-bar-body {
+    width: 350px;
+    height: 100%;
+    transition: 500ms ease-out;
+    
+    border: 1px solid green;
+}
+
+/* 
+===========
+  Header
+===========
+*/
+
+.main-header {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 20px 30px 0 0;
+    text-align: right;
+}
+
+.main-header h2 {
+    font-size: 24pt;
+    padding-right: 30px;
+}
+
+/* 
+===========
+  Nav Bar
+===========
+*/
+
+.navigation-item {
+    margin: 20px 0;
+    border: 1px solid blue;
+}
+
+.navigation-item:hover {
+    cursor: pointer;
+}
