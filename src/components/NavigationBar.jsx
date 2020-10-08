@@ -12,8 +12,8 @@ function NavigationBar(props){
                 <p><a href="mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></p>
             </div>
             {
-                Object.keys(props.items).map(key => {
-                    return (<NavigationItem name={key} icon={props.items[key].icon}></NavigationItem>)
+                Object.keys(props.items).map(keyName => {
+                    return (<NavigationItem key={keyName} name={keyName} icon={props.items[keyName].icon}></NavigationItem>)
                 })
             }
         </div>
