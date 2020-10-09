@@ -35,17 +35,13 @@ button:focus {
     height: 100%;
     margin: 20px 30px 0 0;
     width: auto;
-    transition: 500ms ease-out;
-
-    border: 1px solid blue;
+    transition: 250ms ease;
 }
 
 .navigation-bar-body {
     width: 350px;
     height: 100%;
-    transition: 500ms ease-out;
-    
-    border: 1px solid green;
+    transition: 250ms ease;
 }
 
 /* 
@@ -72,12 +68,28 @@ button:focus {
 */
 
 .navigation-item {
+    display: flex;
+    justify-content: space-between;
     margin: 20px 0;
-    border: 1px solid blue;
+    background-color: #BBB;
+}
+
+.navigation-item img {
+    height: 35px;
+    width: auto;
 }
 
 .navigation-item:hover {
     cursor: pointer;
+}
+
+.content-hidden {
+    /* Visibility hidden leaves empty space. Display:none doesn't */
+    visibility: hidden;
+}
+
+.navigation-toggle-button {
+
 }
 
 /* 
@@ -88,8 +100,6 @@ button:focus {
 
 .main-pane {
     height: 100%;
-    
-    border: 1px solid red;
 }
 
 .pane-content {
@@ -97,8 +107,11 @@ button:focus {
     width: 500px;
     height: 100%;
     text-align: center;
+}
 
-    border: 1px solid purple;
+.pane-image {
+    border-radius: 300px;
+    width: 300px;
 }
 
 /* 
@@ -120,5 +133,5 @@ button:focus {
 .contact-panel img {
     width: 90px;
     margin: auto 10px;
-    border-right: 1px solid green;
+    border-right: 1px solid black;
 }
