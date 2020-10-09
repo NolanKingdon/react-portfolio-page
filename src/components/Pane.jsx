@@ -6,15 +6,18 @@ import PanelItem from './PaneItem';
  * @param {object} props component specific props
  */
 function Pane(props){
-
     return (
         <div className="main-pane">
             <div className="pane-content">
-                {props.content.image && <img src={props.content.image}></img>}
+                {props.content.image && <img
+                                            className="pane-image"
+                                            src={props.content.image}
+                                            alt={props.content.imageAlt} />}
                 {props.content.primaryText && <h2>{props.content.primaryText}</h2>}
                 {props.content.secondaryText && props.content.secondaryText.map( text => <p>{text}</p>)}
                 {props.content.items !== undefined &&
-                    props.content.items.map(item => <PanelItem
+                    props.content.items.map((item, index) => <PanelItem
+                                                        key={index}
                                                         panelType={item.panelType}
                                                         icon={item.itemIcon}
                                                         iconAltText={item.iconAltText}
