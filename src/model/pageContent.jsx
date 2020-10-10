@@ -1,4 +1,8 @@
 import aboutImage from '../images/about/linkedin.png';
+import linkedinLogo from '../images/LinkedIn-Logo.png';
+import gmailLogo from '../images/gmailCircle.png';
+import phoneIcon from '../images/phoneIcon.png';
+import powerschoolLogo from '../images/employment/PS-logo.png';
 
 let pageContent = {
     "template": {
@@ -37,21 +41,21 @@ let pageContent = {
         ],
         "items": [
             {
-                "itemIcon": "<<Image coming soon>>",
+                "itemIcon": gmailLogo,
                 "iconAltText": "Gmail Icon",
                 "panelType": "contact-panel",
                 "primaryText": "nolan.kingdon@gmail.com",
                 "link": "mailto:nolan.kingdon@gmail.com"
             },
             {
-                "itemIcon": "<<Image coming soon>>",
+                "itemIcon": linkedinLogo,
                 "iconAltText": "Linkedin Icon",
                 "panelType": "contact-panel",
                 "primaryText": "LinkedIn",
                 "link": "https://www.linkedin.com/in/nolan-kingdon/"
             },
             {
-                "itemIcon": "<<Image coming soon>>",
+                "itemIcon": phoneIcon,
                 "iconAltText": "Telephone Icon",
                 "panelType": "contact-panel",
                 "primaryText": "(905) 220-1705",
@@ -110,7 +114,7 @@ let pageContent = {
     "Employment History": {
         "items": [
             {
-                "itemIcon": "<< Icon coming soon >>",
+                "itemIcon": powerschoolLogo,
                 "iconAltText": "Icon",
                 "panelType": "information-panel",
                 "primaryText": "This is a test project",

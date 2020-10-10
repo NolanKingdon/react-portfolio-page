@@ -10,18 +10,20 @@ import React from 'react';
  */
 function PaneItem(props){
     return (
-        <div className={"panel-item " + props.panelType}>
+        <a href={props.link} target="_blank" className={"panel-item " + props.panelType}>
             <img src={props.icon} alt={props.iconAltText}/>
-            <h2>{props.primaryText}</h2>
-            {props.secondaryText && <p>{props.secondaryText}</p>}
-            {props.date && <p>{props.date}</p>}
-            {props.description && 
-                <React.Fragment>
-                    <hr/>
-                    <p>{props.description}</p> 
-                </React.Fragment>
-            }
-        </div>
+            <div className="panel-item-content">
+                <h2 className="panel-header-text">{props.primaryText}</h2>
+                {props.secondaryText && <p className="panel-secondary-text">{props.secondaryText}</p>}
+                {props.date && <p className="panel-date">{props.date}</p>}
+                {props.description && 
+                    <React.Fragment>
+                        <hr/>
+                        <p>{props.description}</p> 
+                    </React.Fragment>
+                }
+            </div>
+        </a>
     );
 }
 

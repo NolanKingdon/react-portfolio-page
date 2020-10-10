@@ -9,11 +9,20 @@ function NavigationBar(props){
     let navWidth = props.extended ? "350px" : "50px";
 
     return (
-        <div className="navigation-bar-body" style={{width: navWidth}}>
-            <div className={"navigation-header" + hiddenClass}>
-                <h3>Nolan Kingdon</h3>
-                <p><a href="tel:9052201705">905-220-1705</a></p>
-                <p><a href="mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></p>
+        <div className="navigation-bar-body shadowed" style={{width: navWidth}}>
+            <div className="navigation-header-container">
+                <div className={"navigation-header" + hiddenClass}>
+                    <h3>Nolan Kingdon</h3>
+                    <p><a href="tel:9052201705">905-220-1705</a></p>
+                    <p><a href="mailto:nolan.kingdon@gmail.com">nolan.kingdon@gmail.com</a></p>
+                </div>
+                <div className="navigation-button-container">
+                    <button
+                        className="navigation-toggle-button"
+                        onClick={() => props.toggleHandler()}>
+                            Toggle
+                    </button>
+                </div>
             </div>
             {
                 Object.keys(props.items).map(keyName => {
@@ -25,9 +34,6 @@ function NavigationBar(props){
                                 changeState={props.changeState}/>)
                 })
             }
-            <button
-                className="navigation-toggle-button"
-                onClick={() => props.toggleHandler()}>Toggle</button>
         </div>
     );
 }

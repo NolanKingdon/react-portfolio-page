@@ -6,19 +6,24 @@ import contactIcon from '../images/navbar/nav-icons/white/nav-icon-envelope-whit
 
 let navigation = {
     "About": {
-        "icon": aboutIcon
+        "icon": aboutIcon,
+        "iconAlt": "Icon of person"
     },
     "Education": {
-        "icon": educationIcon
+        "icon": educationIcon,
+        "iconAlt": "Icon of graduation cap"
     },
     "My Work": {
-        "icon": workIcon
+        "icon": workIcon,
+        "iconAlt": "Icon of an html tag"
     },
     "Employment History": {
-        "icon": employmentIcon
+        "icon": employmentIcon,
+        "iconAlt": "Icon of a briefcase"
     },
     "Contact": {
-        "icon": contactIcon
+        "icon": contactIcon,
+        "iconAlt": "Icon of a letter"
     }
 };
 

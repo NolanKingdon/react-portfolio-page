@@ -5,7 +5,10 @@
 */
 
 * {
-    font-family: sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    --main-blue: rgb(2, 54, 112);
+    --seconary-blue: #032c59;
+    --light-card-background: #f5f5f5;
 }
 
 html, body, #root {
@@ -17,6 +20,12 @@ html, body, #root {
 
 button:focus {
     outline: none;
+}
+
+.shadowed{
+    -webkit-box-shadow: 4px 5px 10px 1px gray;
+    -moz-box-shadow:    4px 5px 10px 1px gray;
+    box-shadow:         4px 5px 10px 1px gray;
 }
 
 /* 
@@ -39,9 +48,11 @@ button:focus {
 }
 
 .navigation-bar-body {
+    background-color: var(--main-blue);
     width: 350px;
     height: 100%;
     transition: 250ms ease;
+    color: white;
 }
 
 /* 
@@ -51,8 +62,8 @@ button:focus {
 */
 
 .main-header {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border-top: 4px solid var(--main-blue);
+    border-bottom: 4px solid var(--main-blue);
     text-align: right;
 }
 
@@ -67,11 +78,37 @@ button:focus {
 ===========
 */
 
+.navigation-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-header {
+    margin: 10px;
+}
+
 .navigation-item {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    background-color: #BBB;
+    background-color: var(--seconary-blue);
+    padding: 5px 10px;
+}
+
+.navigation-item div {
+    align-self: center;
+    text-justify: distribute-all-lines;
+    font-weight: 600;
+}
+
+.navigation-bar-body h3 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.navigation-bar-body a {
+    color: white;
+    font-weight: 600
 }
 
 .navigation-item img {
@@ -84,8 +121,12 @@ button:focus {
 }
 
 .content-hidden {
-    /* Visibility hidden leaves empty space. Display:none doesn't */
-    visibility: hidden;
+    display: none;
+}
+
+.navigation-button-container {
+    /* Fixed height allows all icons to stay in same position when hiding navbar */
+    height: 150px;
 }
 
 .navigation-toggle-button {
@@ -100,6 +141,7 @@ button:focus {
 
 .main-pane {
     height: 100%;
+    margin-top: 30px;
 }
 
 .pane-content {
@@ -112,6 +154,15 @@ button:focus {
 .pane-image {
     border-radius: 300px;
     width: 300px;
+    border: 2px solid black;
+}
+
+.pane-header {
+    font-size: 3em;
+}
+
+.pane-secondary {
+    font-size: 1.7em;
 }
 
 /* 
@@ -121,17 +172,38 @@ button:focus {
 */
 .panel-item {
     border-radius: 5px;
-    background-color: #BBB;
     margin: 15px 0;
+    text-decoration: none;
+    color: black;
+    transition: 400ms;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--light-card-background);
+
+    border: 1px solid green;
+}
+
+.panel-item * { border: 1px solid green;}
+
+.panel-item:hover {
+    background-color: var(--seconary-blue);
+    color: white;
+}
+
+.panel-item img {
+    align-self: flex-start;
+    width: 80px;
+    height: 80px;
+    margin: auto 10px;
+    padding-right: 20px;
+    border-right: 2px solid var(--main-blue)
+}
+
+.information-panel {
+
 }
 
 .contact-panel {
-    border: 10px solid yellow;
-    display: flex;
-}
-
-.contact-panel img {
-    width: 90px;
-    margin: auto 10px;
-    border-right: 1px solid black;
+    height: 100px;
 }
