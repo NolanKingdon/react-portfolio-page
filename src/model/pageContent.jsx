@@ -115,12 +115,12 @@ let pageContent = {
         "items": [
             {
                 "itemIcon": powerschoolLogo,
-                "iconAltText": "Icon",
+                "iconAltText": "PowerSchool Logo",
                 "panelType": "information-panel",
                 "primaryText": "This is a test project",
                 "secondaryText": "Some secondary text",
                 "date": "01/01/2001 - 02/02/2002",
-                "description": "This will be far more detailed in the future",
+                "description": "This will be far more detailed in the futureThis will be far more detailed <strong>in the</strong> futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the futureThis will be far more detailed in the future",
                 "link": "#"
             },
             {
