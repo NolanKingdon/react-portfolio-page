@@ -1,5 +1,8 @@
 import React from 'react';
 import NavigationItem from './NavigationItem';
+import githubLogo from '../images/GitHub-Logo.png';
+import linkedinLogo from '../images/LinkedIn-Logo.png';
+import leftArrow from '../images/navbar/arrow-left.png';
 import './css/styles.css';
 
 
@@ -20,7 +23,8 @@ function NavigationBar(props){
                     <button
                         className="navigation-toggle-button"
                         onClick={() => props.toggleHandler()}>
-                            Toggle
+                            {props.extended && <img src={leftArrow} alt="Left Arrow Icon" />}
+                            {!props.extended && <img src={leftArrow} className="flipped-img" alt="Left Arrow Icon" />}
                     </button>
                 </div>
             </div>
@@ -34,6 +38,14 @@ function NavigationBar(props){
                                 changeState={props.changeState}/>)
                 })
             }
+            <div className={"navigation-socials" + hiddenClass}>
+                <a href="https://github.com/NolanKingdon" target="_blank">
+                    <img src={githubLogo} alt="GitHub logo"/>
+                </a>
+                <a href="https://www.linkedin.com/in/nolan-kingdon/" target="_blank">
+                    <img src={linkedinLogo} alt="Linkedin Logo"/>
+                </a>
+            </div>
         </div>
     );
 }

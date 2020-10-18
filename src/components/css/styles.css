@@ -9,6 +9,8 @@
     --main-blue: rgb(2, 54, 112);
     --seconary-blue: #032c59;
     --light-card-background: #f5f5f5;
+    --hover-nav-blue: #2781e5;
+    --nav-bar-width: 350px;
 }
 
 html, body, #root {
@@ -26,6 +28,10 @@ button:focus {
     -webkit-box-shadow: 4px 5px 10px 1px gray;
     -moz-box-shadow:    4px 5px 10px 1px gray;
     box-shadow:         4px 5px 10px 1px gray;
+}
+
+.flipped-img {
+    transform: rotate(180deg);
 }
 
 /* 
@@ -49,9 +55,9 @@ button:focus {
 
 .navigation-bar-body {
     background-color: var(--main-blue);
-    width: 350px;
+    width: var(--nav-bar-width);
     height: 100%;
-    transition: 250ms ease;
+    transition: 200ms ease;
     color: white;
 }
 
@@ -93,6 +99,7 @@ button:focus {
     margin: 20px 0;
     background-color: var(--seconary-blue);
     padding: 5px 10px;
+    transition: 300ms;
 }
 
 .navigation-item div {
@@ -118,6 +125,7 @@ button:focus {
 
 .navigation-item:hover {
     cursor: pointer;
+    background-color: var(--hover-nav-blue);
 }
 
 .content-hidden {
@@ -130,7 +138,39 @@ button:focus {
 }
 
 .navigation-toggle-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
 
+.navigation-toggle-button:hover {
+    cursor: pointer;
+}
+
+.navigation-toggle-button img {
+    width: 30px;
+    height: auto;
+}
+
+.navigation-socials {
+    text-align: center;
+    width: var(--nav-bar-width);
+    position: absolute;
+    bottom: 10px;
+}
+
+.navigation-socials a {
+    margin: 4px;
+    opacity: 0.5;
+    transition: 250ms;
+}
+
+.navigation-socials a:hover {
+    opacity: 1;
+}
+
+.navigation-socials img {
+    width: 70px;
 }
 
 /* 
@@ -180,11 +220,19 @@ button:focus {
     align-items: center;
     justify-content: flex-start;
     background-color: var(--light-card-background);
-
-    border: 1px solid green;
 }
 
-.panel-item * { border: 1px solid green;}
+.panel-item hr {
+    height: 2px;
+    border: none;
+    background-color: var(--main-blue);
+}
+
+.panel-item-content {
+    max-width: 75%;
+}
+
+/* .panel-item * { border: 1px solid green;} */
 
 .panel-item:hover {
     background-color: var(--seconary-blue);
@@ -192,7 +240,6 @@ button:focus {
 }
 
 .panel-item img {
-    align-self: flex-start;
     width: 80px;
     height: 80px;
     margin: auto 10px;
@@ -201,7 +248,15 @@ button:focus {
 }
 
 .information-panel {
+    flex-direction: column;
+}
 
+.info-panel-header {
+    display: flex;
+}
+
+.information-panel img {
+    border: none;
 }
 
 .contact-panel {
