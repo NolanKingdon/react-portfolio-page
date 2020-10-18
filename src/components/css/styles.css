@@ -186,7 +186,7 @@ button:focus {
 
 .pane-content {
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
     height: 100%;
     text-align: center;
 }
@@ -229,7 +229,7 @@ button:focus {
 }
 
 .panel-item-content {
-    max-width: 75%;
+    width: 75%;
 }
 
 /* .panel-item * { border: 1px solid green;} */
