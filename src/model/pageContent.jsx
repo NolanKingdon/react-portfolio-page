@@ -81,7 +81,7 @@ let pageContent = {
                 "secondaryText": "C#, ASP.NET Core, MVC, XUnit, Autofixture, Moq",
                 "date": "",
                 "description": "A .NET Core application hosted locally on a Raspberry Pi designed to automatically sort my liked Spotify songs. Sorting occurs by linking a song's genre to a predefined playlist using keywords in the playlist description. Exists as part of a larger project aimed at consolidating several common functions into a local server.",
-                "link": "#"
+                "link": "https://github.com/NolanKingdon/HomeHub"
             },
             {
                 "itemIcon": moonphase,
