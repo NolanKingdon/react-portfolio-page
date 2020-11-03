@@ -6,10 +6,15 @@ import powerschoolLogo from '../images/employment/PS-logo.png';
 import mohawkLogo from '../images/education/Mohawk.png';
 import geotabLogo from '../images/employment/geotab-logo.jpg';
 import brockLogo from '../images/education/Brock_logo.png';
+import moonphase from '../images/work/moonphase.png';
+import dailyPokemon from '../images/work/pokemon.png';
+import speedReader from '../images/work/speedreader.png';
+import siteLogo from '../images/work/this.png';
+import houseHub from '../images/work/houseHub.png';
 
 let pageContent = {
     "template": {
-        "image": "TODO -> Maybe convert us into a jsx so I can implant it in here.",
+        "image": gmailLogo,
         "primaryText": "",
         "secondaryText": [
             "",
@@ -69,24 +74,54 @@ let pageContent = {
     "My Work": {
         "items": [
             {
-                "itemIcon": "<< Icon coming soon >>",
-                "iconAltText": "Icon",
+                "itemIcon": houseHub,
+                "iconAltText": "Raspberry Pi logo in a House",
                 "panelType": "information-panel",
-                "primaryText": "This is a test project",
-                "secondaryText": "Some secondary text",
-                "date": "01/01/2001 - 02/02/2002",
-                "description": "This will be far more detailed in the future",
+                "primaryText": "Spotify Playlist Sorter",
+                "secondaryText": "C#, ASP.NET Core, MVC, XUnit, Autofixture, Moq",
+                "date": "",
+                "description": "A .NET Core application hosted locally on a Raspberry Pi designed to automatically sort my liked Spotify songs. Sorting occurs by linking a song's genre to a predefined playlist using keywords in the playlist description. Exists as part of a larger project aimed at consolidating several common functions into a local server.",
                 "link": "#"
             },
             {
-                "itemIcon": "<< Icon coming soon >>",
-                "iconAltText": "Icon",
+                "itemIcon": moonphase,
+                "iconAltText": "Moonphase Project Icon",
                 "panelType": "information-panel",
-                "primaryText": "This is a test project",
-                "secondaryText": "Some secondary text",
-                "date": "01/01/2001 - 02/02/2002",
-                "description": "This will be far more detailed in the future",
-                "link": "#"
+                "primaryText": "Magic Mirror Moonphase Module",
+                "secondaryText": "Node.JS, HTML5, CSS, JavaScript",
+                "date": "",
+                "description": "A module for the open source Raspberry Pi Magic Mirror project. Calculates the number of days since the last new moon and uses trigonometry to plot the relevant shadown on an HTML5 canvas. Uses HTML5, JavaScript, and CSS to run on an Electron based display. Localized into several languages thanks to the Magic Mirror community.",
+                "link": "https://github.com/NolanKingdon/MMM-MoonPhase"
+            },
+            {
+                "itemIcon": siteLogo,
+                "iconAltText": "React logo",
+                "panelType": "information-panel",
+                "primaryText": "Personal Portfolio Page",
+                "secondaryText": "React.js, JavaScript, HTML, CSS",
+                "date": "",
+                "description": "The source code for this website. Built using react and DRY principles.",
+                "link": "https://github.com/NolanKingdon/react-portfolio-page"
+            },
+            {
+                "itemIcon": dailyPokemon,
+                "iconAltText": "Daily Pokemon Project Logo",
+                "panelType": "information-panel",
+                "primaryText": "Magic Mirror Daily Pokemon Module",
+                "secondaryText": "Node.JS, HTML5, CSS, JavaScript",
+                "date": "",
+                "description": "A module for the open source Raspberry Pi Magic Mirror project. Leverages PokeAPI to grab a random Pokemon and display its stats/description at a configurable interval.",
+                "link": "https://github.com/NolanKingdon/MMM-DailyPokemon"
+            },
+            {
+                "itemIcon": speedReader,
+                "iconAltText": "SpeedReader logo",
+                "panelType": "information-panel",
+                "primaryText": "Python Speed Reader",
+                "secondaryText": "Python",
+                "date": "",
+                "description": "A project based in the idea that moving your eye word to word takes up the most time when reading. Will scrape out text from various file types and present them back to the user one word at a time. Dramatically improves reading speed.",
+                "link": "https://github.com/NolanKingdon/Python_Speed_Reader"
             }
         ]
     },
