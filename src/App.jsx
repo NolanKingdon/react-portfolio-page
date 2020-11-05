@@ -3,7 +3,7 @@ import Page from './components/Page';
 import NavigationBar from './components/NavigationBar';
 import MobileNavButton from './components/MobileNavButton';
 import MobileNavToggle from './components/MobileNavToggle';
-import './components/css/styles.css';
+import './css/styles.css';
 import navigationItems from './model/navigation.jsx';
 import pageContent from './model/pageContent.jsx';
 

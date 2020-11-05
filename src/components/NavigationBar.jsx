@@ -3,8 +3,6 @@ import NavigationItem from './NavigationItem';
 import githubLogo from '../images/GitHub-Logo.png';
 import linkedinLogo from '../images/LinkedIn-Logo.png';
 import leftArrow from '../images/navbar/arrow-left.png';
-import './css/styles.css';
-
 
 function NavigationBar(props){
     // I don't like this. feels like the exact thing I'm refactoring to get away from.
