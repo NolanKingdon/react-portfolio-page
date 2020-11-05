@@ -10,9 +10,16 @@ function NavigationBar(props){
     // I don't like this. feels like the exact thing I'm refactoring to get away from.
     let hiddenClass = props.extended ? "" : " content-hidden";
     let navWidth = props.extended ? "350px" : "50px";
+    let visible = !props.extended && props.isMobile ? "none" : "inline";
+    
+    let styles = {
+        width: navWidth,
+        display: visible
+    };
+
 
     return (
-        <div className="navigation-bar-body shadowed" style={{width: navWidth}}>
+        <div className="navigation-bar-body shadowed" style={styles}>
             <div className="navigation-header-container">
                 <div className={"navigation-header" + hiddenClass}>
                     <h3>Nolan Kingdon</h3>

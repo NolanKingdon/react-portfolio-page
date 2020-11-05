@@ -7,7 +7,7 @@ import RIGHTARROW from '../Nav-Bar/images/arrow-right.png';
 
 export default class Buttons extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.handleToggle = this.handleToggle.bind(this);
     this.handleForwardClick = this.handleForwardClick.bind(this);
