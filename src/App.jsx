@@ -21,7 +21,8 @@ class App extends Component {
     this.changeState = this.changeState.bind(this);
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.updateWindowWidth = this.updateWindowWidth.bind(this);
-    this.stepThroughPages = this.stepThroughPages.bind(this);
+    this.leftSwipeHandler = this.leftSwipeHandler.bind(this);
+    this.rightSwipeHandler = this.rightSwipeHandler.bind(this);
   }
 
   componentDidMount() {
@@ -62,14 +63,22 @@ class App extends Component {
     }
   }
 
-  stepThroughPages(direction){
+  leftSwipeHandler(){
+    let page = this.state.currentPage;
     let keys = Object.keys(navigationItems);
-    let currentIndex = keys.indexOf(this.state.currentPage);
+    let currentIndex = keys.indexOf(page);
 
-    // Should be impossible to go out of bounds with normal use -> Buttons disappear.
-    if (direction === 'forward') {
+    if (currentIndex < keys.length-1){
       this.setState({currentPage: keys[currentIndex+1]});
-    } else if (direction === "back") {
+    }
+  }
+
+  rightSwipeHandler(){
+    let page = this.state.currentPage;
+    let keys = Object.keys(navigationItems);
+    let currentIndex = keys.indexOf(page);
+
+    if (currentIndex > 0){
       this.setState({currentPage: keys[currentIndex-1]});
     }
   }
@@ -98,6 +107,8 @@ class App extends Component {
             </div>
         }
         <Page
+          leftSwipeHandler={this.leftSwipeHandler}
+          rightSwipeHandler={this.rightSwipeHandler}
           currentPage={this.state.currentPage}
           pageContents={pageContent[this.state.currentPage]} />
       </div>
