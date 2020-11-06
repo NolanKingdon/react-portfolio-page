@@ -2,14 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React Based Portfolio Page
 
-WIP - Will be my personal portfolio page
+Personal portfolio page used to present contact information and showcase some of my work. Designed with DRY principles in mind to be easy to maintain and expand in the future.
 
-## TODOS
+Current version (V2) is a redesign of my first attempt, and applies several best practices previously absent.
 
-### MOBILE
-* Merge with desktop - A lot of redundant components are left over from old design  
-
-### Desktop
-
-### All
-* Add Reviews/References
+Hosted on Github Pages.
