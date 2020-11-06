@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Pane from './Pane';
-import { useSwipeable, Swipeable } from 'react-swipeable'
+import { Swipeable } from 'react-swipeable'
 
 function Page(props){
     return (

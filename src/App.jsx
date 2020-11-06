@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Page from './components/Page';
 import NavigationBar from './components/NavigationBar';
-import MobileNavButton from './components/MobileNavButton';
 import MobileNavToggle from './components/MobileNavToggle';
 import './css/styles.css';
 import navigationItems from './model/navigation.jsx';

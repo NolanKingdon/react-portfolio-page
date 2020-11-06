@@ -42,10 +42,10 @@ function NavigationBar(props){
                 })
             }
             <div className={"navigation-socials" + hiddenClass}>
-                <a href="https://github.com/NolanKingdon" target="_blank">
+                <a href="https://github.com/NolanKingdon" target="_blank" rel="noopener noreferrer">
                     <img src={githubLogo} alt="GitHub logo"/>
                 </a>
-                <a href="https://www.linkedin.com/in/nolan-kingdon/" target="_blank">
+                <a href="https://www.linkedin.com/in/nolan-kingdon/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedinLogo} alt="Linkedin Logo"/>
                 </a>
             </div>

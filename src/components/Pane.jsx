@@ -40,7 +40,7 @@ function Pane(props){
                                         description={item.description}
                                         link={item.link}/>
                         }
-                        return;
+                        return null;
                     })
                 }
             </div>
