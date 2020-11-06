@@ -334,7 +334,7 @@ button:focus {
     */
     .navigation-bar-body {
         position: absolute;
-        bottom: 105px;
+        bottom: 75px;
         right: 20px;
         height: 170px;
         width: 200px!important;
@@ -393,5 +393,9 @@ button:focus {
     .info-panel-header img {
         margin: 0px auto;
         padding: 0px;
+    }
+
+    .main-header {
+        text-align: center;
     }
 }

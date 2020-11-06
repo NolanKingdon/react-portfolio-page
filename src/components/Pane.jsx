@@ -24,7 +24,8 @@ function Pane(props){
                                         panelType={item.panelType}
                                         icon={item.itemIcon}
                                         iconAltText={item.iconAltText}
-                                        primaryText={item.primaryText}/>
+                                        primaryText={item.primaryText}
+                                        link={item.link}/>
                         }
 
                         if (item.panelType === 'information-panel'){

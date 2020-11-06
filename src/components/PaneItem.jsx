@@ -10,7 +10,7 @@ import React from 'react';
  */
 function PaneItem(props){
     return (
-        <a href={props.link} className={"panel-item " + props.panelType}>
+        <a href={props.link} target="_blank" className={"panel-item " + props.panelType}>
             <div className="info-panel-header">
                 <img src={props.icon} alt={props.iconAltText}/>
                 <div>

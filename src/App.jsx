@@ -13,7 +13,7 @@ class App extends Component {
 
     this.state = {
       currentPage: "About",
-      navExtended: true,
+      navExtended: window.innerWidth > 700,
       viewportWidth: window.innerWidth,
       isMobile: window.innerWidth <= 700
     }
@@ -26,6 +26,7 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.updateWindowWidth);
+    window.addEventListener('touchstart', this.touchDownHandler);
   }
 
   componentWillUnmount() {
@@ -33,7 +34,11 @@ class App extends Component {
   }
 
   changeState(page){
-    this.setState({currentPage: page});
+    // Changing page. Sets Navbar to closed if we are mobile.
+    this.setState({
+      currentPage: page,
+      navExtended: !this.state.isMobile
+    });
   }
 
   /**
@@ -51,8 +56,6 @@ class App extends Component {
 
     // I also want to check to see if we're tripping into our mobile css.
     if (width <= 700 && !this.state.navExtended){
-      // Openning the navbar if it's closed. Keeps text visible.
-      this.toggleNavbar();
       this.setState({isMobile: true});
     } else {
       this.setState({isMobile: false});
@@ -89,20 +92,6 @@ class App extends Component {
         {
           this.state.viewportWidth <= 700 &&
             <div className="mobile-nav-btns">
-              {
-                this.state.currentPage !== "About" &&
-                  <MobileNavButton
-                    navExtended={this.state.navExtended}
-                    direction="back" 
-                    pageChanger={this.stepThroughPages}/>
-              }
-              {
-                this.state.currentPage !== "Contact" &&
-                  <MobileNavButton 
-                    navExtended={this.state.navExtended}
-                    direction="forward" 
-                    pageChanger={this.stepThroughPages}/>
-              }
               <MobileNavToggle 
                 extended={this.state.navExtended}
                 toggleHandler={this.toggleNavbar}/>

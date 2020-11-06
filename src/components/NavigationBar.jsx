@@ -5,7 +5,6 @@ import linkedinLogo from '../images/LinkedIn-Logo.png';
 import leftArrow from '../images/navbar/arrow-left.png';
 
 function NavigationBar(props){
-    // I don't like this. feels like the exact thing I'm refactoring to get away from.
     let hiddenClass = props.extended ? "" : " content-hidden";
     let navWidth = props.extended ? "350px" : "50px";
     let visible = !props.extended && props.isMobile ? "none" : "inline";
@@ -14,7 +13,6 @@ function NavigationBar(props){
         width: navWidth,
         display: visible
     };
-
 
     return (
         <div className="navigation-bar-body shadowed" style={styles}>

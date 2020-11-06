@@ -59,7 +59,7 @@ let pageContent = {
                 "itemIcon": linkedinLogo,
                 "iconAltText": "Linkedin Icon",
                 "panelType": "contact-panel",
-                "primaryText": "LinkedIn",
+                "primaryText": "linkedin.com/in/nolan-kingdon",
                 "link": "https://www.linkedin.com/in/nolan-kingdon/"
             },
             {
@@ -143,7 +143,7 @@ let pageContent = {
                 "panelType": "information-panel",
                 "primaryText": "Brock University",
                 "secondaryText": "Bachelor of Arts",
-                "date": "01/01/2001 - 02/02/2002",
+                "date": "September 2011 - June 2015",
                 "description": "Honours Sociology, Conc. Criminology, Minor in Philosophy",
                 "link": "#"
             }
@@ -158,7 +158,7 @@ let pageContent = {
                 "primaryText": "Software Developer Intern",
                 "secondaryText": "Geotab Inc.",
                 "date": "December 2019 - Present",
-                "description": "Worked with SDK and Integrations team to modernize and maintain SDK tools including JavaScript API Wrapper and Add-in Generator for backend services. Created asynchronous update scheduler for use in integration project with third party manufacturers.",
+                "description": "Worked with SDK and Integrations team to modernize and maintain SDK tools including JavaScript Web and Node.js API Wrapper and Add-in Generator for backend services. Created asynchronous update scheduler using .NET Core and ASP.NET Core ecosystem for use in integration project with third party manufacturers.",
                 "link": "#"
             },
             {
