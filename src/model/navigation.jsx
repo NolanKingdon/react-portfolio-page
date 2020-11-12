@@ -13,7 +13,7 @@ let navigation = {
         "icon": educationIcon,
         "iconAlt": "Icon of graduation cap"
     },
-    "My Work": {
+    "Portfolio": {
         "icon": workIcon,
         "iconAlt": "Icon of an html tag"
     },

@@ -6,9 +6,9 @@ import powerschoolLogo from '../images/employment/PS-logo.png';
 import mohawkLogo from '../images/education/Mohawk.png';
 import geotabLogo from '../images/employment/geotab-logo.jpg';
 import brockLogo from '../images/education/Brock_logo.png';
-import moonphase from '../images/work/moonphase.png';
-import dailyPokemon from '../images/work/pokemon.png';
-import speedReader from '../images/work/speedreader.png';
+import moonphase from '../images/work/moonphase.PNG';
+// import dailyPokemon from '../images/work/pokemon.png';
+// import speedReader from '../images/work/speedreader.png';
 import siteLogo from '../images/work/this.png';
 import houseHub from '../images/work/houseHub.png';
 
@@ -71,7 +71,7 @@ let pageContent = {
             }
         ]
     },
-    "My Work": {
+    "Portfolio": {
         "items": [
             {
                 "itemIcon": houseHub,
@@ -88,10 +88,30 @@ let pageContent = {
                 "iconAltText": "Moonphase Project Icon",
                 "panelType": "information-panel",
                 "primaryText": "Magic Mirror Moonphase Module",
-                "secondaryText": "Node.JS, HTML5, CSS, JavaScript",
+                "secondaryText": "Node.js, HTML5, CSS, JavaScript",
                 "date": "",
-                "description": "A module for the open source Raspberry Pi Magic Mirror project. Calculates the number of days since the last new moon and uses trigonometry to plot the relevant shadown on an HTML5 canvas. Uses HTML5, JavaScript, and CSS to run on an Electron based display. Localized into several languages thanks to the Magic Mirror community.",
+                "description": "A module for the open source Raspberry Pi Magic Mirror project. Calculates the number of days since the last new moon and uses trigonometry to plot the relevant shadow on an HTML5 canvas. Uses HTML5, JavaScript, and CSS to run on an Electron based display. Localized into several languages thanks to the Magic Mirror community.",
                 "link": "https://github.com/NolanKingdon/MMM-MoonPhase"
+            },
+            {
+                "itemIcon": geotabLogo,
+                "iconAltText": "Geotab Logo",
+                "panelType": "information-panel",
+                "primaryText": "JavaScript API Wrapper",
+                "secondaryText": "Node.js, ES6+, JavaScript, Mocha, Chai, Webpack",
+                "date": "",
+                "description": "Overhauled existing web API wrapper into a Node.js and Browser (UMD) compatible wrapper. Provided extensive testing and Async/Await/Promise functionality while maintaining backwards compatibility for callbacks. Created modular and sustainable design using ES6+ and Webpack to ensure compatibility with older browsers.",
+                "link": "https://github.com/Geotab/mg-api-js"
+            },
+            {
+                "itemIcon": geotabLogo,
+                "iconAltText": "Geotab Logo",
+                "panelType": "information-panel",
+                "primaryText": "Add-In Generator",
+                "secondaryText": "Node.js, Yeoman, Webpack, Puppeteer, Mocha, Chai",
+                "date": "",
+                "description": "Modernized existing Add-In generator and added several functions to improve quality of life when developing open source add-ins for Geotab service. Functionality includes - translations, permission group testing, Webpack compilation, linting, mock sidebar, and mock UI.",
+                "link": "#"
             },
             {
                 "itemIcon": siteLogo,
@@ -102,27 +122,27 @@ let pageContent = {
                 "date": "",
                 "description": "The source code for this website. Built using react and DRY principles.",
                 "link": "https://github.com/NolanKingdon/react-portfolio-page"
-            },
-            {
-                "itemIcon": dailyPokemon,
-                "iconAltText": "Daily Pokemon Project Logo",
-                "panelType": "information-panel",
-                "primaryText": "Magic Mirror Daily Pokemon Module",
-                "secondaryText": "Node.JS, HTML5, CSS, JavaScript",
-                "date": "",
-                "description": "A module for the open source Raspberry Pi Magic Mirror project. Leverages PokeAPI to grab a random Pokemon and display its stats/description at a configurable interval.",
-                "link": "https://github.com/NolanKingdon/MMM-DailyPokemon"
-            },
-            {
-                "itemIcon": speedReader,
-                "iconAltText": "SpeedReader logo",
-                "panelType": "information-panel",
-                "primaryText": "Python Speed Reader",
-                "secondaryText": "Python",
-                "date": "",
-                "description": "A project based in the idea that moving your eye word to word takes up the most time when reading. Will scrape out text from various file types and present them back to the user one word at a time. Dramatically improves reading speed.",
-                "link": "https://github.com/NolanKingdon/Python_Speed_Reader"
             }
+            // {
+            //     "itemIcon": dailyPokemon,
+            //     "iconAltText": "Daily Pokemon Project Logo",
+            //     "panelType": "information-panel",
+            //     "primaryText": "Magic Mirror Daily Pokemon Module",
+            //     "secondaryText": "Node.js, HTML5, CSS, JavaScript",
+            //     "date": "",
+            //     "description": "A module for the open source Raspberry Pi Magic Mirror project. Leverages PokeAPI to grab a random Pokemon and display its stats/description at a configurable interval.",
+            //     "link": "https://github.com/NolanKingdon/MMM-DailyPokemon"
+            // },
+            // {
+            //     "itemIcon": speedReader,
+            //     "iconAltText": "SpeedReader logo",
+            //     "panelType": "information-panel",
+            //     "primaryText": "Python Speed Reader",
+            //     "secondaryText": "Python",
+            //     "date": "",
+            //     "description": "A project based in the idea that moving your eye word to word takes up the most time when reading. Will scrape out text from various file types and present them back to the user one word at a time. Dramatically improves reading speed.",
+            //     "link": "https://github.com/NolanKingdon/Python_Speed_Reader"
+            // }
         ]
     },
     "Education": {
